@@ -63,6 +63,8 @@ model User {
   challenges    UserChallenge[]
   bingoCards    UserBingoCard[]
   activityPosts ActivityPost[]
+  following     Follow[]  @relation("UserFollows")
+  followers     Follow[]  @relation("UserFollowers")
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -373,4 +375,18 @@ model ActivityPost {
   @@index([createdAt])
   @@index([userId])
   @@index([type])
+}
+
+model Follow {
+  id          String   @id @default(cuid())
+  followerId  String   // User who is following
+  followingId String   // User being followed
+  createdAt   DateTime @default(now())
+
+  follower    User     @relation("UserFollows", fields: [followerId], references: [id], onDelete: Cascade)
+  following   User     @relation("UserFollowers", fields: [followingId], references: [id], onDelete: Cascade)
+
+  @@unique([followerId, followingId])
+  @@index([followerId])
+  @@index([followingId])
 }
