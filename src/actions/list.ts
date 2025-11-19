@@ -4,6 +4,7 @@ import { auth } from "@/auth"
 import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
 import { checkAndAwardAchievements, addXP } from "@/lib/achievements"
+import { createEpisodeActivity, createChapterActivity } from "@/actions/activity"
 
 function getUserId(session: any): string {
   return (session?.user as any)?.id || session?.user?.id
@@ -228,6 +229,9 @@ export async function incrementAnimeEpisode(animeId: number) {
   // Award XP for episode progress
   await addXP(userId, 5, "Watched episode")
   
+  // Create activity post for episode progress
+  await createEpisodeActivity(animeId, newEpisode)
+  
   // Check if completed (anime already fetched above)
   if (anime?.episodes && newEpisode >= anime.episodes) {
     await prisma.userAnimeList.update({
@@ -296,6 +300,9 @@ export async function incrementMangaChapter(mangaId: number) {
 
   // Award XP for chapter progress
   await addXP(userId, 3, "Read chapter")
+  
+  // Create activity post for chapter progress
+  await createChapterActivity(mangaId, newChapter)
   
   // Check if completed (manga already fetched above)
   if (manga?.chapters && newChapter >= manga.chapters) {

@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { LandingFeatures, LandingCTAs } from "@/components/landing-content";
 import { UserDashboard } from "@/components/user-dashboard";
 import { NewsSection } from "@/components/news-section";
-import { RecentActivity } from "@/components/recent-reviews";
+import { ActivityFeed } from "@/components/activity-feed";
 
 export default async function Home() {
   const session = await auth();
@@ -112,14 +112,19 @@ export default async function Home() {
             <p className="text-lg text-muted-foreground">Here's what's happening with your lists</p>
           </div>
 
-          {/* Main Dashboard Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16">
-            {/* Main Dashboard Content */}
-            <div className="lg:col-span-8 space-y-8">
+          {/* Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+            {/* Left Side - Activity Feed */}
+            <div>
+              <ActivityFeed />
+            </div>
+
+            {/* Right Side - Stats/Info/Continue Watching */}
+            <div className="space-y-6">
               {/* User Dashboard */}
               <UserDashboard userId={userId} />
 
-              {/* Watching List */}
+              {/* Continue Watching */}
               {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
                 <section>
                   <div className="flex items-center justify-between mb-8">
@@ -128,11 +133,6 @@ export default async function Home() {
                   <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
                 </section>
               )}
-            </div>
-
-            {/* Sidebar - Recent Activity */}
-            <div className="lg:col-span-4">
-              <RecentActivity />
             </div>
           </div>
         </div>

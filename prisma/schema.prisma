@@ -62,6 +62,7 @@ model User {
   badges        UserBadge[]
   challenges    UserChallenge[]
   bingoCards    UserBingoCard[]
+  activityPosts ActivityPost[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -104,6 +105,7 @@ model Anime {
   userLists      UserAnimeList[]
   reviews        Review[]
   favorites      UserFavoriteAnime[]
+  activityPosts  ActivityPost[]
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 }
@@ -135,6 +137,7 @@ model Manga {
   userLists      UserMangaList[]
   reviews        Review[]
   favorites      UserFavoriteManga[]
+  activityPosts  ActivityPost[]
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 }
@@ -349,4 +352,25 @@ model News {
   @@index([publishedAt])
   @@index([category])
   @@index([source])
+}
+
+model ActivityPost {
+  id          String   @id @default(cuid())
+  userId      String
+  type        String   // "post", "episode", "chapter"
+  content     String?  // User's text content (for "post" type)
+  animeId     Int?
+  mangaId     Int?
+  episode     Int?     // Episode number (for "episode" type)
+  chapter     Int?     // Chapter number (for "chapter" type)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anime       Anime?   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  manga       Manga?   @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt])
+  @@index([userId])
+  @@index([type])
 }
