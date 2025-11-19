@@ -16,15 +16,15 @@ export function Hero() {
         <p className="text-xl md:text-2xl text-muted-foreground max-w-[600px] mx-auto mb-8">
           Your personal anime and manga sanctuary. Track, discover, and immerse yourself in the world of Japanese animation.
         </p>
-        <div className="flex gap-4 justify-center">
-          <Link href="#anime">
+        <div className="flex gap-4 justify-center flex-wrap">
+          <Link href="/login">
             <Button size="lg" className="rounded-full px-8">
-              Explore Anime
+              Get Started Free
             </Button>
           </Link>
-          <Link href="#manga">
+          <Link href="#anime">
             <Button size="lg" variant="outline" className="rounded-full px-8 bg-transparent border-white/20 hover:bg-white/10">
-              Read Manga
+              Explore Anime
             </Button>
           </Link>
         </div>
