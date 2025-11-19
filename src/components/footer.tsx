@@ -24,27 +24,27 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/#anime" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/#anime" className="text-muted-foreground hover:text-primary transition-colors">
                   Top Anime
                 </Link>
               </li>
               <li>
-                <Link href="/#manga" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/#manga" className="text-muted-foreground hover:text-primary transition-colors">
                   Top Manga
                 </Link>
               </li>
               <li>
-                <Link href="/anime-list" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/anime-list" className="text-muted-foreground hover:text-primary transition-colors">
                   My Anime List
                 </Link>
               </li>
               <li>
-                <Link href="/manga-list" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/manga-list" className="text-muted-foreground hover:text-primary transition-colors">
                   My Manga List
                 </Link>
               </li>
@@ -56,12 +56,12 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Account</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/login" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/login" className="text-muted-foreground hover:text-primary transition-colors">
                   Sign In
                 </Link>
               </li>
               <li>
-                <Link href="/profile/edit" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="/profile/edit" className="text-muted-foreground hover:text-primary transition-colors">
                   Edit Profile
                 </Link>
               </li>
@@ -98,13 +98,13 @@ export function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© {currentYear} Hikari. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-foreground transition-colors">
+            <Link href="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-foreground transition-colors">
+            <Link href="/terms" className="hover:text-primary transition-colors">
               Terms of Service
             </Link>
-            <Link href="/about" className="hover:text-foreground transition-colors">
+            <Link href="/about" className="hover:text-primary transition-colors">
               About
             </Link>
           </div>

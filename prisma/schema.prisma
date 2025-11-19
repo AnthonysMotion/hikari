@@ -49,6 +49,8 @@ model User {
   bannerImage   String?   // Profile banner
   bio           String?   // User bio
   accentColor   String?   // Custom accent color (hex)
+  xp            Int       @default(0) // Experience points
+  level         Int       @default(1) // User level
   accounts      Account[]
   sessions      Session[]
   animeList     UserAnimeList[]
@@ -56,6 +58,10 @@ model User {
   reviews       Review[]
   favoriteAnime UserFavoriteAnime[]
   favoriteManga UserFavoriteManga[]
+  achievements  UserAchievement[]
+  badges        UserBadge[]
+  challenges    UserChallenge[]
+  bingoCards    UserBingoCard[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 }
@@ -210,4 +216,117 @@ model UserFavoriteManga {
   manga     Manga    @relation(fields: [mangaId], references: [id], onDelete: Cascade)
 
   @@unique([userId, mangaId])
+}
+
+model Achievement {
+  id          String   @id @default(cuid())
+  code        String   @unique // e.g., "first_complete", "genre_master"
+  name        String
+  description String
+  icon        String?  // Icon identifier
+  xpReward    Int      @default(0)
+  category    String   // "completion", "genre", "streak", "milestone", "challenge"
+  rarity      String   @default("common") // "common", "rare", "epic", "legendary"
+  createdAt   DateTime @default(now())
+  
+  users       UserAchievement[]
+}
+
+model UserAchievement {
+  id            String      @id @default(cuid())
+  userId        String
+  achievementId String
+  unlockedAt    DateTime    @default(now())
+  progress      Int?        // Current progress if achievement is progressive
+  
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, achievementId])
+}
+
+model Badge {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String
+  icon        String?
+  category    String   // "genre", "milestone", "special"
+  rarity      String   @default("common")
+  createdAt   DateTime @default(now())
+  
+  users       UserBadge[]
+}
+
+model UserBadge {
+  id        String   @id @default(cuid())
+  userId    String
+  badgeId   String
+  earnedAt  DateTime @default(now())
+  
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  badge     Badge    @relation(fields: [badgeId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, badgeId])
+}
+
+model Challenge {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  description String
+  type        String   // "daily", "weekly"
+  category    String   // "genre", "episode_count", "completion", "watch_time"
+  target      Int      // Target value (e.g., 3 shows, 10 episodes)
+  targetGenre String?  // If genre-specific
+  xpReward    Int      @default(0)
+  startDate   DateTime
+  endDate     DateTime
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  
+  users       UserChallenge[]
+}
+
+model UserChallenge {
+  id          String    @id @default(cuid())
+  userId      String
+  challengeId String
+  progress    Int       @default(0)
+  completed   Boolean   @default(false)
+  completedAt DateTime?
+  startedAt   DateTime  @default(now())
+  
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  challenge   Challenge @relation(fields: [challengeId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, challengeId])
+}
+
+model BingoCard {
+  id          String   @id @default(cuid())
+  name        String   // e.g., "Spring 2025 Bingo"
+  season      String   // "SPRING", "SUMMER", "FALL", "WINTER"
+  year        Int
+  squares     String   // JSON array of square definitions
+  isActive    Boolean  @default(true)
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime @default(now())
+  
+  users       UserBingoCard[]
+}
+
+model UserBingoCard {
+  id            String    @id @default(cuid())
+  userId        String
+  bingoCardId   String
+  markedSquares String    @default("[]") // JSON array of marked square indices
+  completedAt   DateTime?
+  startedAt     DateTime  @default(now())
+  
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bingoCard     BingoCard @relation(fields: [bingoCardId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, bingoCardId])
 }

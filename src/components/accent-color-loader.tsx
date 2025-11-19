@@ -14,6 +14,10 @@ export function AccentColorLoader({ accentColor }: AccentColorLoaderProps) {
     if (!accentColor) {
       document.documentElement.style.removeProperty("--accent-color")
       document.documentElement.style.removeProperty("--accent-custom-hsl")
+      document.documentElement.style.removeProperty("--primary-custom")
+      document.documentElement.style.removeProperty("--primary-custom-hsl")
+      document.documentElement.style.removeProperty("--ring-custom")
+      document.documentElement.style.removeProperty("--ring-custom-hsl")
       return
     }
 
@@ -68,6 +72,30 @@ export function AccentColorLoader({ accentColor }: AccentColorLoaderProps) {
     document.documentElement.style.setProperty(
       "--accent-custom",
       `oklch(${oklchLightness.toFixed(3)} ${oklchChroma.toFixed(3)} ${h})`
+    )
+
+    // Also set primary color to use accent color (for buttons, badges, etc.)
+    const primaryLightness = isDark ? Math.min(75, Math.max(lightness, 65)) : Math.max(45, Math.min(lightness, 55))
+    const primaryChroma = Math.min(0.25, s / 100 * 0.4)
+    
+    document.documentElement.style.setProperty(
+      "--primary-custom",
+      `oklch(${(primaryLightness / 100).toFixed(3)} ${primaryChroma.toFixed(3)} ${h})`
+    )
+    document.documentElement.style.setProperty(
+      "--primary-custom-hsl",
+      `${h} ${s}% ${primaryLightness}%`
+    )
+
+    // Update ring color for focus states
+    const ringLightness = isDark ? Math.min(65, Math.max(lightness, 55)) : Math.max(60, Math.min(lightness, 70))
+    document.documentElement.style.setProperty(
+      "--ring-custom",
+      `oklch(${(ringLightness / 100).toFixed(3)} ${Math.min(0.2, primaryChroma).toFixed(3)} ${h})`
+    )
+    document.documentElement.style.setProperty(
+      "--ring-custom-hsl",
+      `${h} ${Math.max(40, s - 20)}% ${ringLightness}%`
     )
   }, [accentColor, theme])
 

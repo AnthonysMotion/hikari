@@ -92,7 +92,14 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center center' }}
           />
-        ) : null}
+        ) : (
+          <div 
+            className="absolute inset-0"
+            style={{
+              background: `linear-gradient(135deg, color-mix(in srgb, var(--accent-color, #a855f7) 30%, transparent), color-mix(in srgb, var(--accent-color, #ec4899) 30%, transparent))`
+            }}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent" />
       </div>
 
@@ -102,7 +109,12 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
           <div className="relative">
             <Avatar className="h-32 w-32 md:h-40 md:w-40 lg:h-48 lg:w-48 border-4 border-background shadow-xl ring-4 ring-background/50">
               <AvatarImage src={user.image || ""} alt={user.name || user.username || ""} />
-              <AvatarFallback className="text-2xl md:text-4xl lg:text-5xl bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+              <AvatarFallback 
+                className="text-2xl md:text-4xl lg:text-5xl text-white"
+                style={{
+                  background: `linear-gradient(135deg, var(--accent-color, #a855f7), var(--accent-color, #ec4899))`
+                }}
+              >
                 {(user.name || user.username || user.email || "U")[0].toUpperCase()}
               </AvatarFallback>
             </Avatar>
