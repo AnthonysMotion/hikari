@@ -91,6 +91,18 @@ export async function ActivityFeed() {
                           <span className="text-xs font-medium text-primary">Chapter {activity.chapter}</span>
                         </>
                       )}
+                      {activity.type === "dropped" && (
+                        <span className="text-xs text-muted-foreground">dropped</span>
+                      )}
+                      {activity.type === "planning" && (
+                        <span className="text-xs text-muted-foreground">added to plan</span>
+                      )}
+                      {activity.type === "paused" && (
+                        <span className="text-xs text-muted-foreground">paused</span>
+                      )}
+                      {activity.type === "completed" && (
+                        <span className="text-xs text-muted-foreground">completed</span>
+                      )}
                     </div>
                     <span className="text-xs text-muted-foreground whitespace-nowrap">
                       {formatDate(activity.createdAt)}

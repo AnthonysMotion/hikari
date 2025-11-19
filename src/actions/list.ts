@@ -4,7 +4,7 @@ import { auth } from "@/auth"
 import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
 import { checkAndAwardAchievements, addXP } from "@/lib/achievements"
-import { createEpisodeActivity, createChapterActivity } from "@/actions/activity"
+import { createEpisodeActivity, createChapterActivity, createStatusActivity } from "@/actions/activity"
 
 function getUserId(session: any): string {
   return (session?.user as any)?.id || session?.user?.id
@@ -46,6 +46,9 @@ export async function addToAnimeList(animeId: number, status: string) {
       currentEpisode: status === "WATCHING" || status === "PAUSED" || status === "DROPPED" ? 1 : null,
     },
   })
+
+  // Create activity for status change
+  await createStatusActivity("anime", animeId, status)
 
   // Award XP and check achievements
   if (status === "COMPLETED" && wasCompleted?.status !== "COMPLETED") {
@@ -96,6 +99,9 @@ export async function addToMangaList(mangaId: number, status: string) {
       currentChapter: status === "READING" || status === "PAUSED" || status === "DROPPED" ? 1 : null,
     },
   })
+
+  // Create activity for status change
+  await createStatusActivity("manga", mangaId, status)
 
   // Award XP and check achievements
   if (status === "COMPLETED" && wasCompleted?.status !== "COMPLETED") {

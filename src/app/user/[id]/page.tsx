@@ -10,6 +10,7 @@ import { GenreChart } from "@/components/genre-chart"
 import { FavoriteAnimeList } from "@/components/favorite-anime-list"
 import { FavoriteMangaList } from "@/components/favorite-manga-list"
 import { LevelProgress, AchievementsList, BadgesList } from "@/components/gamification"
+import { UserActivityFeed } from "@/components/user-activity-feed"
 import { Edit, Settings, Calendar, Mail } from "lucide-react"
 
 function getUserId(session: any): string | null {
@@ -194,6 +195,11 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
               </div>
             )}
           </div>
+        </div>
+
+        {/* Activity Feed */}
+        <div className="mb-12">
+          <UserActivityFeed userId={user.id} />
         </div>
 
         {/* Level & XP */}
