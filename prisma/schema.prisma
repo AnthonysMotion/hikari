@@ -332,3 +332,21 @@ model UserBingoCard {
   
   @@unique([userId, bingoCardId])
 }
+
+model News {
+  id          String   @id @default(cuid())
+  title       String
+  description String?  // Summary/excerpt
+  content     String?  // Full content if available
+  link        String   @unique // Original article URL
+  imageUrl    String?  // Featured image URL
+  source      String   // "ANN", "MyAnimeList", "Crunchyroll", etc.
+  category    String?  // "trailer", "announcement", "adaptation", "staff", "delay", "production"
+  publishedAt DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@index([publishedAt])
+  @@index([category])
+  @@index([source])
+}

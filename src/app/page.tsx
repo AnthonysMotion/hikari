@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { Badge } from "@/components/ui/badge";
 import { LandingFeatures, LandingCTAs } from "@/components/landing-content";
 import { UserDashboard } from "@/components/user-dashboard";
+import { NewsSection } from "@/components/news-section";
 
 export default async function Home() {
   const session = await auth();
@@ -236,6 +237,9 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      {/* News Section - Shown for both logged in and logged out */}
+      <NewsSection />
     </main>
   );
 }
