@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles, ListChecks, BookMarked, Flame, Star, UserCircle } from "lucide-react"
+import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles, ListChecks, BookMarked, Flame, Star, UserCircle, Settings } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export async function Navbar() {
@@ -127,6 +127,12 @@ export async function Navbar() {
               <DropdownMenuItem asChild>
                 <Link href="/profile/edit" className="w-full flex items-center">
                   <span>Edit Profile</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/settings" className="w-full flex items-center">
+                  <Settings className="mr-2 h-4 w-4" />
+                  <span>Settings</span>
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuSeparator />

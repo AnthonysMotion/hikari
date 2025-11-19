@@ -48,6 +48,7 @@ model User {
   image         String?   // Profile picture
   bannerImage   String?   // Profile banner
   bio           String?   // User bio
+  accentColor   String?   // Custom accent color (hex)
   accounts      Account[]
   sessions      Session[]
   animeList     UserAnimeList[]
