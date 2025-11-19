@@ -1,0 +1,11 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "installCommand": "npm install",
+  "crons": [
+    {
+      "path": "/api/news/update",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}
+
