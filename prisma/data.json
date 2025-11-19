@@ -1,0 +1,24 @@
+{
+  "anime": [
+    {
+      "title": "Frieren: Beyond Journey's End",
+      "description": "The mage Frieren defeated the Demon King alongside the hero Himmel's party after a 10-year quest. Folk magic, demons, and a long life await her.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx154587-qQTzQnEJJ3oB.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2023",
+      "episodes": 28,
+      "genres": ["Adventure", "Drama", "Fantasy"]
+    }
+  ],
+  "manga": [
+    {
+      "title": "Berserk",
+      "description": "Guts, known as the Black Swordsman, seeks sanctuary from the demonic forces that pursue him and his woman, and vengeance against the man who branded him as an unholy sacrifice.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30002-Cul4OeN7bYtn.jpg",
+      "status": "RELEASING",
+      "chapters": 376,
+      "genres": ["Action", "Adventure", "Drama", "Fantasy", "Horror", "Supernatural"]
+    }
+  ]
+}
+
