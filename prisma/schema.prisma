@@ -58,28 +58,62 @@ model VerificationToken {
 }
 
 model Anime {
-  id           Int      @id @default(autoincrement())
-  title        String
-  description  String?
-  coverImage   String?
-  status       String   // RELEASING, FINISHED, NOT_YET_RELEASED
-  season       String?  // e.g. "Spring 2025"
-  episodes     Int?
-  genres       Genre[]
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id             Int      @id @default(autoincrement())
+  anilistId      Int?     @unique
+  title          String
+  titleRomaji    String?
+  titleEnglish   String?
+  titleNative    String?
+  description    String?
+  coverImage     String?
+  bannerImage    String?
+  status         String   // RELEASING, FINISHED, NOT_YET_RELEASED
+  season         String?  // e.g. "Spring 2025"
+  seasonYear     Int?
+  format         String?  // TV, MOVIE, OVA, etc.
+  episodes       Int?
+  duration       Int?     // in minutes
+  startDate      String?  // YYYY-MM-DD
+  endDate        String?  // YYYY-MM-DD
+  averageScore   Int?     // 0-100
+  popularity     Int?
+  source         String?  // ORIGINAL, MANGA, etc.
+  studios        String?  // JSON array of studio names
+  synonyms       String?  // JSON array of alternative titles
+  tags           String?  // JSON array of tags
+  countryOfOrigin String?
+  isAdult        Boolean  @default(false)
+  genres         Genre[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }
 
 model Manga {
-  id           Int      @id @default(autoincrement())
-  title        String
-  description  String?
-  coverImage   String?
-  status       String   // RELEASING, FINISHED, NOT_YET_RELEASED
-  chapters     Int?
-  genres       Genre[]
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id             Int      @id @default(autoincrement())
+  anilistId      Int?     @unique
+  title          String
+  titleRomaji    String?
+  titleEnglish   String?
+  titleNative    String?
+  description    String?
+  coverImage     String?
+  bannerImage    String?
+  status         String   // RELEASING, FINISHED, NOT_YET_RELEASED
+  format         String?  // MANGA, NOVEL, etc.
+  chapters       Int?
+  volumes        Int?
+  startDate      String?  // YYYY-MM-DD
+  endDate        String?  // YYYY-MM-DD
+  averageScore   Int?     // 0-100
+  popularity     Int?
+  source         String?  // ORIGINAL, etc.
+  synonyms       String?  // JSON array of alternative titles
+  tags           String?  // JSON array of tags
+  countryOfOrigin String?
+  isAdult        Boolean  @default(false)
+  genres         Genre[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 }
 
 model Genre {

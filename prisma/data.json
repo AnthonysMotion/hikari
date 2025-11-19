@@ -1,24 +1,2645 @@
 {
   "anime": [
     {
-      "title": "Frieren: Beyond Journey's End",
-      "description": "The mage Frieren defeated the Demon King alongside the hero Himmel's party after a 10-year quest. Folk magic, demons, and a long life await her.",
+      "title": "Frieren: Beyond Journey’s End",
+      "description": "The adventure is over but life goes on for an elf mage just beginning to learn what living is all about. Elf mage Frieren and her courageous fellow adventurers have defeated the Demon King and brought peace to the land. But Frieren will long outlive the rest of her former party. How will she come to understand what life means to the people around her? Decades after their victory, the funeral of one her friends confronts Frieren with her own near immortality. Frieren sets out to fulfill the last ",
       "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx154587-qQTzQnEJJ3oB.jpg",
       "status": "FINISHED",
       "season": "Fall 2023",
       "episodes": 28,
-      "genres": ["Adventure", "Drama", "Fantasy"]
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Gintama: THE VERY FINAL",
+      "description": "Gintama: THE FINAL is the 3rd and final film adaptation of the remainder of the Silver Soul arc and is the series finale.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114129-RLgSuh6YbeYx.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2021",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Chainsaw Man – The Movie: Reze Arc",
+      "description": "Theatrical follow-up to Chainsaw Man.\nDenji became “Chainsaw Man”, a boy with a devil’s heart, and is now part of Special Division 4’s devil hunters. After a date with Makima, the woman of his dreams, Denji takes shelter from the rain. There he meets Reze, a girl who works in a café.\n\n(Source: MAPPA CHANNEL)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171627-ZN9D7P46yHnw.png",
+      "status": "FINISHED",
+      "season": "Summer 2025",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Horror",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Gintama Season 4",
+      "description": "Gintoki, Shinpachi, and Kagura return as the fun-loving but broke members of the Yorozuya team! Living in an alternate-reality Edo, where swords are prohibited and alien overlords have conquered Japan, they try to thrive on doing whatever work they can get their hands on. However, Shinpachi and Kagura still haven't been paid... Does Gin-chan really spend all that cash playing pachinko?\n\nMeanwhile, when Gintoki drunkenly staggers home one night, an alien spaceship crashes nearby. A fatally injure",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20996-kBEGEGdeK1r7.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2015",
+      "episodes": 51,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "ONE PIECE FAN LETTER",
+      "description": "To commemorate the 25th anniversary of the ONE PIECE TV anime: an animated adaptation of the \"ONE PIECE novel: Mugiwara Stories\". \n\nTwo years after the Paramount War, the Straw Hats are about to reunite on the Sabaody Archipelago. At the same time, a girl who is head over heels for Nami is trying to hand a fan letter to her before the group leaves the island.\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182469-JQ808NBPxmgn.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2024",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "description": "\"In order for something to be obtained, something of equal value must be lost.\"\n\nAlchemy is bound by this Law of Equivalent Exchange—something the young brothers Edward and Alphonse Elric only realize after attempting human transmutation: the one forbidden act of alchemy. They pay a terrible price for their transgression—Edward loses his left leg, Alphonse his physical body. It is only by the desperate sacrifice of Edward's right arm that he is able to affix Alphonse's soul to a suit of armor. D",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5114-nSWCgQlmOMtj.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2009",
+      "episodes": 64,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Fruits Basket The Final Season",
+      "description": "After last season’s revelations, the Soma family moves forward, but the emotional chains that bind them are not easily broken. Unable to admit why she wants the cure, Tohru wrestles with the truth, aware that time is running out for someone close.\n\nAnd a secret still lurks that could break another’s heart. But hope is not lost—a clue to the curse is found. Could their imprisonment’s end be near?\n(Source: Funimation)\nNote: This season premiered on Funimation and AnimeLab on March 20, 2021. The Ja",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124194-TJlqMMR7BGn9.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2021",
+      "episodes": 13,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Romance",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Attack on Titan Season 3 Part 2",
+      "description": "The battle to retake Wall Maria begins now! With Eren’s new hardening ability, the Scouts are confident they can seal the wall and take back Shiganshina District. If they succeed, Eren can finally unlock the secrets of the basement—and the world. But danger lies in wait as Reiner, Bertholdt, and the Beast Titan have plans of their own. Could this be humanity’s final battle for survival?\n\n(Source: Funimation)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104578-k61nx3LPjvgd.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2019",
+      "episodes": 10,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "Owarimonogatari Second Season",
+      "description": "Third and “Final Season” of the Monogatari Series, part 4/5. Contains the arcs Mayoi Hell, Hitagi Rendezvous, and Ougi Dark from the Owarimonogatari light novels.\n\nKoyomi wakes up to see Mayoi Hachikuji before him, the girl who supposedly had gone to the afterlife. She tells Koyomi that they are currently in Avichi, the lowest levels of hell. Koyomi is dubious of how Mayoi knew about the exact timing of his death and which hell he would drop into, when Mayoi tells him that she was there to pick ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21745-VrhhJjZNdBXV.png",
+      "status": "FINISHED",
+      "season": "Summer 2017",
+      "episodes": 7,
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Psychological",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Steins;Gate",
+      "description": "Self-proclaimed mad scientist Okabe Rintarou lives in a small room in Akihabara, where he invents \"future gadgets\" with fellow lab members Shiina Mayuri, his air-headed childhood friend, and Hashida Itaru, an otaku hacker. The three pass the time by tinkering with their latest creation, a \"Phone Microwave\" that can be controlled through text messages. \n\nThe lab members soon face a string of mysterious incidents that lead to a game-changing discovery: the Phone Microwave can send emails to the pa",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9253-tIUXF2gfU8Sg.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2011",
+      "episodes": 24,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Sci-Fi",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "March comes in like a lion Season 2",
+      "description": "The second season of 3-gatsu no Lion.\n\nNow in his second year of high school, Rei Kiriyama continues pushing through his struggles in the professional shogi world as well as his personal life. Surrounded by vibrant personalities at the shogi hall, the school club, and in the local community, his solitary shell slowly begins to crack. Among them are the three Kawamoto sisters—Akari, Hinata, and Momo—who forge an affectionate and familial bond with Rei. Through these ties, he realizes that everyon",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx98478-Yua5iL9zbrji.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2017",
+      "episodes": 22,
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Hunter x Hunter (2011)",
+      "description": "A new adaption of the manga of the same name by Togashi Yoshihiro.\nA Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted lands for any lost treasures. Gon is a young boy whose father disappeared long ago, being a Hunter. He believes if he could also follow his father's path, he could one day reunite with him.\nAfter becoming 12, Gon leaves his home and takes on the task of entering the Hunter exam, notorious for its l",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11061-y5gsT1hoHuHw.png",
+      "status": "FINISHED",
+      "season": "Fall 2011",
+      "episodes": 148,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love is War -Ultra Romantic-",
+      "description": "The elite members of Shuchiin Academy's student council continue their competitive day-to-day antics. Council president Miyuki Shirogane clashes daily against vice-president Kaguya Shinomiya, each fighting tooth and nail to trick the other into confessing their romantic love. Kaguya struggles within the strict confines of her wealthy, uptight family, rebelling against her cold default demeanor as she warms to Shirogane and the rest of her friends.\n\nMeanwhile, council treasurer Yuu Ishigami suffe",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx125367-1yuq9NFcQuLI.png",
+      "status": "FINISHED",
+      "season": "Spring 2022",
+      "episodes": 13,
+      "genres": [
+        "Comedy",
+        "Psychological",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Gintama Season 3",
+      "description": "While Gintoki Sakata was away, the Yorozuya found themselves a new leader: Kintoki, Gintoki's golden-haired doppelganger. In order to regain his former position, Gintoki will need the help of those around him, a troubling feat when no one can remember him! Between Kintoki and Gintoki, who will claim the throne as the main character?\n\nIn addition, Yorozuya make a trip back down to red-light district of Yoshiwara to aid an elderly courtesan in her search for her long-lost lover. Although the distr",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15417-Uc2uNdWEixwi.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2012",
+      "episodes": 13,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Gintama Season 2",
+      "description": "After a one-year hiatus, Shinpachi Shimura returns to Edo, only to stumble upon a shocking surprise: Gintoki and Kagura, his fellow Yorozuya members, have become completely different characters! Fleeing from the Yorozuya headquarters in confusion, Shinpachi finds that all the denizens of Edo have undergone impossibly extreme changes, in both appearance and personality. Most unbelievably, his sister Otae has married the Shinsengumi chief and shameless stalker Isao Kondou and is pregnant with thei",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9969-0GaRABYVdUcH.png",
+      "status": "FINISHED",
+      "season": "Spring 2011",
+      "episodes": 51,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Gintama Season 5",
+      "description": "After joining the resistance against the bakufu, Gintoki and the gang are in hiding, along with Katsura and his Joui rebels. The Yorozuya is soon approached by Nobume Imai and two members of the Kiheitai, who explain that the Harusame pirates have turned against 7th Division Captain Kamui and their former ally Takasugi. The Kiheitai present Gintoki with a job: find Takasugi, who has been missing since his ship was ambushed in a Harusame raid. Nobume also makes a stunning revelation regarding the",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97889-ytqHdmus9wQi.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2017",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "The Apothecary Diaries Season 2",
+      "description": "The second season of Kusuriya no Hitorigoto.\n\nMaomao and Jinshi face palace intrigue as a pregnant concubine's safety and a looming conspiracy collide.\n\n(Source: Crunchyroll News)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176301-TIGmldLffQGX.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2025",
+      "episodes": 24,
+      "genres": [
+        "Drama",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "BLEACH: Thousand-Year Blood War",
+      "description": "Was it all just a coincidence, or was it inevitable?\n\nIchigo Kurosaki gained the powers of a Soul Reaper through a chance encounter. As a Substitute\nSoul Reaper, Ichigo became caught in the turmoil of the Soul Society, a place where deceased\nsouls gather. But with help from his friends, Ichigo overcame every challenge to become even\nstronger.\n\nWhen new Soul Reapers and a new enemy appear in his hometown of Karakura, Ichigo jumps\nback into the battlefield with his Zanpakuto to help those in need.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116674-p3zK4PUX2Aag.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2022",
+      "episodes": 13,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Tomorrow's Joe 2",
+      "description": "Yabuki Joe is left downhearted and hopeless after a certain tragic event. In attempt to put the past behind him, Joe leaves the gym behind and begins wandering. On his travels he comes across the likes of Wolf Kanagushi and Goromaki Gondo, men who unintentionally fan the dying embers inside him, leading him to putting his wanderings to an end. His return home puts Joe back on the path to boxing, but unknown to himself and his trainer, he now suffers deep-set issues holding him back from fighting",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2921-PxFepBRCGD0K.jpg",
+      "status": "FINISHED",
+      "season": "Fall 1980",
+      "episodes": 47,
+      "genres": [
+        "Action",
+        "Drama",
+        "Slice of Life",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Legend of the Galactic Heroes",
+      "description": "For decades, the Galactic Empire has been locked in an interstellar war with the Free Planets Alliance, a conflict that involves thousands of spaceships and millions of soldiers on both sides. Two new commanders enter the conflict with great hopes: Imperial Admiral Reinhard von Lohengramm and the FPA's Yang Wen-Li. As they deal with superiors and subordinates, maneuver through complicated political arrangements, plot strategies, and win battles, each will be tested, and ultimately, changed, by t",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx820-x5dNLNFeKb8B.png",
+      "status": "FINISHED",
+      "season": "Winter 1988",
+      "episodes": 110,
+      "genres": [
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Vinland Saga Season 2",
+      "description": "The second season of Vinland Saga. \nAfter his father's death and the destruction of his village at the hands of English raiders, Einar wishes for a peaceful life with his family on their newly rebuilt farms. However, fate has other plans: his village is invaded once again. Einar watches helplessly as the marauding Danes burn his lands and slaughter his family. The invaders capture Einar and take him back to Denmark as a slave.\n\nEinar clings to his mother's final words to survive. He is purchased",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx136430-gsBsJjA7hGh9.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2023",
+      "episodes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    {
+      "title": "ONE PIECE",
+      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most co",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+      "status": "RELEASING",
+      "season": "Fall 1999",
+      "episodes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Monster",
+      "description": "Dr. Kenzo Tenma is a renowned Japanese brain surgeon working at a leading hospital in Germany. One night, Dr. Tenma risks his reputation and career to save the life of a critically wounded young boy over that of the town mayor who had been planning to support the hospital financially. A string of mysterious murders begin to occur soon after the operation, and Dr. Tenma emerges as the primary suspect despite no incriminating evidence. \n\nA doctor is taught to believe that all life is equal; howeve",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx19-gtMC64182sm4.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2004",
+      "episodes": 74,
+      "genres": [
+        "Drama",
+        "Horror",
+        "Mystery",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "The Apothecary Diaries",
+      "description": "Maomao lived a peaceful life with her apothecary father. Until one day, she’s sold as a lowly servant to the emperor’s palace. But she wasn’t meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she’s making a name for herself solving medical mysteries!\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx161645-QLbzHXiYRgV2.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2023",
+      "episodes": 24,
+      "genres": [
+        "Drama",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "A Silent Voice",
+      "description": "After transferring into a new school, a deaf girl, Shouko Nishimiya, is bullied by the popular Shouya Ishida. As Shouya continues to bully Shouko, the class turns its back on him. Shouko transfers and Shouya grows up as an outcast. Alone and depressed, the regretful Shouya finds Shouko to make amends.\n\n(Source: Eleven Arts)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20954-sYRfE5jQRtSB.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2016",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Monogatari Series Second Season",
+      "description": "Second season of the Monogatari Series, part 1/2. Contains the arcs Tsubasa Tiger, Mayoi Jiangshi, Nadeko Medusa, Shinobu Time, and Hitagi End, from the Nekomonogatari White, Kabukimonogatari, Otorimonogatari, Onimonogatari and Koimonogatari light novels, respectively.\n\nThese stories take place after the end of the summer vacation when the apparition of the bee had left and the apparition of the phoenix avoided any consequences… Now that Koyomi Araragi and the girls were entering their new schoo",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx17074-xMhVAZsEDH66.png",
+      "status": "FINISHED",
+      "season": "Summer 2013",
+      "episodes": 26,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Mob Psycho 100 II",
+      "description": "The second season of Mob Psycho 100. \nKageyama is an ordinary 8th grader who just wants to live a normal life. Although he can disappear in the crowd in a flash, he was actually the most powerful psychic. The lives of those around Mob and his numerous feelings that softly piles up for the eventual explosion. The mysterious group \"Claw\" stands before him once again. In the midst of his youthful days, where will his roaring heart take him!?\n\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101338-rokVscjRYzdP.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2019",
+      "episodes": 13,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Sound! Euphonium 3",
+      "description": "The third season of Hibike! Euphonium.\n\nKumiko's third year finally begins! With the concert band at Kitauji High School over 90 members, Kumiko is now the president and does her best with her final high school club activities to try to win her long-desired gold at nationals.\n\n(Source: Crunchyroll, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109731-EwHzbtywdcyG.png",
+      "status": "FINISHED",
+      "season": "Spring 2024",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Music",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Gintama.: Silver Soul Arc - Second Half War",
+      "description": "The second season of the Silver Soul arc.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101925-gcA84dgcSj2w.png",
+      "status": "FINISHED",
+      "season": "Summer 2018",
+      "episodes": 14,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Gintama: The Final Chapter - Be Forever Yorozuya",
+      "description": "When Gintoki apprehends a movie pirate at a premiere, he checks the camera's footage and finds himself transported to a bleak, post-apocalyptic version of Edo, where a mysterious epidemic called the \"White Plague\" has ravished the world's population. It turns out that the movie pirate wasn't a pirate after all—it was an android time machine, and Gintoki has been hurtled five years into the future! Shinpachi and Kagura, his Yorozuya cohorts, have had a falling out and are now battle-hardened solo",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx15335-QjijwChGTBs0.png",
+      "status": "FINISHED",
+      "season": "Summer 2013",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Clannad: After Story",
+      "description": "A few months have passed since Tomoya declared his love to Nagisa, and his life keeps moving forward as he continues to meet a variety of new people, expanding his world in the process. While Tomoya's world continues to expand, his and Nagisa's relationship is entering a new phase, and neither of them is quite sure where it will take them. Through his relationship with Nagisa, Tomoya begins to understand the meaning and importance of family.\n\nBut as Tomoya and Nagisa begin a family of their own,",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx4181-zUKE7BZC62OF.png",
+      "status": "FINISHED",
+      "season": "Fall 2008",
+      "episodes": 24,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Vinland Saga",
+      "description": "Thorfinn is son to one of the Vikings' greatest warriors, but when his father is killed in battle by the mercenary leader Askeladd, he swears to have his revenge. Thorfinn joins Askeladd's band in order to challenge him to a duel, and ends up caught in the middle of a war for the crown of England.\n\n(Source: Kodansha USA)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101348-2fhDFPCuMNiz.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2019",
+      "episodes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    {
+      "title": "Kizumonogatari Part 3: Reiketsu",
+      "description": "First season of the Monogatari Series, part 4/6. Contains the arc Koyomi Vamp from the Kizumonogatari light novel.\n\nWith help from Meme Oshino, the apparition specialist, Koyomi defeats the three powerful vampire hunters: Dramaturgy, Episode and Guillotinecutter. Koyomi takes back all the limbs of Kiss-Shot Acerola-Orion Heart-Under-Blade in order to become a human again. But, when he returns to Kiss-Shot, she reveals to him the cold truth of what it means to be a vampire—a creature of the night",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21400-38ykNo3j4xXo.png",
+      "status": "FINISHED",
+      "season": "Winter 2017",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Ecchi",
+        "Mystery",
+        "Psychological",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love is War -The First Kiss That Never Ends-",
+      "description": "Shuchiin Academy’s student council room: the place where Student Council Vice President Kaguya Shinomiya and President Miyuki Shirogane met. After a long battle in love, these two geniuses communicated their feelings and, at the Hoshin Festival, had their very first kiss. However, there was no clear confession of love. The relationship between these two, who assumed they would be a couple, remains ambiguous. Now, overly conscious of their feelings, they must face the biggest challenge yet: Chris",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151384-gv0q8wOE6D58.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2023",
+      "episodes": 4,
+      "genres": [
+        "Comedy",
+        "Psychological",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Violet Evergarden: the Movie",
+      "description": "While writing other people’s emotions, she may have neglected her own. Violet Evergarden, the child soldier turned Auto Memory Doll, writes letters that evoke the words her clients can’t. But when a terminally ill boy requests her services for his family, her own feelings about love and loss resurface. Now she must confront her past and the death of the Major.\n\n(Source: Funimation)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx103047-odblDHHEdehK.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2020",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Uma Musume: Pretty Derby - Shin Jidai no Tobira",
+      "description": "Jungle Pocket, an Umamusume who has been racing tirelessly in pursuit of becoming the greatest, is ready to take on the once-in-a-lifetime Classic Triple Crown series. However, standing in her way are rivals from the same generation, whose talent may even surpass her own.\n(Source: Umamusume: Pretty Derby English Twitter)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172420-4LjhmwpNMHti.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2024",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Slice of Life",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 1",
+      "description": "The fate of the world hangs in the balance as Eren unleashes the ultimate power of the Titans. With a burning determination to eliminate all who threaten Eldia, he leads an unstoppable army of Colossal Titans towards Marley. Now a motley crew of his former comrades and enemies scramble to halt his deadly mission, the only question is, can they stop him?\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146984-GXrLeT6vQqyP.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2023",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "Mob Psycho 100 III",
+      "description": "The third season of Mob Psycho 100. \nThe appearance of a divine tree and new religion turns Mob and Reigen's city upside down!\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx140439-bPKmhe1wNxc9.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2022",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Revue Starlight: The Movie",
+      "description": "The stage emulates life and compresses it, setting free skills learned over lifetimes in brief but dazzling displays for the amusement and judgment of others. For the performers, it is the ultimate risk, and some will rise while others must fall. Nowhere is this truer than at the Seisho Music Academy, where music, dance and real weapons all come into play in the creation of the next great Star. Karen and Hikari’s destinies have been linked since a childhood promise, but their journeys here have ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113024-OdzOh0OKFPTN.png",
+      "status": "FINISHED",
+      "season": "Spring 2021",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Music",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "HAIKYU!! 3rd Season",
+      "description": "After the victory against Aoba Jousai High, Karasuno High School, once called “a fallen powerhouse, a crow that can’t fly,” has finally reached the climax of the heated Spring tournament. Now, to advance to nationals, the Karasuno team has to defeat the powerhouse Shiratorizawa Academy. Karasuno’s greatest hurdle is their adversary’s ace, Wakatoshi Ushijima, the number one player in the Miyagi Prefecture, and one of the country’s top three aces.\n\nOnly the strongest team will make it to the natio",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21698-RL71mr1YU5Io.png",
+      "status": "FINISHED",
+      "season": "Fall 2016",
+      "episodes": 10,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "description": "Part 1 of the theatrical trilogy adaptation of the Infinity Castle Arc.\n\nTanjiro Kamado – a boy who joined an organization dedicated to hunting down demons called the Demon Slayer Corps after his younger sister Nezuko was turned into a demon.\n\nWhile growing stronger and deepening his friendships and bonds with fellow corps members, Tanjiro has battled many demons with his comrades – Zenitsu Agatsuma and Inosuke Hashibira. Along the way, his journey has led him to fight alongside the Demon Slayer",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178788-zm3gtpB9TpRt.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2025",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "BOCCHI THE ROCK!",
+      "description": "Hitori Gotou, “Bocchi-chan,” is a girl who’s so introverted and shy around people that she’d always start her conversations with “Ah...”\n\nDuring her middle school years, she started playing the guitar, wanting to join a band because she thought it could be an opportunity for even someone shy like her to also shine. But because she had no friends, she ended up practicing guitar for six hours every day all by herself. After becoming a skilled guitar player, she uploaded videos of herself playing t",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130003-HTDmeL4RGeJ4.png",
+      "status": "FINISHED",
+      "season": "Fall 2022",
+      "episodes": 12,
+      "genres": [
+        "Comedy",
+        "Music",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "THE FIRST SLAM DUNK",
+      "description": "Shohoku's “speedster” and point guard, Ryota Miyagi, always plays with brains and lightning speed, running circles around his opponents while feigning composure. Born and raised in Okinawa, Ryota had a brother who was three years older. Following in the footsteps of his older brother, who was a famous local player from a young age, Ryota also became addicted to basketball.\n\nIn his second year of high school, Ryota plays with the Shohoku High School basketball team along with Sakuragi, Rukawa, Ak",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128207-SWpfVJMRfQ9X.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2022",
+      "episodes": 1,
+      "genres": [
+        "Sports"
+      ]
+    },
+    {
+      "title": "Takopi's Original Sin",
+      "description": "A Happy alien, Takopi, lands on Earth with one mission: to spread happiness! When he meets Shizuka, a lonely fourth grader, he vows to bring back her smile using his magical Happy Gadgets. But as he uncovers the pain in her life, Takopi learns that true happiness may require more than gadgets.\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185407-7uzY4fA3hokP.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2025",
+      "episodes": 6,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "The Dangers in My Heart Season 2",
+      "description": "The second season of Boku no Kokoro no Yabai Yatsu.\n\nAfter an eventful winter break, Kyoutarou Ichikawa and Anna Yamada reunite with a stronger bond. They continue to grow in their own ways, with Yamada taking on more challenging photoshoots and Ichikawa maturing both physically and emotionally as he tackles his affections for Yamada. However, spending time together outside of school allows for their relationship to deepen, and it becomes increasingly difficult to deny their budding romantic fee",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166216-vCMkF4e3x5FB.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2024",
+      "episodes": 13,
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Attack on Titan Final Season THE FINAL CHAPTERS Special 2",
+      "description": "Eren, as the Founding Titan, advances on Fort Salta with countless other Titans. Appearing before the refugees, who stand on the brink of despair, are Mikasa, Armin, Jean, Conny, Reiner, Pieck, and Levi, who narrowly escaped from the rumbling. The battle between former comrades and childhood friends with Eren concludes here.\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx162314-qIWdAAFtvY8J.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2023",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Code Geass: Lelouch of the Rebellion R2",
+      "description": "A year has passed since \"The Black Rebellion\" and the remaining Black Knights have vanished into the shadows, their leader and figurehead, Zero, executed by the Britannian Empire. Area 11 is once more squirming under the Emperor's oppressive heel as the Britannian armies concentrate their attacks on the European front. But for the Britannians living in Area 11, life is back to normal. On one such normal day, a Britannian student, skipping his classes in the Ashford Academy, sneaks out to gamble ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx2904-Fet9Q33suC7G.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2008",
+      "episodes": 25,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mecha",
+        "Sci-Fi",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "LOOK BACK",
+      "description": "Ayumu Fujino is a fourth grader who draws a manga strip for the school newspaper. Her art makes her the star of the class, but one day she's told that Kyomoto, a student who refuses to come to school, would also like to submit a manga for the paper...\n\n(Source: MANGA Plus, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx174788-9LsUnn0oEppv.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2024",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "JUJUTSU KAISEN Season 2",
+      "description": "The second season of Jujutsu Kaisen.\n\nThe past comes to light when second-year students Satoru Gojou and Suguru Getou are tasked with escorting young Riko Amanai to Master Tengen. But when a non-sorcerer user tries to kill them, their mission to protect the Star Plasma Vessel threatens to turn them into bitter enemies and cement their destinies—one as the world’s strongest sorcerer, and the other its most twisted curse user!\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx145064-hSNRJM03pvv1.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2023",
+      "episodes": 23,
+      "genres": [
+        "Action",
+        "Drama",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Hajime no Ippo: The Fighting!",
+      "description": "Makunouchi Ippo has been bullied his entire life. Constantly running errands and being beaten up by his classmates, Ippo has always dreamed of changing himself, but never has the passion to act upon it. One day, in the midst of yet another bullying, Ippo is saved by Takamura Mamoru, who happens to be a boxer. Ippo faints from his injuries and is brought to the Kamogawa boxing gym to recover. As he regains consciousness, he is awed and amazed at his new surroundings in the gym, though lacks confi",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx263-ivVyn9xAgwSZ.png",
+      "status": "FINISHED",
+      "season": "Fall 2000",
+      "episodes": 75,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "86 EIGHTY-SIX Part 2",
+      "description": "The second cour of 86: Eighty Six.\n\nHaving bid Lena farewell, Shin and the surviving members of the Spearhead squadron continue into the heart of Legion territory. There, they endure countless hardships until they're rescued by the Federal Republic of Giad, a reformed nation that offers them a second chance at a peaceful life. But it isn't long before a sense of duty calls the Eighty-Six back to the battlefield. Choosing to enlist in the military, they willingly walk back through the gates of he",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131586-JhC0wcBi09EZ.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2021",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mecha",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "MONOGATARI Series: OFF & MONSTER Season",
+      "description": "The sequel to the 'Final Season' story arc of the Monogatari series.\n\nFrom the past to the future, their story continues. \n\nNow that he has graduated from high school, Koyomi Araragi’s story ends here. His story is truly over now, but the stories of the girls Koyomi saved - their stories - are not over yet.\n\nThis is the prequel or sequel to their stories and their struggles.\n\n(Source: Monogatari Series USA Official Website)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173533-9DN3nHtT2FBm.png",
+      "status": "FINISHED",
+      "season": "Summer 2024",
+      "episodes": 14,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Attack on Titan Final Season",
+      "description": "It’s been four years since the Scout Regiment reached the shoreline, and the world looks different now. Things are heating up as the fate of the Scout Regiment—and the people of Paradis—are determined at last. However, Eren is missing. Will he reappear before age-old tensions between Marleyans and Eldians result in the war of all wars?\n\n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110277-sKUNXAsWMNFw.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2021",
+      "episodes": 16,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "Descending Stories: Showa Genroku Rakugo Shinju",
+      "description": "Unable to forget a performance of \"Shinigami\" performed by the rakugo master Yakumo in the prison where he was being held, Yotaro's first act upon his release was go right to the theater, where he begged, pleaded, and was finally accepted as Yakumo's live-in apprentice. After years of refining his art, Yotaro was promoted to the rank of Shinuchi and inherited the title of 3rd Generation Sukeroku. For the sake of his master Yakumo, Konatsu, and to change the image of Sukeroku inside them both, wh",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21733-SUV6bCTsU51u.png",
+      "status": "FINISHED",
+      "season": "Winter 2017",
+      "episodes": 12,
+      "genres": [
+        "Drama"
+      ]
+    },
+    {
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "description": "Chidori High is a boys’ school that takes in the dregs of society with the lowest grades. Next door stands Kikyo Girls’ High, where the wealthy, high-class families send their precious daughters. Chidori second-year Rintarou, who has a fierce face but a gentle heart, is helping at his family’s patisserie when he meets a girl named Kaoruko. The two hit it off right away…but this blissful peace is quickly disturbed when Rintarou discovers that Kaoruko is actually a student at Kikyo. Worse, she doe",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2025",
+      "episodes": 13,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ]
+    },
+    {
+      "title": "MUSHI-SHI The Next Passage 2",
+      "description": "Second season of Mushishi Zoku Shou.\n\nGhostly, primordial beings known as Mushi continue to cause mysterious changes in the lives of humans. The travelling Mushishi, Ginko, persists in trying to set right the strange and unsettling situations he encounters. Time loops, living shadows, and telepathy are among the overt effects of interference from Mushi, but more subtle symptoms that take years to be noticed also rouse Ginko's concern as he passes from village to village.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20751-O3XJ9u30y7Qj.png",
+      "status": "FINISHED",
+      "season": "Fall 2014",
+      "episodes": 10,
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Mystery",
+        "Psychological",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "HAIKYU!! The Dumpster Battle",
+      "description": "Theatrical follow-up to Haikyuu!! TO THE TOP 2. The first film of Haikyuu!! FINAL.\n\nThe Spring Nationals tournament continues on, with Karasuno High matched against rivals Nekoma High, the fated battle between cats versus crows, also known as the highly anticipated “Dumpster Battle”. This match is the long awaited ultimate showdown between two opposing underdog teams.\n(Source: Crunchyroll, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx153658-KVnjW77cQw3y.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2024",
+      "episodes": 1,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Attack on Titan Final Season Part 2",
+      "description": "The war for Paradis zeroes in on Shiganshina just as Jaegerists have seized control. After taking a huge blow from a surprise attack led by Eren, Marley swiftly acts to return the favor. With Zeke’s true plan revealed and a military forced under new rule, this battle might be fought on two fronts. Does Eren intend on fulfilling his half-brother’s wishes or does he have a plan of his own?\n\n(Source: Funimation)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131681-5ooUqvqNtee1.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2022",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "BLEACH: Thousand-Year Blood War - The Conflict",
+      "description": "The third part of BLEACH: Sennen Kessen-hen.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169755-Rqb7MjnzdTc6.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2024",
+      "episodes": 14,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Gintama.: Silver Soul Arc",
+      "description": "Utsuro's ultimate plan is revealed: spark a universal war that will ultimately lead to the destruction of Earth, allowing him to finally die but taking the universe down with him. Gintoki and others must team up with old allies and former enemies to not only defeat him but also the victims of the immortal's plans, a gathering army of vengeful Amanto who may no longer listen to reason.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100784-7fWdiduBFr95.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2018",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Idol",
+      "description": "Music video directed by Naoya Nakayama for the song Idol by YOASOBI. The song is based on the original novel \"45510\" written by Aka Akasaka.\n\nNote: The song featured in this music video also serves as the opening theme of the anime [Oshi no Ko]. There exists two versions of this video; the first being a Japanese version uploaded on April 12, 2023 and an English version of the song also titled \"Idol\" by YOASOBI, which was uploaded on May 26, 2023.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx164117-PW0VR0S1nsba.png",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 1,
+      "genres": [
+        "Psychological"
+      ]
+    },
+    {
+      "title": "Orb: On the Movements of the Earth",
+      "description": "The setting is 15th-century Europe. It was a time when heretical ideas lead those to who possessed such a mindset to being burned at the stake for their beliefs.\n\nThe protagonist, Rafał, a child prodigy, is expected to major in theology, the most important subject at the time, at the university where he plans to skip a grade. One day, however, he comes across a mysterious man, and is now studying a possible \"truth\" in the midst of heretical thought!\n(Source: Shogakukan, translated)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151514-Y0d82Ah2ZOHX.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2024",
+      "episodes": 25,
+      "genres": [
+        "Drama"
+      ]
+    },
+    {
+      "title": "Link Click Season 2",
+      "description": "Cheng Xiaoshi by chance meets Lu Guang, a person possessing super powers, and awakens to his own special ability.\nIn order to save the Time Photo Studio which is on the verge of closing down, the two of them start to cooperate in using their super powers to enter photos of customers to complete their commissions.\n\nHowever, the appearance of a mysterious killer shatters the peace, Lu Guang's condition is still unknown and Qiao Ling has also become entangled in the conspiracy. Faced with all this,",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx136484-QiHcF64PVWQi.jpg",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 12,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Link Click",
+      "description": "In a corner of a bustling city, there is a small shop called \"Time Photo Studio\"  operating as usual. Although the entrance looks abandoned, it's actually run by two men with special abilities: Cheng Xiaoshi and Lu Guang. In order to fulfil customers' requests, Lu Guang and Cheng Xiaoshi work together and use their special abilities to enter photos. However, things don't go as planned...\n\n(Source: bilibili, translated)\n\nNote: The final episode aired with a runtime of ~31 minutes.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx126403-BfVSRzWUtVFW.png",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 11,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "ARIA The ORIGINATION",
+      "description": "In Neo Venezia, Akari, Aika, and Alice continue to work diligently toward the day they become full-fledged Prima Undine (a professional tour guide gondolier). The girls have come far since they began their training, and they are slowly forming their own distinctive styles as tour guides for the city.\nOn the long journey towards their goal, the girls have relied on the advice of their seniors from their respective companies: the patient and understanding Alicia from Aria Company, the strict and p",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3297-FHuyO7uiefNg.png",
+      "status": "FINISHED",
+      "season": "Winter 2008",
+      "episodes": 13,
+      "genres": [
+        "Fantasy",
+        "Sci-Fi",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Demon Slayer: Kimetsu no Yaiba Entertainment District Arc",
+      "description": "After visiting the Rengoku residence, Tanjirou and his comrades volunteer for a mission within the Entertainment District, a place where desires are sold and demons dwell. They journey alongside the flashy Sound Hashira, Tengen Uzui, in search of a monstrous foe terrorizing the town. Sworn to slay creatures of the night, the hunt continues.\n\n(Source: Funimation)\n\nNote:\n- The first episode aired with a runtime of ~47 minutes.\n- The last episode aired with a runtime of ~33 minutes.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx142329-kET1PIXJv2eW.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2022",
+      "episodes": 11,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Solo Leveling Season 2 -Arise from the Shadow-",
+      "description": "The second season of Solo Leveling.\nMastering his new abilities in secret, Jin-U must battle humanity's toughest foes to save his mother.\n\n(Source: Crunchyroll News)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176496-9BDMjAZGEbq4.png",
+      "status": "FINISHED",
+      "season": "Winter 2025",
+      "episodes": 13,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "BLEACH: Thousand-Year Blood War - The Separation",
+      "description": "The second part of BLEACH: Sennen Kessen-hen. \n\nAfter a brutal surprise attack by the forces of Quincy King Yhwach, the resident Reapers of the Soul Society lick their wounds and mourn their losses. Many of the surviving Soul Reaper captains train to battle without their Bankai, the ultimate technique wielded by the fiercest warriors.\n\nIn the previous assault, Ichigo Kurosaki narrowly managed to help fend off Yhwach's fearsome wrath. However, to ultimately defeat his godly adversary and save his",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159322-Sp1GflRhE6Po.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2023",
+      "episodes": 13,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Kingdom Season 3",
+      "description": "The third season of Kingdom.\n\nFollowing the successful Sanyou campaign, the Qin army, including 1,000-Man Commander Xin, inches ever closer to fulfilling King Ying Zheng's dream of unifying China. With a major geographical foothold in the state of Wei now under its control, Qin sets its sights eastward toward the remaining warring states.\n\nMeanwhile Li Mu—an unparalleled strategist and the newly appointed prime minister of the state of Zhao—has taken advantage of Zhao's temporary truce with Qin ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113108-ArjAmFLubVyu.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2020",
+      "episodes": 26,
+      "genres": [
+        "Action"
+      ]
+    },
+    {
+      "title": "MUSHI-SHI The Next Passage",
+      "description": "They existed long before anyone can remember. They are simple and strange in nature, not resembling any other plant or animal in this world. In ancient times, people revered these bizarre creatures and called them \"Mushi.\"\n\nPeople once again began to believe in the existence of these \"Mushi\" when they began affecting their lives in inexplicable ways.\n\nThe one who connects the world of \"Mushi\" to the world of humans—they were called the \"Mushi-shi.\"\n\nAll life exists not to hinder others in this w",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20595-HcUeaAnvaUhM.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2014",
+      "episodes": 10,
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Mystery",
+        "Psychological",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "The Disappearance of Haruhi Suzumiya",
+      "description": "It is mid-December, and SOS Brigade chief Haruhi Suzumiya announces that the Brigade is going to hold a Christmas party in their clubroom, with Japanese hotpot for dinner. The brigade members Kyon, Yuki Nagato, Mikuru Asahina and Itsuki Koizumi start preparing everything for the party, such as costumes and decorations. But a couple of days later, Kyon arrives at school only to find that Haruhi is missing. Not only that, but Mikuru claims she has never known Kyon before, Koizumi is also missing, ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx7311-9Mfc1YRHwCCW.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2010",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Sci-Fi",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love is War?",
+      "description": "After a slow but eventful summer vacation, Shuchiin Academy's second term is now starting in full force. As August transitions into September, Miyuki Shirogane's birthday looms ever closer, leaving Kaguya Shinomiya in a serious predicament as to how to celebrate it. Furthermore, the tenure of the school's 67th student council is coming to an end. Due to the council members being in different classes, the only time Kaguya and Miyuki have to be together will soon disappear, putting all of their cu",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112641-zoGC8d6FaPXU.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2020",
+      "episodes": 12,
+      "genres": [
+        "Comedy",
+        "Psychological",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Spirited Away",
+      "description": "On the way to their new home, 10-year-old Chihiro Ogino's family stumbles upon a deserted theme park. Intrigued, the family investigates the park, though unbeknownst to them, it is secretly inhabited by spirits who sleep by day and appear at night. When Chihiro's mother and father eat food from a restaurant in the street, angry spirits turn them into pigs. Furthermore, a wide sea has appeared between the spirit world and the human one, trapping Chihiro, the sole human, in a land of spirits. Luck",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199-sWefXJvXkDOb.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2001",
+      "episodes": 1,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Cowboy Bebop",
+      "description": "Enter a world in the distant future, where Bounty Hunters roam the solar system. Spike and Jet, bounty hunting partners, set out on journeys in an ever struggling effort to win bounty rewards to survive.\nWhile traveling, they meet up with other very interesting people. Could Faye, the beautiful and ridiculously poor gambler, Edward, the computer genius, and Ein, the engineered dog be a good addition to the group?",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1-GCsPm7waJ4kS.png",
+      "status": "FINISHED",
+      "season": "Spring 1998",
+      "episodes": 26,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "The Founder of Diabolism: Final Season",
+      "description": "The third season of Modao Zushi.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx121467-Et0U1jXLfuYf.jpg",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Your Name.",
+      "description": "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.\n\nOne day, Mitsuha awakens in a room that is not her own and suddenly finds herself living the dream life in Tokyo—but in Taki's body! Elsewhere, Taki finds himself liv",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21519-SUo3ZQuCbYhJ.png",
+      "status": "FINISHED",
+      "season": "Summer 2016",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "HAIKYU!! 2nd Season",
+      "description": "Following their participation at the Inter-High, the Karasuno High School volleyball team attempts to refocus their efforts, aiming to conquer the Spring tournament instead.\n\nWhen they receive an invitation from long-standing rival Nekoma High, Karasuno agrees to take part in a large training camp alongside many notable volleyball teams in Tokyo and even some national level players. By playing with some of the toughest teams in Japan, they hope not only to sharpen their skills, but also come up ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20992-aHgNbcalVEqk.png",
+      "status": "FINISHED",
+      "season": "Fall 2015",
+      "episodes": 25,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Ping Pong the Animation",
+      "description": "Tsukimoto Makoto (nicknamed Smile) is a quiet high-schooler who's been friends with the loud and energetic Hoshino Yukata (nicknamed Peko). They're both in the table tennis club and are very good at it, though Smile's personality prevents him from winning against Peko. The club teacher however notices Smile's talent and tries to make him gain some sportive tenacity.\n\n(Source: Anime News Network)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20607-fIOxVISIl0HY.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2014",
+      "episodes": 11,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Heaven Official's Blessing Season 2",
+      "description": "The second season of Tian Guan Ci Fu.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127976-zmag82H3ygcI.jpg",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 12,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Made in Abyss: The Golden City of the Scorching Sun",
+      "description": "The second season of Made in Abyss.\n\nDirectly after the events of Made in Abyss: Fukaki Tamashii no Reimei, the third installment of Made in Abyss covers the adventures of Reg, Riko, and Nanachi in the Sixth Layer, The Capital of the Unreturned.\n\nNote: The last episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114745-fBgTC12T7IAy.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2022",
+      "episodes": 12,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Hajime no Ippo: The Fighting! New Challenger",
+      "description": "Ippo Makunouchi continues his boxing career and his goal on knowing the meaning of being strong, and the desire on fighting his idol Ichiro Miyata once again. Along him are pro boxers Takamura, Aoki and Kimura that each one of them aspire to their own dreams.\n\n(Source: Anime News Network)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5258-Qn6GBiSY57iT.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2009",
+      "episodes": 26,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "ODDTAXI",
+      "description": "The taxi driver Odokawa lives a very mundane life. He has no family, doesn't really hang out with others, and he's an oddball who is narrow-minded and doesn't talk much. The only people he can call his friends are his doctor, Gouriki and his classmate from high school, Kakihana.\n\nAll of his patrons seem to be slightly odd themselves. The college student who wants the world to notice him online, Kabasawa. A nurse with secrets named Shirakawa. A comedy duo that just can't catch a break named the H",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128547-nNekWTKqmvEi.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2021",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Made in Abyss: Dawn of the Deep Soul",
+      "description": "Dawn of the Deep Soul continues the epic adventure of plucky Riko and Reg who are joined by their new friend Nanachi. Together they descend into the Abyss’ treacherous fifth layer, the Sea of Corpses, and encounter the mysterious Bondrewd, a legendary White Whistle whose shadow looms over Nanachi’s troubled past. Bondrewd is ingratiatingly hospitable, but the brave adventurers know things are not always as they seem in the enigmatic Abyss...\n\n(Source: Sentai Filmworks)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100643-fPH9OgEKKvcI.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2020",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Attack on Titan Season 3",
+      "description": "Eren and his companions in the 104th are assigned to the newly-formed Levi Squad, whose assignment is to keep Eren and Historia safe given Eren's newly-discovered power and Historia's knowledge and pedigree. Levi and Erwin have good reason to be concerned, because the priest of the Church that Hanji had hidden away was found tortured to death, making it clear that the Military Police are involved with the cover-up. Things get more harrowing when the MPs make a move on Erwin and the Levi Squad na",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99147-AiPDD8cwlCfi.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2018",
+      "episodes": 12,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "Violet Evergarden",
+      "description": "A certain point in time, in the continent of Telesis. The great war which divided the continent into North and South has ended after four years, and the people are welcoming a new generation. Violet Evergarden, a young girl formerly known as “the weapon”, has left the battlefield to start a new life at CH Postal Service. There, she is deeply moved by the work of “Auto Memories Dolls”, who carry people's thoughts and convert them into words. Violet begins her journey as an Auto Memories Doll, and",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21827-ubzq619ZA2E9.png",
+      "status": "FINISHED",
+      "season": "Winter 2018",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Fate/stay night [Heaven’s Feel] III. spring song",
+      "description": "The third film in a trilogy adaptation of the 3rd route of the popular visual novel: Fate/stay night.\n\nTo save the girl, to enact the justice he's chosen...The young man will no longer turn a blind eye to\nthe truth. Mages (Masters) and Heroic Spirits (Servants) work together in the battles of the Holy\nGrail War, a fight for an omnipotent wish-granting container called the Holy Grail. However, this\nwar has become horribly twisted.\n\nA young woman named Sakura Matou, with the sins she has committed",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21719-MSdTlkno0Z0u.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2020",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Supernatural",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+      "description": "In the aftermath of the Fourth Impact, stranded without their Evangelions, Shinji, Asuka, and Rei find refuge in one of the rare pockets of humanity that still exist on the ruined planet Earth. There, each of them live a life far different from their days as an Evangelion pilot. However, the danger to the world is far from over. A new impact is looming on the horizon—one that will prove to be the true end of Evangelion. Finally, the Human Instrumentality Project is set in motion, and WILLE makes",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx3786-Tpt9iM72dxTv.jpg",
+      "status": "FINISHED",
+      "season": "Winter 2021",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mecha",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Bungo Stray Dogs 5",
+      "description": "The fifth season of Bungou Stray Dogs. \nDetective employees are caught one after another, and Kamui, the leader of Tenjin Goshui, is closing in on the Armed Detective Agency. Will the Agency survive?! \n(Source: Crunchyroll)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx163263-uz881pFAyi7P.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2023",
+      "episodes": 11,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "To Be Hero X",
+      "description": "This is a world where heroes are created by people's trust, and the hero who gains the most trust is known as X. In this world, people's trust can be quantified through data, and these values are reflected on everyone's wrist. As long as one gains enough trust points, an ordinary person can possess superpowers and become a superhero who saves the world. However, the constantly changing trust values make the path of a hero full of uncertainties...\n\n(Source: Official To Be Hero X home page)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx156092-yHqgQZOF2mbg.jpg",
+      "status": "FINISHED",
+      "season": null,
+      "episodes": 24,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Fruits Basket Season 2",
+      "description": "A year has passed since Tohru Honda began living in the Souma residence, and she has since created stronger relationships with its inhabitants Shigure, Kyou, and Yuki. She has also grown closer to the rest of the Souma family and has become familiar with their ancestral secret, having helped them with many of their personal issues. The closer Tohru gets, however, the more she begins to realize that their secret holds a darker truth than she first presumed.\n\nSummer is approaching and Tohru is inv",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx111762-C8TNf5uRlVNQ.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2020",
+      "episodes": 25,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Romance",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Umamusume: Cinderella Gray",
+      "description": "Unbeknownst to those around her in the destitute countryside of Kasamatsu, the staggering potential of this ashen-haired \"Beast” will soon rock Japan with her feet and catapult her to the national stage—down the path of a legend. \nFollow Oguri Cap and her insatiable appetite as the starting gates open on this Umamusume's hot-blooded Cinderella story! \n\n(Source: It's Anime powered by REMOW, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180516-lebpoKLkw6E3.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2025",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Oshi no Ko Season 2",
+      "description": "The second season of [Oshi no Ko].\n\nAqua’s desire for revenge takes center stage as he navigates the dark underbelly of the entertainment world alongside his twin sister, Ruby. While Ruby follows in their slain mother’s footsteps to become an idol, Aqua joins a famous theater troupe in hopes of uncovering clues to the identity of his father — the man who arranged their mother’s untimely death, and the man who once starred in the same troupe Aqua hopes to infiltrate.\n\n(Source: HIDIVE)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx166531-dAL5MsqDHUkj.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2024",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Mushoku Tensei: Jobless Reincarnation Cour 2",
+      "description": "After the mysterious mana calamity, Rudeus Greyrat and his fierce student Eris Boreas Greyrat are teleported to the Demon Continent. There, they team up with their newfound companion Ruijerd Supardia—the former leader of the Superd's Warrior group—to form \"Dead End,\" a successful adventurer party. Making a name for themselves, the trio journeys across the continent to make their way back home to Fittoa.\n\nFollowing the advice he received from the faceless god Hitogami, Rudeus saves Kishirika Kish",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127720-ADJgIrUVMdU9.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2021",
+      "episodes": 12,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Cyberpunk: Edgerunners",
+      "description": "An original anime series set in in the universe of Cyberpunk 2077.\n\nCyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.\n\n(Source: CD PROJEKT RED)\n\nNote: The first episode received a pre-screening at Anime Expo on July 2, 2022. The first 3 dubbed episodes were stre",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx120377-ayZPoxiWt4Li.jpg",
+      "status": "FINISHED",
+      "season": "Summer 2022",
+      "episodes": 10,
+      "genres": [
+        "Action",
+        "Drama",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "HAIKYU!! TO THE TOP Part 2",
+      "description": "The second half of Haikyuu!! 4th season kicks-off where the first part ended. Karasuno High won their first match of The Spring Nationals against Tsubakihara Academy. Karasuno High is excited to be back in the Spring Nationals after many years of not making it, so can they handle the pressure of playing against the best teams in Japan? Will they make it to the top?",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113538-tHVE8j5mOPLu.jpg",
+      "status": "FINISHED",
+      "season": "Fall 2020",
+      "episodes": 12,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Natsume's Book of Friends Season 4",
+      "description": "The fourth season of Natsume Yuujinchou.\n\nStill in possession of his grandmother's Book of Friends, Natsume spends his days returning the names of yokai to their rightful owners. He has been learning how to deal with the yokai and humans that surround his life, but the time has come for him to deal with something even more difficult — his own past, and future.\n(Source: NIS America)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11665-nfbt94cwKySE.png",
+      "status": "FINISHED",
+      "season": "Winter 2012",
+      "episodes": 13,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Neon Genesis Evangelion: The End of Evangelion",
+      "description": "NERV faces a brutal attack from SEELE, but with Asuka in a coma, and Shinji in a nervous breakdown, things soon turn into the surreal. This movie provides a concurrent ending to the final two episodes of the show Neon Genesis Evangelion.\n\n(Source: IMDb)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx32-5JYsv0wc122I.jpg",
+      "status": "FINISHED",
+      "season": "Summer 1997",
+      "episodes": 1,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mecha",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Natsume's Book of Friends Season 6",
+      "description": "The sixth season of Natsume Yuujinchou.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97983-Uqn04SR6hVW9.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2017",
+      "episodes": 11,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Perfect Blue",
+      "description": "Rising pop star Mima has quit singing to pursue a career as an actress and model, but her fans aren’t ready to see her go... Encouraged by her managers, Mima takes on a recurring role on a popular TV show, when suddenly her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima’s reality and fantasy meld into a frenzied paranoia. As her stalker closes in, in person and online, the threat he poses is more real than even Mi",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx437-69NMlXKFeuse.jpg",
+      "status": "FINISHED",
+      "season": "Winter 1998",
+      "episodes": 1,
+      "genres": [
+        "Drama",
+        "Horror",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Gintama",
+      "description": "Life isn't easy in feudal Japan... especially since the aliens landed and conquered everything! Oh sure, the new health care is great, but the public ban on the use of swords has left a lot of defeated samurai with a difficult decision to make concerning their future career paths! This is especially true if, as in the case of Gintoki Sakata, they're not particularly inclined towards holding a day job, which is why Gintoki's opted for the freelance route, taking any job that's offered to him as l",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx918-iOaeBVUn4uK7.jpg",
+      "status": "FINISHED",
+      "season": "Spring 2006",
+      "episodes": 201,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
     }
   ],
   "manga": [
     {
       "title": "Berserk",
-      "description": "Guts, known as the Black Swordsman, seeks sanctuary from the demonic forces that pursue him and his woman, and vengeance against the man who branded him as an unholy sacrifice.",
+      "description": "His name is Guts, the Black Swordsman, a feared warrior spoken of only in whispers. Bearer of a gigantic sword, an iron hand, and the scars of countless battles and tortures, his flesh is also indelibly marked with The Brand, an unholy symbol that draws the forces of darkness to him and dooms him as their sacrifice. But Guts won't take his fate lying down; he'll cut a crimson swath of carnage through the ranks of the damned—and anyone else foolish enough to oppose him! Accompanied by Puck the El",
       "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30002-Cul4OeN7bYtn.jpg",
       "status": "RELEASING",
-      "chapters": 376,
-      "genres": ["Action", "Adventure", "Drama", "Fantasy", "Horror", "Supernatural"]
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "JoJo's Bizarre Adventure: Part 7–Steel Ball Run",
+      "description": "Riders from around the world gather in the Wild West for the race of the century! Johnny Joestar, a former jockey paralyzed from the waist down, comes to spectate, and momentarily regains the ability to walk while watching a duel fought by Gyro Zeppeli. Desperate to learn more about this power, Johnny joins the race alongside Gyro and embarks on the most epic and bizarre race to ever cross the American frontier!\n(Source: Viz Media)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31706-lRncu9VbcBB7.png",
+      "status": "FINISHED",
+      "chapters": 95,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Vagabond",
+      "description": "At seventeen years of age, Miyamoto Musashi--still known by his childhood name, Shinmen Takezo--was a wild young brute just setting out along the way of the sword.\n\nIn the aftermath of the epic Battle of Sekigahara, Takezo finds himself a fugitive survivor on the losing side of the war. Takezo's vicious nature has made him an outcast even in his own village, and he is hunted down like an animal. At this crucial crossroads in Takezo's life, an eccentric monk and a childhood friend are the only on",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30656-9mW113O7rDnA.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    {
+      "title": "One Piece",
+      "description": "As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer \"Red-Haired\" Shanks. But his life changed when Luffy accidentally ate the Gum-Gum Devil Fruit and gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, still vowing to become the king of the pirates, Luffy sets out on his adventure...one guy alone in a rowboat, in search of the legendary \"One Piece,\" said to be the greatest treasure in the world..",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30013-BeslEMqiPhlk.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Umineko When They Cry Episode 8: Twilight of the Golden Witch",
+      "description": "It's time once again for the annual family gathering on Rokkenjima! Ange Ushiromiya is just getting over a cold, but that won't dampen her excitement at seeing her cousins again! Granddad couldn't be more thrilled to see his beloved grandchildren and throws a special Halloween party where everyone gets lots of treats! By lunchtime on the first day, the aunts and uncles are chatting up a storm, and the cousins are eagerly planning the afternoon's fun. It's the very picture of a happy family-one t",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx64053-tHJHWLRrWbeA.png",
+      "status": "FINISHED",
+      "chapters": 42,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Monster",
+      "description": "Everyone faces uncertainty at some point in their lives. Even a brilliant surgeon like Kenzo Tenma is no exception. But there’s no way he could have known that his decision to stop chasing professional success and instead concentrate on his oath to save peoples’ lives would result in the birth of an abomination. The questions of good and evil now take on a terrifyingly real dimension.\n\nYears later, in Germany during the tumultuous post-reunification period, middle-aged childless couples are bein",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30001-Knby7l1jevE7.jpg",
+      "status": "FINISHED",
+      "chapters": 162,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Vinland Saga",
+      "description": "As a child, Thorfinn sat at the feet of the great Leif Ericson and thrilled to wild tales of a land far to the west. But his youthful fantasies were shattered by a mercenary raid. Raised by the Vikings who murdered his father, Thorfinn became a terrifying warrior, forever seeking to kill the band's leader, Askeladd, and avenge his father. Sustaining Thorfinn through his ordeal are his pride in his family and his dreams of a fertile westward land, a land without war or slavery … the land Leif cal",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30642-0mjRDkf4THpo.jpg",
+      "status": "FINISHED",
+      "chapters": 220,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ]
+    },
+    {
+      "title": "Slam Dunk",
+      "description": "Hanamichi Sakuragi's got no game with girls--none at all! It doesn't help that he's known for throwing down at a moment's notice and always coming out on top. A hopeless bruiser, he's been rejected by 50 girls in a row! All that changes when he meets the girl of his dreams, Haruko, and she's actually not afraid of him! When she introduces him to the game of basketball, his life is changed forever...\n\n(Source: Viz Media)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30051-5KJyPlO7z5F4.png",
+      "status": "FINISHED",
+      "chapters": 276,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Land of the Lustrous",
+      "description": "In a world inhabited by crystalline lifeforms called The Lustrous, every unique gem must fight for their way of life against the threat of lunarians who would turn them into decorations. Phosphophyllite, the most fragile and brittle of gems, longs to join the battle. When Phos is instead assigned to complete a natural history of their world, it sounds like a dull and pointless task. But this new job brings Phos into contact with Cinnabar, a gem forced to live in isolation. Can Phos’s seemingly m",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx74489-5HtDCFfut8Be.jpg",
+      "status": "FINISHED",
+      "chapters": 108,
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Fullmetal Alchemist",
+      "description": "Alchemy tore the Elric brothers’ bodies apart. Can their bond make them whole again?\nIn this world, alchemists are those who study and perform the art of alchemical transmutation—the science of manipulating and transforming matter. They are bounded by the Law of Equivalent Exchange: in order to gain something, one must sacrifice something of equal value.\nIn an alchemical ritual gone wrong, Edward Elric lost his arm and his leg, and his brother Alphonse became nothing but a soul in a suit of armo",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30025-mpPVpCKFTowt.png",
+      "status": "FINISHED",
+      "chapters": 116,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Fata Morgana no Yakata: Anata no Genten ni Itaru Monogatari",
+      "description": "You awaken in a decrepit old mansion.\n\nA woman with eyes of jade stands before You, informing You that You are the Master of the house, and she Your Maid. However, You have no memories, no concept of self—or, indeed, any certainty that You are even alive.\n\nThe Maid invites You to join her on a journey through the mansion's lifeless halls, to behold the numerous tragedies that have befallen its residents. She suggests that among them, perhaps You will find some trace of Yourself.\n\nBeyond the firs",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110992-ROmqSnw0QDTK.jpg",
+      "status": "FINISHED",
+      "chapters": 21,
+      "genres": [
+        "Drama",
+        "Horror",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Real",
+      "description": "A motorcycle accident, bone cancer, a speeding truck crashing into a boy on a stolen bicycle--tragic life-changing events turn the worlds of three young men upside down. These three very different personalities have only one thing in common--their passion for basketball.\n\n(Source: Viz Media)\n\nNote: Won an Excellence Prize for manga at the 2001 Japan Media Arts Festival.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30657-AzyyUOWMJ6fd.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Sports"
+      ]
+    },
+    {
+      "title": "The Greatest Estate Developer",
+      "description": "When civil engineering student Su-Ho Kim falls asleep reading a fantasy novel, he wakes up as a character in the book! Su-Ho is now in the body of Lloyd Frontera, a lazy noble who loves to drink, and whose family is in a mountain of debt. Using his engineering knowledge, Su-Ho designs inventions to avert the terrible future that lies in wait for him. With the help of a giant hamster, a knight, and the world’s magic, can Su-Ho dig his new family out of debt and build a better future?\n(Source: WEB",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx140407-fJQr0fmqq1IO.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Kingdom",
+      "description": "Millions of years have passed since the times of legends, when the worlds of man and gods were still the same. In these times it was the desires of man that moved the world. It is the period of the 500 year war: the Era of Warring States. Kingdom is the story of a young boy who grew into a great general and all the trials and bloodshed that led him there.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx46765-KPXir4sRqJBW.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Drama"
+      ]
+    },
+    {
+      "title": "Ascendance of a Bookworm: Part 5",
+      "description": "Part 5 of Honzuki no Gekokujou.\n\nEhrenfest’s first winter without Ferdinand is colder and more oppressive than usual. A surprise betrayal within the former Veronica faction makes the purge even more urgent, and the few who know about Georgine’s destructive goals compare her to the Goddess of Chaos. Meanwhile, Rozemyne throws herself into her third year at the Royal Academy, trying to stave off the loneliness eating away at her. She pushes to win over the students of the former Veronica faction, ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx113869-S4RyCDWsc0n9.jpg",
+      "status": "FINISHED",
+      "chapters": 256,
+      "genres": [
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Grand Blue Dreaming",
+      "description": "After moving out on his own to a seaside town, Iori Kitahara makes a college debut he never anticipated. A new chapter of his life unfolds, full of diving with beautiful girls and shenanigans with a gaggle of lovable bastards! Idiot-expert Kenji Inoue and au naturel authority Kimitake Yoshioka bring you a glorious college tale filled with booze-fueled antics!\n(Source: Kodansha USA)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87395-axsA49kSZp72.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Slice of Life",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Haikyu!!",
+      "description": "A chance event triggered Shouyou Hinata's love for volleyball. His club had no members, but somehow persevered and finally made it into its very first and final regular match of middle school, where it was steamrolled by Tobio Kageyama, a superstar player known as \"King of the Court.\" Vowing revenge, Hinata applied to the Karasuno High School volleyball club...only to come face-to-face with his hated rival, Kageyama! A tale of hot-blooded youth and volleyball from the pen of Haruichi Furudate!!\n",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx65243-mR4MnJFmfaOF.png",
+      "status": "FINISHED",
+      "chapters": 404,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Ashita no Joe: Fighting for Tomorrow",
+      "description": "Joe Yabuki is a troubled young man who runs away from an orphanage. Wandering through the Tokyo slums, he meets former boxing trainer Danpei. Joe is later arrested and goes to a temporary jail where he fights Nishi, his future best friend, ​and leader of a group of hooligans. He and Nishi then go to a juvenile prison miles away from Tokyo. There Joe meets Rikiishi, a former boxing prodigy, and a rivalry develops between them. They face each other in a match in which Rikiishi dominates Joe until ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31303-l21HJn9AXl7w.jpg",
+      "status": "FINISHED",
+      "chapters": 171,
+      "genres": [
+        "Drama",
+        "Slice of Life",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Vagabond: Saigo no Manga-ten",
+      "description": "Telling the later life of Vagabond's Musashi Miyamoto, it was depicted through 140 hand-drawn drawings with ink and brush. It was released at the Ueno Royal Museum in Tokyo in May 2008, and since then it has been displayed at three other venues, Kumamoto City Museum, Suntory Museum in Osaka, and Sendai Mediatheque, with new paintings and productions.\n\nNote: The comic was compiled in two books: \"Inoueno: Mikazuki-hen\" (いのうえの 三日月篇) and \"Inoueno: Mangetsu-hen\" (いのうえの 満月篇).",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b135129-rbQyUsPfUZTj.jpg",
+      "status": "FINISHED",
+      "chapters": 2,
+      "genres": [
+        "Action",
+        "Drama",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "Yotsuba&!",
+      "description": "Hello! This is Koiwai Yotsuba, Yotsuba Koiwai...um, YOTSUBA! Yotsuba moved with Daddy to a new house from our old house waaaaaaay over there! And moving's fun 'cos people wave! (Ohhhh!!) And Yotsuba met these nice people next door and made friends to play with (one of 'em acted like one of those bad strangers Daddy told Yotsuba not to go with, but it was okay in the end). I hope we get to play a lot. And eat ice cream! And-and-and...oh yeah! You should come play with Yotsuba too!\n(Source: Yen Pr",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30104-sUVzNlTWZ5cu.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Comedy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Three Days of Happiness",
+      "description": "HOW MUCH IS LIFE TRULY WORTH?\nKusunoki used to believe he was destined for great things. Ostracized as a child, he held on to a belief that a good life was waiting for him in the years ahead. Now approaching the age of twenty, he's a completely mediocre college student with no motivation, no dreams, and no money. After learning he can sell his remaining years-and just how little they're worth-he chooses to divest himself of all but his last three months. Has Kusunoki truly destroyed his last cha",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx98361-Zn6ICdUCq7pf.jpg",
+      "status": "FINISHED",
+      "chapters": 15,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Romance",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Kizumonogatari: Wound Tale",
+      "description": "Around midnight, under a lonely street lamp in a provincial town in Japan, lies a white woman, a blonde, alone, robbed of all four limbs, yet undead. Indeed, a rumour’s been circulating among the local girls that a vampire has come to their backwater, of all places. Koyomi Araragi, who prefers to avoid having friends because they’d lower his “intensity as a human,” is naturally sceptical. Yet it is to him that the bloodsucking demon, a concept “dated twice over,” beckons on the first day of spri",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143701-JltoJEa9GLAS.jpg",
+      "status": "FINISHED",
+      "chapters": 18,
+      "genres": [
+        "Action",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Koimonogatari: Love Tale",
+      "description": "Circling back to a middle school girl’s apotheosis, if we can call it that, in OTORIMONOGATARI, and the mortal threat it poses to the hero and his girl, this “Season Two” finale is narrated, for the first time in the series, by a grown-up—but if the word conjures a sense of reliability, of stability and certainty to you, dear reader, then the lesson to take home from this is to trust no one.\n\nBecause the teller of the tale, who has been summoned by the heroine to defuse the situation, despite ha",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143726-oM6XdI2Ghb8b.jpg",
+      "status": "FINISHED",
+      "chapters": 39,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Nekomonogatari: Cat Tale (White)",
+      "description": "A tale of heroine Tsubasa Hanekawa from her own perspective, in her own voice—if that can hold true for a damaged soul who, depending on who you’re asking, suffers from a split personality or a supernatural aberration. The bone-chilling brokenness of her household, where father and mother and daughter keep three separate sets of cookware in the same kitchen and only ever prepare their own meals, and the profound darkness nurtured in the genius schoolgirl’s heart, come to life, if that is the wor",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx53751-1PHRYYsVP2cE.jpg",
+      "status": "FINISHED",
+      "chapters": 40,
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Psychological",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Goodnight Punpun",
+      "description": "Meet Punpun Punyama. He’s an average kid in an average town.\nHe wants to win a Nobel Prize and save the world.\nHe wants the girl he has a crush on to like him back.\nHe wants to find some porn.\nThat’s what he wants, but what does he get…?\n\n(Source: Viz Media)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx34632-5xMDkx3pXsEh.png",
+      "status": "FINISHED",
+      "chapters": 147,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Nana",
+      "description": "Nana Komatsu is a young woman who's endured an unending string of boyfriend problems. Moving to Tokyo, she's hoping to take control of her life and put all those messy misadventures behind her. She's looking for love and she's hoping to find it in the big city.\nNana Osaki, on the other hand, is cool, confident and focused. She swaggers into town and proceeds to kick down the doors to Tokyo's underground punk scene. She's got a dream and won't give up until she becomes Japan's No. 1 rock'n'roll s",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30028-VJqBC1ar6AxE.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "86―EIGHTY-SIX",
+      "description": "A War Without Casualties:\n\nThe Republic of San Magnolia has long been under attack from the neighboring Giadian Empire's army of unmanned drones known as the Legion. After years of painstaking research, the Republic finally developed autonomous drones of their own, turning the one-sided struggle into a war without casualties-or at least, that's what the government claims.\nIn truth, there is no such thing as a bloodless war. Beyond the fortified walls protecting the eighty-five Republic territori",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx98610-TIf7R1gkU0vc.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mecha",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "20th Century Boys",
+      "description": "Humanity, having faced extinction at the end of the 20th century, would not have entered the new millennium if it weren't for them. In 1969, during their youth, they created a symbol. In 1997, as the coming disaster slowly starts to unfold, that symbol returns. This is the story of a group of boys who try to save the world.\nFor Kenji, a simple convenience store manager who once dreamed of becoming a rock 'n' roll musician, a host of memories from his past come rushing back when one of his childh",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30003-E84fwIh22LAQ.jpg",
+      "status": "FINISHED",
+      "chapters": 249,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Sci-Fi",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "The Fragrant Flower Blooms With Dignity",
+      "description": "This story takes place in a particular town with two infamous schools in constant dispute: Chidori High, a boys' school predominantly attended by low-class students with damning grades, and its neighbor Kikyo Girls' High, with most of its female students coming from wealthy and prestigious families. One day, high school second-year Rintaro Tsumugi, a fierce-looking but gentle-minded student at Chidori, is helping at his family's patisserie when he encounters a female customer by the name of Kaor",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx140475-QEGtrmdvbpOv.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Hunter x Hunter",
+      "description": "Gon might be a country boy, but he has high aspirations. Despite his Aunt Mito's protests, Gon decides to follow in his father's footsteps and become a legendary Hunter. The Hunter hopefuls begin their journey by storm-tossed ship, where Gon meets Leorio and Kurapika, the only other applicants who aren't devastated by bouts of seasickness.\n\nHaving survived the terrors of the high seas, Gon and his companions now have to prove their worth in a variety of tests in order to find the elusive Exam Ha",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30026-uCvXMudMzmwI.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Kaguya-sama: Love is War",
+      "description": "As leaders of their prestigious academy’s student council, Kaguya and Miyuki are the elite of the elite! But it’s lonely at the top… Luckily for them, they’ve fallen in love! There’s just one problem—they both have too much pride to admit it. And so begins the daily scheming to get the object of their affection to confess their romantic feelings first… Love is a war you win by losing.\n\n(Source: Viz Media)\n\nNotes: \n- The first 10 chapters were published in Monthly Miracle Jump. It switched to Wee",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86635-EdaLQmsn86Fy.png",
+      "status": "FINISHED",
+      "chapters": 281,
+      "genres": [
+        "Comedy",
+        "Psychological",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Delicious in Dungeon",
+      "description": "When young adventurer Laios and his company are attacked and soundly thrashed by a dragon deep in a dungeon, the party loses all its money and provisions...and a member! They're eager to go back and save her, but there is just one problem: If they set out with no food or coin to speak of, they're sure to starve on the way! But Laios comes up with a brilliant idea: \"Let's eat the monsters!\" Slimes, basilisks, and even dragons...none are safe from the appetites of these dungeon-crawling gourmands!",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86082-MXizJxzbijdd.jpg",
+      "status": "FINISHED",
+      "chapters": 111,
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "description": "Kicked out by his family and wandering the streets, an unemployed 34-year-old shut-in thinks he’s hit rock-bottom—just as he’s hit and killed by a speeding truck! Awakening to find himself reborn as an infant in a world of swords and sorcery, but with the memories of his first life intact, Rudeus Greyrat is determined not to repeat his past mistakes. He’s going to make the most of this reincarnation as he sets off on the adventure of a second lifetime!\n\n(Source: Seven Seas Entertainment)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx85470-jt6BF9tDWB2X.jpg",
+      "status": "FINISHED",
+      "chapters": 334,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "March Comes in Like a Lion",
+      "description": "Rei Kiriyama is a child prodigy. Rei Kiriyama is also an orphan who lives alone in an empty apartment. Rei Kiriyama is a teen working in an adult's world. Life is complicated for Rei. He's an up-and-coming shogi player on the verge of turning pro, but he has no homelife, or much of a life period,outside his board game, but thankfully with the help of some life-long friends he has an opportunity start all over again.\n\n(Source: DENPA)\n\nNotes:\n- Winner of the Grand Prize at the 4th Manga Taishou Aw",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31224-dxugU08jahRT.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Kono Oto Tomare!",
+      "description": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has begun, Takezou will have to seek out new members into the club, or the club will become terminated. Out of nowhere, a new member barges into the near-abandoned club room, demanding to join the club. How will Takezou be able to keep his club alive and deal with this rascal of a new member?",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx75143-qPFON51fyZpt.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "description": "Subaru Natsuki was just trying to get to the convenience store but wound up summoned to another world. He encounters the usual things--life-threatening situations, silver haired beauties, cat fairies--you know, normal stuff. All that would be bad enough, but he's also gained the most inconvenient magical ability of all--time travel, but he's got to die to use it. How do you repay someone who saved your life when all you can do is die?\n\n(Source: Yen Press)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85737-WkWOr5EgwPyo.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Umineko When They Cry Episode 7: Requiem of the Golden Witch",
+      "description": "The time for logical debate and magical feints has come to an end; the revelation of the truth about Beatrice the Golden Witch is at hand. To facilitate this, game master Bernkastel has chosen Will Wright the Mage-Hunter to step onto her board and answer a single question: Who killed Beatrice? Joining him in the game is Lion Ushiromiya, Krauss's firstborn and heir, whose role is a mystery in its own right. Will's line of questioning draws together the stray strands from all the previous games, t",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx53900-aDalkx2qmugI.png",
+      "status": "FINISHED",
+      "chapters": 48,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Supernatural",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Bakemonogatari: Monster Tale",
+      "description": "The first part of the Monogatari Series.\n\nThere’s a girl at their school who is always ill. She routinely arrives late, leaves early, or doesn’t show up at all, and skips gym as a matter of course. She’s pretty, and the boys take to whispering that she’s a cloistered princess. As the self-described worst loser in her class soon finds out, they just don’t know what a monster she is. So begins a tale of mysterious maladies that are supernatural in origin yet deeply revealing of the human psyche, a",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx44893-aV0XRP0OfWf7.jpg",
+      "status": "FINISHED",
+      "chapters": 41,
+      "genres": [
+        "Action",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Strangulation: Kubishime Romanticist",
+      "description": "Now that he’s a cool college student, our anti-hero Iichan thinks his crime-solving days are behind him. Cynical, sarcastic and minimally engaged in his studies, Iichan is much more interested in his own feelings of disaffection and isolation. But despite his resolve to remain aloof, he’s pulled into the narrative when he encounters and bonds with a serial killer named Hitoshi Zerozaki – a homicidal maniac with the soul of an artist whose talent is on display at the grisly scenes of his crimes.\n",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143838-gyAyeyS20RWF.jpg",
+      "status": "FINISHED",
+      "chapters": 9,
+      "genres": [
+        "Comedy",
+        "Mystery",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "The Climber",
+      "description": "On his first day of transferring to a new high school, a loner named Mori Buntarou, is cajoled by a classmate into climbing the school building. Despite knowing that one misstep could send him spiraling to his death, he moves forward, and upon finally reaching the top, Mori experiences a sense of fulfillment. That feeling, which seems to be telling him, \"You're alive!\" gives birth to an adrenaline for rock-climbing.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx37375-wkgev4kXhamw.png",
+      "status": "FINISHED",
+      "chapters": 170,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Psychological",
+        "Sports"
+      ]
+    },
+    {
+      "title": "A Silent Voice",
+      "description": "Based on a one-shot that won the 80th Weekly Shounen Magazine Newbie Best Mangaka Award.\nShouya is a bully. When Shouko, a girl who can't hear, enters his elementary school class, she becomes their favorite target, and Shouya and his friends goad each other into devising new tortures for her. But the children's cruelty goes too far. Shouko is forced to leave the school, and Shouya ends up shouldering all the blame. Six years later, the two meet again. Can Shouya make up for his past mistakes, or",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85135-11OOnyaqV71k.png",
+      "status": "FINISHED",
+      "chapters": 64,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Hajime no Ippo: Fighting Spirit!",
+      "description": "Makunouchi Ippo has been bullied his entire life. Constantly running errands and being beaten up by his classmates, Ippo has always dreamed of changing himself, but never has the passion to act upon it. One day, in the midst of yet another bullying, Ippo is saved by Takamura Mamoru, who happens to be a boxer. Ippo faints from his injuries and is brought to Takamura boxing gym to recover. As he regains consciousness, he is awed and amazed at his new surroundings in the gym, though lacks confidenc",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx30007-jVUNk721L0Uz.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Frieren: Beyond Journey’s End",
+      "description": "The adventure is over but life goes on for an elf mage just beginning to learn what living is all about.\n\nElf mage Frieren and her courageous fellow adventurers have defeated the Demon King and brought peace to the land. With the great struggle over, they all go their separate ways to live a quiet life. But as an elf, Frieren, nearly immortal, will long outlive the rest of her former party. How will she come to terms with the mortality of her friends? How can she find fulfillment in her own life",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx118586-CXKgWikBFQgS.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Veil",
+      "description": "A chance encounter. A handsome soldier. A beautiful woman. A tentative love affair smolders on the snowy cobblestone streets, out of sight of those that might keep them apart.\n\nVeil is a beautifully illustrated full-color romance manga, told in stylish short vignettes, beautiful illustrations, and secret moments.\n\n(Source: Udon Entertainment, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx116170-Q9f5Wk6cod5E.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Ascendance of a Bookworm: Part 4",
+      "description": "Part 4 of Honzuki no Gekokujou.\n\nRozemyne awakens from her two-year sleep to a world that isn’t as she remembers it. The strange sensation fills her with unease, but she has no time to rest—she is soon to be enrolled in the Royal Academy as an archduke candidate, where she will be taught how to control her mana, make magic tools, and perform the magic needed to rule as an archduke. She begins dormitory life with colorful teachers and students from other duchies, aiming to be the best big sister ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110802-fWMPC3swaE7w.jpg",
+      "status": "FINISHED",
+      "chapters": 209,
+      "genres": [
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Yona of the Dawn",
+      "description": "A red-haired princess loses her family and her kingdom—now she must rise and fight for her throne!\n\nPrincess Yona lives an ideal life as the only princess of her kingdom. Doted on by her father, the king, and protected by her faithful guard Hak, she cherishes the time spent with the man she loves, Su-won. But everything changes on her 16th birthday when tragedy strikes her family!\n\nYona reels from the shock of witnessing a loved one's murder and having to fight for her life. With Hak's help, she",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx51525-wZ1AjkbXrKns.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Heaven Official's Blessing",
+      "description": "800 years ago, Xie Lian was a pure-blooded and noble Crown Prince, a well-regarded child of Heaven with unlimited potential. But who knew that, after he ascended and became a god with tens of thousands of worshippers, his fate would take such a sharp downhill turn? He was demoted again and again, and fell to rock bottom. 800 years later, Xie Lian ascended again, but this time, without worshippers or and without incense. One day, after returning from collecting scraps, he took a mysterious young ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx112275-fh0u5cH2qB5b.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Medalist",
+      "description": "Tsukasa, whose dreams were crushed. Inori, left to fend for herself. These two share a dream...and their tenacity may be the only thing that sees them through. Their destination? The ice...on the world's stage!\n\n(Source: Kodansha USA)\n\nNotes:\n- Won the Tsugimanga 2022 Award in the Print Manga Category.\n- Winner of the 68th Shogakukan Manga Award in the general category.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx118371-3xk9VUbWnnRR.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Spice & Wolf",
+      "description": "The life of a traveling merchant is a lonely one, a fact with which Kraft Lawrence is well acquainted. Wandering from town to town with just his horse, cart, and whatever wares have come his way, the peddler has pretty well settled into his routine&mdash;that is, until the night Lawrence finds a wolf goddess asleep in his cart. Taking the form of a fetching girl with wolf ears and a tail, Holo has wearied of tending to harvests in the countryside and strikes up a bargain with the merchant to len",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx39115-2uLgBuM30i1b.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Owarimonogatari: End Tale",
+      "description": "Volume 1:\nBefore we witness the series’ climactic showdown in the third volume of the End Tale—each part of which forms its own cohesive whole—narrator Araragi wrestles with a crucial bit of history that had turned him into the loner we met at the very beginning, who opined that friendships only lowered his intensity as a human.\n\nWhat initiates his pilgrim’s progress of a reckoning is his first encounter, at school, with the mysterious freshman Ogi Oshino, self-described niece of the equally eni",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143747-dxRIq37Odflm.jpg",
+      "status": "FINISHED",
+      "chapters": 117,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "The Apothecary Diaries",
+      "description": "In the East is a land ruled by an emperor, whose consorts and serving women live in a sprawling complex known as the hougong, the rear palace. Maomao, an unassuming girl raised in an unassuming town by her apothecary father, never imagined the rear palace would have anything to do with her—until she was kidnapped and sold into service there.\nThough she looks ordinary, Maomao has a quick wit, a sharp mind, and an extensive knowledge of medicine. That's her secret, until she encounters a resident ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99026-5Eg650WAd9Rj.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "GTO: Great Teacher Onizuka",
+      "description": "Former juvenile delinquent Onizuka finds himself thrust into to role of high school teacher, facing students who behave just as he used to and an administration that doesn't trust him. Using the brash an unorthodox methods he picked up in his youth, Onizuka manages to reach through to his kids and help them with their problems.(Source: Tokyopop)\nNotes:\n- Won the 22nd Kodansha Manga Award for Best Shounen Manga.\n- The chapter count includes the 7 chapters extra GTO: Great Toroko Oppai♡ (Tomoko's ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30336-KWTPMwsNTeSa.png",
+      "status": "FINISHED",
+      "chapters": 208,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Ecchi"
+      ]
+    },
+    {
+      "title": "Aria",
+      "description": "On the planet Aqua, a world once known as Mars, Akari Mizunashi has just made her home in the town of Neo-Venezia, a futuristic imitation of the ancient city of Venice. In pursuit of her dream to become an Undine — a gondolier who leads high-end tours around the city — Akari joins as a trainee with the Aria Company, one of the three most prestigious water-guide companies in Neo-Venezia. There, she explores the beauty of the city and the world along with other trainees from Aria and rival compani",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30081-oCRaPkTGq4vP.jpg",
+      "status": "FINISHED",
+      "chapters": 67,
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Sci-Fi",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Hitokui Magical: Satsuriku Kijutsu no Niounomiya Kyoudai",
+      "description": "The No. 1 Killing Name, \"Niounomiya\", has finally arrived!\n\n\".....Specifically, what are you researching, Assistant Professor\nKigamine?\"\n\"——Researching not dying.\"\n\nInvited to monitor the bizarre research on Kuchiha Madoka—a girl who lives eternal—Ii, the Nonsense User, visits the ruins of a clinic in northern Kyoto with antique apartment dwellers Ichihime Yukariki and Kasuga Kasugai.\n\nHowever, what awaits them there is a terrible \"fate\" itself!\n\nThe Niounomiya siblings, the number one killers i",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx143841-0PmHa1CT3q9J.jpg",
+      "status": "FINISHED",
+      "chapters": 11,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Tobaku Datenroku Kaiji: One Poker-hen",
+      "description": "Kaiji and Kazuya face off against each other in a high-stakes game of \"One Poker,\" a modified version of standard poker. Kazuya sets forth a gamble of 2,000,000,000 yen! How will Kaiji survive?! \nChapter count for this arc is 101-254 in the original tankoubon.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx89278-2nemnSgiesJa.jpg",
+      "status": "FINISHED",
+      "chapters": 155,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Chihayafuru",
+      "description": "Chihaya is a girl in the sixth grade, still not old enough to even know the meaning of the word zeal. But one day, she meets Arata, a transfer student from rural Fukui prefecture. Though docile and quiet, he has an unexpected skill: his ability to play competitive karuta, a traditional Japanese card game.\n\nChihaya is struck by his obsession with the game, along with his ability to pick out the right card and swipe it away before any of his opponents. However, Arata is transfixed by her as well, ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx43245-Ied8R99LH3u6.jpg",
+      "status": "FINISHED",
+      "chapters": 248,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Gin Tama",
+      "description": "The samurai didn't stand a chance. First, the aliens invaded Japan. Next, they took all the jobs. And then they confiscated everyone's swords. So what does a hotheaded former samurai like Sakata \"Gin\" Gintoki do to make ends meet? Take any odd job that comes his way, even if it means losing his dignity.\n\n(Source: Viz Media)\n\nIncluded Bonus Chapters:\nVolume 1: Dandelion (One-shot).\nVolume 2: Shirokuro (One-shot).\nVolume 24: 13 (One-shot).\nVolume 38: Bankara-san Ga Tooru (One-shot).\nVolume 41: Spe",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30044-vPmoz3vTPvZs.jpg",
+      "status": "FINISHED",
+      "chapters": 709,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "The Summer You Were There",
+      "description": "Shizuku is a shy girl who hardly talks to other people. Instead, she loses herself in creative writing, crafting a novel that she never plans to show anyone. But when Kaori–Shizuku’s cute, popular classmate–gets her hands on Shizuku’s manuscript, everything changes. Kaori is a huge fan, and suggests that Shizuku can get inspiration for her writing if the two of them start dating! Can these very different young ladies create their own love story together?\n\n(Source: Seven Seas Entertainment)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx117620-cyvy8nO9GLm8.jpg",
+      "status": "FINISHED",
+      "chapters": 32,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Witch Hat Atelier",
+      "description": "In a world where everyone takes wonders like magic spells and dragons for granted, Coco is a girl with a simple dream: she wants to be a witch. But everybody knows magicians are born, not made, and Coco was not born with a gift for magic. Resigned to her un-magical life, Coco is about to give up on her dream to become a witch … until the day she meets Qifrey, a mysterious, traveling magician. After secretly seeing Qifrey perform magic in a way she’s never seen before, Coco soon learns what every",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx98263-kIeaTXrAbGkj.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Golden Kamuy",
+      "description": "In the early twentieth century, Russo-Japanese War veteran Saichi “Immortal” Sugimoto scratches out a meager existence during the postwar gold rush in the wilderness of Hokkaido. When he stumbles across a map to a fortune in hidden Ainu gold, he sets off on a treacherous quest to find it. But Sugimoto is not the only interested party, and everyone who knows about the gold will kill to possess it! Faced with the harsh conditions of the northern wilderness, ruthless criminals and rogue Japanese so",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86559-Y4xDmoz4ud43.jpg",
+      "status": "FINISHED",
+      "chapters": 314,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama"
+      ]
+    },
+    {
+      "title": "On the Way to Meet Mom",
+      "description": "One day, after being discovered in an abandoned house by a rescue team, Mori suddenly finds himself in a children's protection center. Here, he begins to learn a new way of life – one that includes grand care packages sent by a mysterious patron. But when his closest friend is reunited with her mother and leaves the center, Mori learns for the first time the existence of a mother for every child, and decides to embark on a journey to find his own. But what sort of obstacles wait along the way?(S",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx187189-B5zA4zPh3UJA.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Aoashi",
+      "description": "Ashito Aoi, a third year middle school student from Ehime, meets Fukuda Tatsuya, a J Youth League coach. Even though he's still rough around the edges, Ashito has such amazing potential that he gets invited by coach Fukuda to participate in his team's try-outs in Tokyo. The story of a boy who will revolutionize Japanese football begins to unfold.\nNotes: \n- Nominated for the 2017 Manga Taishou Award.\n- Winner of the 65th Shogakukan Manga Award for \"Best General Manga\" category in 2019.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx107279-R2vxyPQRqV0X.jpg",
+      "status": "FINISHED",
+      "chapters": 410,
+      "genres": [
+        "Sports"
+      ]
+    },
+    {
+      "title": "Girls' Last Tour",
+      "description": "Civilization is dead, but Chito and Yuuri are still alive. So they hop aboard their beloved Kettenkrad motorbike and aimlessly wander the ruins of the world they once knew. Day after hopeless day, they look for their next meal and fuel for their ride. But as long as the two are together, even an existence as bleak as theirs has a ray or two of sunshine in it, whether they're sucking down their fill of soup or hunting for machine parts to tinker with. For two girls in a world full of nothing, the",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85412-wzZ2QFwbZJED.jpg",
+      "status": "FINISHED",
+      "chapters": 47,
+      "genres": [
+        "Adventure",
+        "Sci-Fi",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Uma Musume: Cinderella Gray",
+      "description": "Uma Musume Cinderella Gray is a spin-off title of the Uma Musume project by Cygames. It follows Oguri Cap through her time at Kasamatsu Training Center Academy and on her journey of becoming a legendary horse girl.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx119247-8ylxneez5fa8.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Classroom of the Elite",
+      "description": "Students of the prestigious Tokyo Metropolitan Advanced Nurturing High School are given remarkable freedom—if they can win, barter, or save enough points to work their way up the ranks! Ayanokoji Kiyotaka has landed at the bottom in the scorned Class D, where he meets Horikita Suzune, who’s determined to rise up the ladder to Class A. Can they beat the system in a school where cutthroat competition is the name of the game?\n\n(Source: Seven Seas Entertainment)\n\nIncludes Volumes: 4.5, 7.5, 11.5\nInc",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx94970-q77X5sfRIKvU.jpg",
+      "status": "FINISHED",
+      "chapters": 110,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Slice of Life",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Dorohedoro",
+      "description": "In a city so dismal it's known only as \"the Hole,\" a clan of Sorcerers have been plucking people off the streets to use as guinea pigs for atrocious \"experiments\" in the black arts. In a dark alley, Nikaido found Caiman, a man with a reptile head and a bad case of amnesia. To undo the spell, they're hunting and killing the Sorcerers in the Hole, hoping that eventually they'll kill the right one. But when En, the head Sorcerer, gets word of a lizard-man slaughtering his people, he sends a crew of",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31133-Jx6map3Oidz1.png",
+      "status": "FINISHED",
+      "chapters": 191,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Horror",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "Bungo Stray Dogs: Storm Bringer",
+      "description": "It's been roughly one year since Chuya Nakahara joined the Port Mafia, and he's got his sights set on an executive position. But as he makes plans to move up, a man by the name of Paul Verlaine—claiming to be his younger brother—appears and vows to assassinate everyone he cares about! Now Chuya must team up with Adam, a European A.I. investigator, to stop this lunatic before the storm swallows Yokohama once again…\n\n(Source: Yen Press)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx130080-CNB42H8VTalT.jpg",
+      "status": "FINISHED",
+      "chapters": 6,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Usogui",
+      "description": "There are gamblers out there who even bet their lives as ante. But to secure the integrity of these life-threatening gambles, a violent and powerful organization by the name of \"Kakerou\" referees these games as a neutral party. Follow Baku Madarame a.k.a. Usogui (The Lie Eater) as he gambles against maniacal opponents at games&mdash;such as Escape the Abandoned Building, Old Maid, and Hangman&mdash;to ultimately \"out-gamble\" and control the neutral organization of Kakerou itself.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx39982-68LS2Z9075Kw.jpg",
+      "status": "FINISHED",
+      "chapters": 539,
+      "genres": [
+        "Action",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "BECK",
+      "description": "For the first 14 years of his life, Yukio Tanaka has been one heck of a boring guy. He has no hobbies, a weak taste in music, and only a small vestige of a personality. He yearns for an exciting life, but his shy, and somewhat neurotic personality make him his own worst enemy. Little does he know that his life will be forever changed when he meets Ryusuke Minami, a wild and unpredictable 16 year-old fresh from America, who happens to be in a rock-and-roll band named after his Frankenstein-like p",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30145-ipNuwNgD5AJS.png",
+      "status": "FINISHED",
+      "chapters": 103,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Music",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Classroom of the Elite: Year 2",
+      "description": "Students of the prestigious Tokyo Metropolitan Advanced Nurturing High School are given remarkable freedom–if they can win, barter, or save enough points to work their way up the ranks! Ayanokouji Kiyotaka started at the bottom in the scorned Class D, where he met Horikita Suzune, who was determined to rise up the ladder to Class A. Who can beat the system in a school where cutthroat competition is the name of the game? The second year of this intense school drama begins now!\n\n(Source: Seven Sea",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx115166-eBK5EqkUTplf.jpg",
+      "status": "FINISHED",
+      "chapters": 130,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Skip and Loafer",
+      "description": "Excellent student Iwakura Mitsumi has always dreamt about leaving her small town, going to a prestigious university, and making positive change in the world. But she’s so focused on reaching her goals that she’s not prepared for the very different (and overwhelming) city life that awaits her in a Tokyo high school. Luckily, she makes fast friends with Shima Sousuke, a handsome classmate who’s as laid-back as she is over-prepared. Can this naive country girl make it big in Tokyo with Sousuke by h",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx109285-HmBZpzsO2zxd.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "A Certain Magical Index NT",
+      "description": "World War III is over. Touma disappears. Accelerator spends his days with Last Order and Misaka Worst. Shiage uses the secrets he gained in Russia as a bargaining chip.\n\nBut this peace doesn't last long as the Freshmen arrive...\n\n(Source: Yen Press)\n\nNote: Includes 21 prologues, 22 epilogues, and 2 extras.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx54875-X5s1ShPXq8Ah.jpg",
+      "status": "FINISHED",
+      "chapters": 183,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Space Brothers",
+      "description": "Two brothers looked to the starry skies as children and made a promise ... Now, in the year 2025, the younger brother, Hibito, is carrying his out. He is an astronaut who has been selected as a crew member for mankind’s first long-term base on the moon. Meanwhile, the older brother, Mutta, has just been fired from his job and is unemployed, but decides to trust himself just one last time. A text message from Hibito sends him applying to be an astronaut too and shooting for the stars …\n(Source: K",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx44483-j8urUUmaCOaD.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Sci-Fi",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Omniscient Reader",
+      "description": "Back then, Dok-Ja had no idea. He had no idea his favorite web novel 'Three Ways to Survive the Apocalypse' was going to come to life, and that he would become the only person to know how the world was going to end. He also had no idea he would end up becoming the protagonist of this novel-turned-reality. Now, Dok-Ja will go on a journey to change the course of the story and save humankind once and for all.\n\n(Source: WEBTOON, edited)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx119257-Pi21aq3ey9GG.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Blue Period",
+      "description": "The studious Yatora leaves a dry life of study and good manners behind for a new passion: painting. But untethering yourself from all your past expectations is dangerous as well as thrilling…\n\n(Source: Kodansha USA)\n\nNote: Nominated for Manga Taisho Awards in 2019, Kodansha Manga Awards in 2019 and the 24th Tezuka Osamu Cultural Prize in 2020. Winner of the 13th Manga Taisho Awards. Winner of the General Manga category of the 44th annual Kodansha Manga Awards.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx107237-tyQXghsKmE0t.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.",
+      "description": "A twenty-year-old with little hope for the future discovers a shop that buys lifespan, time, and health. This is a story dealing with the ensuing consequences.\nNote: Includes 2 extra chapters.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx97553-vqJj5DFS8v2p.jpg",
+      "status": "FINISHED",
+      "chapters": 18,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Romance",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Ascendance of a Bookworm: Part 3",
+      "description": "Part 3 of Honzuki no Gekokujou.\n\nFollowing a disastrous encounter with a noble, Myne finally resolves to say goodbye to her family and friends in the lower city, changing her name to “Rozemyne” and beginning her new life as the adopted daughter of Ehrenfest’s archduke. However, her days as an archnoble in noble society are brutal, as she is put through rigorous etiquette and magic training on top of her duties as High Bishop and forewoman. It all proves too much for a weak little seven-year-old ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110801-P0va1ehMlNcL.jpg",
+      "status": "FINISHED",
+      "chapters": 117,
+      "genres": [
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Ikoku Nikki",
+      "description": "The manga centers on 35-year-old novelist Makio Koudai and her 15-year-old niece Asa, who live together under one roof. Makio took Asa in on a sudden impulse after Asa's parents, which included Makio's older sister, passed away. The next day, Makio returns to her senses and remembers that she does not do well in the company of other people. So begins their daily life, as Makio attempts to acclimate to a roommate, while Asa attempts to get used to an adult that never acts like one.\n\n(Source: Anim",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx106331-C1F1hqpHnJ0U.jpg",
+      "status": "FINISHED",
+      "chapters": 57,
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Bloom Into You",
+      "description": "Yuu has always loved shoujo manga and awaits the day she gets a love confession that sends her heart aflutter with bubbles and hearts, and yet when a junior high classmate confesses his feelings to her…she feels nothing. Disappointed and confused, Yuu enters high school still unsure how to respond. That’s when Yuu sees the beautiful student council president Nanami turn down a suitor with such maturity that she’s inspired to ask her for help. But when the next person to confess to Yuu is Nanami ",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86218-sIl9tnqHZQyh.jpg",
+      "status": "FINISHED",
+      "chapters": 53,
+      "genres": [
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Yokohama Kaidashi Kikou",
+      "description": "Set hundreds of years in the future after an environmental catastrophe, Yokohama Kaidashi Kikou (also known as Yokohama Shopping Log) centers on the simple life of Alpha, an android who runs a small coffee shop in coastal Japan. Alpha stands witness to chronicle the end of humanity’s days with coffee, a slice of watermelon, and the sound of her moon guitar backed by distant seagulls. Quiet and bittersweet, this tale is about the melancholy beauty that can be found even as the end approaches.\n\n(S",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30004-k0YUnO94IB4x.jpg",
+      "status": "FINISHED",
+      "chapters": 144,
+      "genres": [
+        "Sci-Fi",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Kimi ni Okuru Eien",
+      "description": "Bonus after story that was included with the special edition of volume 6 of Kimi to Tsuzuru Utakata.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx174875-4dU2x0Rmtwqa.jpg",
+      "status": "FINISHED",
+      "chapters": 1,
+      "genres": [
+        "Drama",
+        "Psychological",
+        "Romance"
+      ]
+    },
+    {
+      "title": "Ascendance of a Bookworm: Part 2",
+      "description": "Part 2 of Honzuki no Gekokujou.\n\nWith her baptism ceremony complete, Myne begins work in the temple as an apprentice shrine maiden. Awaiting within is what she always wanted: a room full of books! But her new life isn't quite the dream she was hoping for; she's surrounded by nobles who scorn her commoner origins, and even her own servants are causing her trouble. On top of that, she has to constantly battle the weakness of her own body. But with her love for books burning in her heart, she gives",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx110800-buaDMQpwzfds.jpg",
+      "status": "FINISHED",
+      "chapters": 105,
+      "genres": [
+        "Fantasy",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Umineko no Naku Koro ni Chiru Episode 5: End of the Golden Witch",
+      "description": "Lambdadelta takes over as Game Master following Beatrice's defeat at the end of the previous arc while Bernkastel takes primary control of the human side in the game. Battler meanwhile tries to understand the truth behind Beato's games and comes into conflict with Erika Furudo, a detective character created by Bern who approaches the island murders from a \"mystery\" perspective, in contrast to Battler's \"anti-fantasy\" stance. The chapter also has a focus on Natsuhi, who receives threatening phone",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx92936-Nhy7avArnylj.jpg",
+      "status": "FINISHED",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Horror",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "Ace of the Diamond Act II",
+      "description": "Sequel to Diamond no Ace",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86569-KC2nXAGtv0Cx.jpg",
+      "status": "FINISHED",
+      "chapters": 308,
+      "genres": [
+        "Slice of Life",
+        "Sports"
+      ]
+    },
+    {
+      "title": "Bungo Stray Dogs Beast",
+      "description": "In a parallel universe of Bungo Stray Dogs, Ryuunosuke Akutagawa’s desperate mission to save his younger sister leads to him being recruited by the armed detective agency! \n\n(Source: Yen Press)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx114998-JTCzDczl8eBD.jpg",
+      "status": "FINISHED",
+      "chapters": 22,
+      "genres": [
+        "Action",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Chainsaw Man",
+      "description": "The name says it all! Denji's life of poverty is changed forever when he merges with his pet chainsaw dog, Pochita! Now he's living in the big city and an official Devil Hunter. But he's got a lot to learn about his new job and chainsaw powers!\n\n(Source: MANGA Plus)\n\nNotes:\n- Nominated for the 2020 Manga Taisho Award.\n- Winner of the 2021 Kono Manga ga Sugoi Award.\n- Winner of the 66th Shogakukan Manga Award in the shounen category.\n- Winner of the 2021 and 2022 Harvey Award for Best Manga.\n- Ch",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx105778-euxXZEIfDY2u.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Horror",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "The Apothecary Diaries",
+      "description": "Maomao, a young woman trained in the art of herbal medicine, is forced to work as a lowly servant in the inner palace. Though she yearns for life outside its perfumed halls, she isn’t long for a life of drudgery! Using her wits to break a “curse” afflicting the imperial heirs, Maomao attracts the attentions of the handsome eunuch Jinshi and is promoted to attendant food taster. But Jinshi has other plans for the erstwhile apothecary, and soon Maomao is back to brewing potions and…solving mysteri",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99022-Hh2WdyNgR8HM.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Mystery"
+      ]
+    },
+    {
+      "title": "My Bias Gets on the Last Train",
+      "description": "Every night, Yeo-Un takes the last train home—same route, same time, same routine. But one thing keeps catching his eye: a girl with a guitar and a presence that lingers in his mind. When a shared love for the indie band Long Afternoon sparks a conversation, their late-night encounters begin to turn into something more. But Hae-In isn’t just another fan—she’s the voice behind the band, a secret she can’t afford to reveal. As music draws them closer, the truth may threaten to pull them apart. Whe",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx187944-bb9vk8N7NcDC.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Romance"
+      ]
+    },
+    {
+      "title": "The Legend of the Northern Blade",
+      "description": "For decades, the brave warriors of the Northern Heavenly Sect fought to keep the world safe from the evil Silent Night. But when the fourth generation leader is accused of colluding with the enemy, he is forced to disband the sect and commit suicide to protect his son, Moo-Won. With no family and allies left, Moo-Won leads a dreary life under close surveillance... until a surprise attack from the Silent Night gives him a chance to escape to the mountains. There, the young warrior trains to maste",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx119521-qYqxFvn0NnXo.png",
+      "status": "FINISHED",
+      "chapters": 202,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ]
+    },
+    {
+      "title": "Eleceed",
+      "description": "Jiwoo is a kind-hearted young man who harnesses the lightning quick reflexes of a cat to secretly make the world a better place – one saved little child or foster pet at a time. Kayden is a secret agent on the run, who finds himself stuck in the body of a…um…decidedly fat old fluffy cat. Together, armed with Jiwoo’s super powers and Kayden’s uber-smarts, they’re out to fight those forces who would let evil rule this world. That is, if they can stand each other long enough to get the job done.\n(S",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx106929-flAUvHZDUz5v.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Mushishi",
+      "description": "Some live in the deep darkness behind your eyelids. Some eat silence. Some thoughtlessly kill. Some simply drive men mad. They are known as mushi—creatures that came into being shortly after life emerged from the primordial ooze. They still exist parallel to our own lives and can only be seen by a select few. As a mushishi, Ginko is one of the few who are aware of their existence, and this young man with a sardonic smile roams from place to place with the knowledge and skill to aid those unwitti",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30418-8unnG2Y01lXX.jpg",
+      "status": "FINISHED",
+      "chapters": 50,
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Mystery",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "The Horizon",
+      "description": "A world where everything has been lost. A boy and a girl alone together. A spark of hope kindled between them. All they can do is move forward. But against broken adults and devastating despair, how long will they be able to keep going...?\n\n(Source: Yen Press)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx100568-4BC0PsdwU4bL.png",
+      "status": "FINISHED",
+      "chapters": 21,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Psychological"
+      ]
+    },
+    {
+      "title": "Billy Bat",
+      "description": "It’s 1949 Los Angeles, and Kevin Yamagata, a Japanese American comic book author, is drawing his bestselling character, Billy Bat: a quick-witted detective who is, unsurprisingly, a cartoon bat. Everything is going well for Kevin until he discovers an unfortunate truth: He may have unintentionally plagiarized his beloved character from a drawing he once saw in Japan. Devastated by the news, Kevin returns to war-torn Japan to find the drawing’s original artist . . . but the character’s origins tu",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx41054-Uje20Y9Q0Rmc.jpg",
+      "status": "FINISHED",
+      "chapters": 165,
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural",
+        "Thriller"
+      ]
+    },
+    {
+      "title": "Nausicaä of the Valley of the Wind",
+      "description": "Humanity, in its hubris, has precipitated a devastating environmental disaster. Flourishing industrial civilizations have been swallowed up by the Sea of Corruption, an enormous forest of fungi releases a miasma of poisonous spores into the air. Nausicaa, a compassionate young princess, and her allies battle to heal a wounded world and its inhabitants...\n\n(Source: Viz Media)\nNote: Won the 26th Seiun Award for Best Comic (1995).",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30651-xLufeLnDPqpn.jpg",
+      "status": "FINISHED",
+      "chapters": 59,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Mob Psycho 100",
+      "description": "Do you or someone you know need an exorcist who works cheap? Reigen's your guy! What's his secret to busting ghosts while keeping prices low? Well, first, he's a fraud, and second, he pays the guy who's got the real psychic power—his student assistant Shigeo—less than minimum wage. Shigeo is an awkward but kind boy whose urge to help others and get along with them is bound up with the mental safety locks he's placed on his own emotions. Reigen knows he needs to exploit Shigeo to stay in business",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx85189-06aXUBq5jwce.jpg",
+      "status": "FINISHED",
+      "chapters": 113,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Psychological",
+        "Slice of Life",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "One-Punch Man",
+      "description": "In this new action-comedy, everything about a young man named Saitama screams \"AVERAGE,&rdquo; from his lifeless expression, to his bald head, to his unimpressive physique. However, this average-looking fellow doesn't have your average problem... He's actually a superhero that's looking for tough opponents! The problem is, every time he finds a promising candidate he beats the snot out of them in one punch. Can Saitama finally find an evil villain strong enough to challenge him? Follow Saitama t",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx74347-sZpmNJ5xLwRK.jpg",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Action",
+        "Comedy",
+        "Sci-Fi",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "My Youth Romantic Comedy Is Wrong, As I Expected",
+      "description": "Hikigaya Hachiman is a high school boy with twisted character. He prefers to go against the trend and refuses to make friends with anybody. In order to get Hachiman back the right track, his school teacher Hiratsuka Shizuka forces him to enter 'Public Service Club'. There he meets other problematic students.\nIncludes volumes 6.5, 7.5, 10.5, and 14.5.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx70171-SjwD5wlgUpJV.jpg",
+      "status": "FINISHED",
+      "chapters": 168,
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ]
+    },
+    {
+      "title": "Natsume's Book of Friends",
+      "description": "When Reiko was Takashi's age, she bound the names of demons and spirits in her Book of Friends, enslaving them to her capricious whim. Now Takashi is the owner of the book, and the creatures will do anything to get their names back.\n\n(Source: Viz Media)",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx31859-mITgIaJFBzl4.png",
+      "status": "RELEASING",
+      "chapters": null,
+      "genres": [
+        "Drama",
+        "Supernatural"
+      ]
+    },
+    {
+      "title": "Pluto",
+      "description": "In an ideal world where man and robots coexist, someone or something has destroyed the powerful Swiss robot Mont Blanc. Elsewhere a key figure in a robot rights group is murdered. The two incidents appear to be unrelated...except for one very conspicuous clue - the bodies of both victims have been fashioned into some sort of bizarre collage complete with makeshift horns placed by the victims' heads. Interpol assigns robot detective Gesicht to this most strange and complex case - and he eventuall",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30745-kueBpwriQkvZ.jpg",
+      "status": "FINISHED",
+      "chapters": 65,
+      "genres": [
+        "Drama",
+        "Mecha",
+        "Mystery",
+        "Psychological",
+        "Sci-Fi"
+      ]
+    },
+    {
+      "title": "Goodbye, Eri",
+      "description": "With his mother dying, Yuuta attempts to capture her last days on his phone. After her death, Yuuta heads to the roof of the hospital to commit suicide, but a meeting with a strange girl leads him on the path to making a movie.\n\n(Source: Manga Plus)Note: The one-shot was compiled in a special volume, released on July 4, 2022.",
+      "coverImage": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx146983-pLf4apCkFwKL.jpg",
+      "status": "FINISHED",
+      "chapters": 1,
+      "genres": [
+        "Drama",
+        "Psychological"
+      ]
     }
   ]
 }
-
