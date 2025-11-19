@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sparkles } from "lucide-react"
+import { SearchBar } from "@/components/search-bar"
 
 export function Hero() {
   return (
@@ -33,7 +34,7 @@ export function Hero() {
         <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-[700px] mx-auto mb-12 leading-relaxed font-light">
           Your personal <span className="text-primary font-medium">anime and manga sanctuary</span>. Track, discover, and immerse yourself in the world of Japanese animation.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-4 justify-center flex-wrap mb-12">
           <Link href="/login">
             <Button size="lg" className="rounded-full px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
               Get Started Free
@@ -44,6 +45,11 @@ export function Hero() {
               Explore Anime
             </Button>
           </Link>
+        </div>
+        
+        {/* Search Bar */}
+        <div className="max-w-2xl mx-auto w-full px-4">
+          <SearchBar placeholder="Search anime and manga..." />
         </div>
       </div>
     </div>
