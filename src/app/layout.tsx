@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -9,14 +9,19 @@ import { AccentColorLoader } from "@/components/accent-color-loader";
 import { auth } from "@/auth";
 import { prisma } from "@/lib/prisma";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Note: Fragment Mono is not available in Google Fonts, using JetBrains Mono as a similar alternative
+// If you want to use Fragment Mono, you can use next/font/local and add the font files to public/fonts
+const fragmentMono = JetBrains_Mono({
+  variable: "--font-fragment-mono",
   subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -44,7 +49,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased pl-16 flex flex-col min-h-screen`}
+        className={`${inter.variable} ${fragmentMono.variable} font-sans antialiased pl-16 flex flex-col min-h-screen`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <AccentColorLoader accentColor={accentColor} />
