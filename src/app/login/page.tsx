@@ -1,49 +1,15 @@
-"use client"
-
-import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { signIn } from "@/auth"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
-export default function LoginPage() {
-  const router = useRouter()
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [error, setError] = useState("")
-  const [loading, setLoading] = useState(false)
-
-  const handleCredentialsSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
-    setError("")
-
-    try {
-      const response = await fetch("/api/auth/signin/credentials", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-          email,
-          password,
-          callbackUrl: "/",
-        }),
-      })
-
-      if (response.ok) {
-        router.push("/")
-        router.refresh()
-      } else {
-        setError("Invalid email or password")
-        setLoading(false)
-      }
-    } catch (err) {
-      setError("An error occurred. Please try again.")
-      setLoading(false)
-    }
-  }
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string; callbackUrl?: string }>
+}) {
+  const params = await searchParams
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
@@ -55,7 +21,12 @@ export default function LoginPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <form action="/api/auth/signin/google" method="POST">
+          <form
+            action={async () => {
+              "use server"
+              await signIn("google", { redirectTo: params.callbackUrl || "/" })
+            }}
+          >
             <Button variant="outline" className="w-full" type="submit">
               Sign in with Google
             </Button>
@@ -72,12 +43,28 @@ export default function LoginPage() {
             </div>
           </div>
 
-          <form onSubmit={handleCredentialsSubmit} className="space-y-4">
-            {error && (
-              <div className="text-sm text-destructive bg-destructive/10 p-3 rounded-md">
-                {error}
-              </div>
-            )}
+          {params.error && (
+            <div className="text-sm text-destructive bg-destructive/10 p-3 rounded-md">
+              {params.error === "CredentialsSignin" || params.error === "MissingCSRF"
+                ? "Invalid email or password"
+                : "An error occurred. Please try again."}
+            </div>
+          )}
+
+          <form
+            action={async (formData: FormData) => {
+              "use server"
+              const email = formData.get("email") as string
+              const password = formData.get("password") as string
+
+              await signIn("credentials", {
+                email,
+                password,
+                redirectTo: params.callbackUrl || "/",
+              })
+            }}
+            className="space-y-4"
+          >
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input
@@ -86,9 +73,6 @@ export default function LoginPage() {
                 type="email"
                 required
                 placeholder="m@example.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                disabled={loading}
               />
             </div>
             <div className="space-y-2">
@@ -98,13 +82,10 @@ export default function LoginPage() {
                 name="password"
                 type="password"
                 required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                disabled={loading}
               />
             </div>
-            <Button className="w-full" type="submit" disabled={loading}>
-              {loading ? "Signing in..." : "Sign In"}
+            <Button className="w-full" type="submit">
+              Sign In
             </Button>
           </form>
         </CardContent>
