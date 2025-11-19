@@ -10,6 +10,7 @@ import { NewsSection } from "@/components/news-section";
 import { ActivityFeedTabs } from "@/components/activity-feed-tabs";
 import { SuggestedUsers } from "@/components/suggested-users";
 import { getActivityFeed, getFollowingActivityFeed } from "@/actions/activity";
+import { SearchBar } from "@/components/search-bar";
 
 async function ActivityFeedWithData({ userId }: { userId: string }) {
   const [globalActivities, followingActivities] = await Promise.all([
@@ -120,14 +121,22 @@ export default async function Home() {
         <div className="container mx-auto px-4 md:px-6 py-16 max-w-[90rem]">
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Welcome Back!</h1>
-            <p className="text-lg text-muted-foreground">Here's what's happening with your lists</p>
+            <p className="text-lg text-muted-foreground mb-6">Here's what's happening with your lists</p>
+            
+            {/* Search Bar */}
+            <div className="max-w-2xl">
+              <SearchBar placeholder="Search anime and manga..." />
+            </div>
           </div>
 
           {/* Two Column Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
             {/* Left Side - Activity Feed */}
-            <div>
+            <div className="space-y-6">
               <ActivityFeedWithData userId={userId} />
+              
+              {/* Suggested Users */}
+              <SuggestedUsers currentUserId={userId} limit={5} />
             </div>
 
             {/* Right Side - Stats/Info/Continue Watching */}
@@ -144,9 +153,6 @@ export default async function Home() {
                   <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
                 </section>
               )}
-
-              {/* Suggested Users */}
-              <SuggestedUsers currentUserId={userId} limit={5} />
             </div>
           </div>
         </div>
