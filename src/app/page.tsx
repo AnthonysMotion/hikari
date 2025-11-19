@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { LandingFeatures, LandingCTAs } from "@/components/landing-content";
 import { UserDashboard } from "@/components/user-dashboard";
 import { NewsSection } from "@/components/news-section";
+import { RecentActivity } from "@/components/recent-reviews";
 
 export default async function Home() {
   const session = await auth();
@@ -105,26 +106,35 @@ export default async function Home() {
 
       {/* Dashboard Content for Logged In Users */}
       {isLoggedIn && (
-        <div className="container mx-auto px-4 md:px-6 py-16 max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6 py-16 max-w-[90rem]">
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Welcome Back!</h1>
             <p className="text-lg text-muted-foreground">Here's what's happening with your lists</p>
           </div>
 
-          {/* User Dashboard */}
-          <div className="mb-16">
-            <UserDashboard userId={userId} />
-          </div>
+          {/* Main Dashboard Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16">
+            {/* Main Dashboard Content */}
+            <div className="lg:col-span-8 space-y-8">
+              {/* User Dashboard */}
+              <UserDashboard userId={userId} />
 
-          {/* Watching List */}
-          {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
-            <section className="mb-16">
-              <div className="flex items-center justify-between mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue Watching</h2>
-              </div>
-              <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
-            </section>
-          )}
+              {/* Watching List */}
+              {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
+                <section>
+                  <div className="flex items-center justify-between mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue Watching</h2>
+                  </div>
+                  <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
+                </section>
+              )}
+            </div>
+
+            {/* Sidebar - Recent Activity */}
+            <div className="lg:col-span-4">
+              <RecentActivity />
+            </div>
+          </div>
         </div>
       )}
         
