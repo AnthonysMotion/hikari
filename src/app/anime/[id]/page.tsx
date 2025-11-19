@@ -1,7 +1,13 @@
 import { prisma } from "@/lib/prisma";
+import { auth } from "@/auth";
 import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
+import { AnimeListStatusSelector } from "@/components/anime-list-status-selector";
+import { EpisodeCounter } from "@/components/episode-counter";
+import { ReviewForm } from "@/components/review-form";
+import { ReviewsSection } from "@/components/reviews-section";
 
 function parseJSON(str: string | null) {
   if (!str) return null;
@@ -24,8 +30,12 @@ function formatDate(dateStr: string | null): string | null {
 
 export default async function AnimePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+  const session = await auth();
+  const animeId = parseInt(id);
+  const userId = (session?.user as any)?.id || session?.user?.id;
+
   const anime = await prisma.anime.findUnique({
-    where: { id: parseInt(id) },
+    where: { id: animeId },
     include: { genres: true },
   });
 
@@ -33,21 +43,45 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
     notFound();
   }
 
+  // Get user's list entry
+  const userListEntry = userId
+    ? await prisma.userAnimeList.findUnique({
+        where: {
+          userId_animeId: {
+            userId: userId,
+            animeId,
+          },
+        },
+      })
+    : null;
+
+  // Get user's review
+  const userReview = userId
+    ? await prisma.review.findUnique({
+        where: {
+          userId_animeId: {
+            userId: userId,
+            animeId,
+          },
+        },
+      })
+    : null;
+
   const studios = parseJSON(anime.studios) as string[] | null;
   const tags = parseJSON(anime.tags) as Array<{ name: string; category?: string; description?: string }> | null;
   const synonyms = parseJSON(anime.synonyms) as string[] | null;
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Banner Image */}
+      {/* Banner Image - Full Width */}
       {anime.bannerImage && (
-        <div className="relative w-full h-64 md:h-96 overflow-hidden">
+        <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden bg-muted">
           <img
             src={anime.bannerImage}
             alt={`${anime.title} banner`}
             className="object-cover w-full h-full"
+            style={{ objectPosition: 'center top' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         </div>
       )}
 
@@ -89,6 +123,29 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
               {anime.isAdult && (
                 <div className="text-sm">
                   <Badge variant="destructive">18+ Content</Badge>
+                </div>
+              )}
+
+              {/* List Status Selector */}
+              {session?.user && (
+                <div className="space-y-3 pt-3 border-t">
+                  <div>
+                    <label className="text-sm font-semibold mb-2 block">My List</label>
+                    <AnimeListStatusSelector
+                      animeId={animeId}
+                      currentStatus={userListEntry?.status as any || null}
+                    />
+                  </div>
+
+                  {/* Episode Counter for Watching/Paused/Dropped */}
+                  {userListEntry &&
+                    ["WATCHING", "PAUSED", "DROPPED"].includes(userListEntry.status) && (
+                      <EpisodeCounter
+                        animeId={animeId}
+                        currentEpisode={userListEntry.currentEpisode}
+                        maxEpisodes={anime.episodes}
+                      />
+                    )}
                 </div>
               )}
 
@@ -189,7 +246,7 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
               )}
 
               {/* Studios */}
-              {studios && studios.length > 0 && (
+              {studios && Array.isArray(studios) && studios.length > 0 && (
                 <div className="p-4 rounded-lg border bg-card">
                   <h3 className="text-sm font-semibold mb-2">Studios</h3>
                   <div className="text-sm text-muted-foreground">
@@ -211,7 +268,7 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
                 </div>
               )}
 
-              {/* Country */}
+              {/* Country of Origin */}
               {anime.countryOfOrigin && (
                 <div className="p-4 rounded-lg border bg-card">
                   <h3 className="text-sm font-semibold mb-2">Country of Origin</h3>
@@ -279,6 +336,21 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
                 </div>
               </div>
             )}
+
+            {/* Review Form (for completed items) */}
+            {session?.user && userListEntry?.status === "COMPLETED" && (
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Write a Review</h3>
+                <ReviewForm
+                  animeId={animeId}
+                  mangaId={null}
+                  existingReview={userReview || null}
+                />
+              </div>
+            )}
+
+            {/* Reviews Section */}
+            <ReviewsSection animeId={animeId} mangaId={null} />
           </div>
         </div>
       </div>

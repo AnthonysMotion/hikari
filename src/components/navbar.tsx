@@ -10,64 +10,104 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles } from "lucide-react"
 
 export async function Navbar() {
   const session = await auth()
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
-        <div className="flex items-center gap-6">
-          <Link href="/" className="font-bold text-xl">
-            Hikari
-          </Link>
-          <div className="flex gap-4 text-sm font-medium">
-            <Link href="/" className="transition-colors hover:text-foreground/80">
-              Home
-            </Link>
-            {/* Add more links here later */}
-          </div>
+    <nav className="fixed left-0 top-0 h-screen w-16 hover:w-64 bg-black/40 backdrop-blur-xl border-r border-white/10 transition-all duration-300 ease-in-out z-50 flex flex-col group overflow-hidden">
+      {/* Logo Area */}
+      <div className="h-16 flex items-center flex-shrink-0 px-4 border-b border-white/5">
+        <div className="w-8 h-8 flex items-center justify-center text-primary">
+          <Sparkles className="w-6 h-6" />
         </div>
+        <span className="ml-4 font-bold text-xl tracking-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-gradient">
+          Hikari
+        </span>
+      </div>
 
-        <div className="flex items-center gap-4">
-          {session?.user ? (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-                  <Avatar className="h-8 w-8">
-                    <AvatarImage src={session.user.image || ""} alt={session.user.name || ""} />
-                    <AvatarFallback>{session.user.name?.[0] || session.user.email?.[0]}</AvatarFallback>
-                  </Avatar>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56" align="end" forceMount>
-                <DropdownMenuLabel className="font-normal">
-                  <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">{session.user.name || "User"}</p>
-                    <p className="text-xs leading-none text-muted-foreground">
-                      {session.user.email}
-                    </p>
-                  </div>
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem asChild>
-                  <form
-                    action={async () => {
-                      "use server"
-                      await signOut({ redirectTo: "/" })
-                    }}
-                  >
-                    <button className="w-full text-left">Log out</button>
-                  </form>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          ) : (
-            <Link href="/login">
-              <Button variant="default" size="sm">Sign In</Button>
-            </Link>
-          )}
-        </div>
+      {/* Navigation Links */}
+      <div className="flex-1 py-6 flex flex-col gap-2 px-2">
+        <Link 
+          href="/" 
+          className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Home className="w-6 h-6 flex-shrink-0" />
+          <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            Home
+          </span>
+        </Link>
+        <Link 
+          href="/#anime" 
+          className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <Tv className="w-6 h-6 flex-shrink-0" />
+          <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            Anime
+          </span>
+        </Link>
+        <Link 
+          href="/#manga" 
+          className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <BookOpen className="w-6 h-6 flex-shrink-0" />
+          <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            Manga
+          </span>
+        </Link>
+      </div>
+
+      {/* User Section */}
+      <div className="p-2 border-t border-white/5">
+        {session?.user ? (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center w-full h-12 px-1 rounded-md hover:bg-white/10 transition-colors outline-none">
+                <Avatar className="h-8 w-8 flex-shrink-0">
+                  <AvatarImage src={session.user.image || ""} alt={session.user.name || ""} />
+                  <AvatarFallback>{session.user.name?.[0] || session.user.email?.[0]}</AvatarFallback>
+                </Avatar>
+                <div className="ml-3 flex flex-col items-start overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-sm font-medium truncate w-full text-left">
+                    {session.user.name || "User"}
+                  </span>
+                  <span className="text-xs text-muted-foreground truncate w-full text-left">
+                    {session.user.email}
+                  </span>
+                </div>
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56 ml-2" side="right" align="end" forceMount>
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <form
+                  action={async () => {
+                    "use server"
+                    await signOut({ redirectTo: "/" })
+                  }}
+                  className="w-full"
+                >
+                  <button className="w-full flex items-center text-red-500">
+                    <LogOut className="mr-2 h-4 w-4" />
+                    <span>Log out</span>
+                  </button>
+                </form>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        ) : (
+          <Link 
+            href="/login" 
+            className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <LogIn className="w-6 h-6 flex-shrink-0" />
+            <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+              Sign In
+            </span>
+          </Link>
+        )}
       </div>
     </nav>
   )

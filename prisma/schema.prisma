@@ -41,12 +41,22 @@ model Session {
 model User {
   id            String    @id @default(cuid())
   name          String?
+  username      String?   @unique
   email         String?   @unique
   emailVerified DateTime?
   password      String?   // For credentials provider
-  image         String?
+  image         String?   // Profile picture
+  bannerImage   String?   // Profile banner
+  bio           String?   // User bio
   accounts      Account[]
   sessions      Session[]
+  animeList     UserAnimeList[]
+  mangaList     UserMangaList[]
+  reviews       Review[]
+  favoriteAnime UserFavoriteAnime[]
+  favoriteManga UserFavoriteManga[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
 }
 
 model VerificationToken {
@@ -84,6 +94,9 @@ model Anime {
   countryOfOrigin String?
   isAdult        Boolean  @default(false)
   genres         Genre[]
+  userLists      UserAnimeList[]
+  reviews        Review[]
+  favorites      UserFavoriteAnime[]
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 }
@@ -112,6 +125,9 @@ model Manga {
   countryOfOrigin String?
   isAdult        Boolean  @default(false)
   genres         Genre[]
+  userLists      UserMangaList[]
+  reviews        Review[]
+  favorites      UserFavoriteManga[]
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 }
@@ -121,4 +137,76 @@ model Genre {
   name   String  @unique
   animes Anime[]
   mangas Manga[]
+}
+
+model UserAnimeList {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  animeId     Int
+  status      String   // WATCHING, PLANNING, DROPPED, COMPLETED, PAUSED
+  currentEpisode Int?  // Current episode for WATCHING, PAUSED, DROPPED
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anime       Anime    @relation(fields: [animeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, animeId])
+}
+
+model UserMangaList {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  mangaId     Int
+  status      String   // READING, PLANNING, DROPPED, COMPLETED, PAUSED
+  currentChapter Int?  // Current chapter for READING, PAUSED, DROPPED
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  manga       Manga    @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, mangaId])
+}
+
+model Review {
+  id          Int      @id @default(autoincrement())
+  userId      String
+  animeId     Int?
+  mangaId     Int?
+  rating      Int      // 0-5 stars
+  review      String?  // Review text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anime       Anime?   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  manga       Manga?   @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, animeId])
+  @@unique([userId, mangaId])
+}
+
+model UserFavoriteAnime {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  animeId   Int
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anime     Anime    @relation(fields: [animeId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, animeId])
+}
+
+model UserFavoriteManga {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  mangaId   Int
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  manga     Manga    @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, mangaId])
 }
