@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { auth, signIn, signOut } from "@/auth"
+import { auth, signOut } from "@/auth"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -36,14 +36,14 @@ export async function Navbar() {
                 <Button variant="ghost" className="relative h-8 w-8 rounded-full">
                   <Avatar className="h-8 w-8">
                     <AvatarImage src={session.user.image || ""} alt={session.user.name || ""} />
-                    <AvatarFallback>{session.user.name?.[0]}</AvatarFallback>
+                    <AvatarFallback>{session.user.name?.[0] || session.user.email?.[0]}</AvatarFallback>
                   </Avatar>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56" align="end" forceMount>
                 <DropdownMenuLabel className="font-normal">
                   <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">{session.user.name}</p>
+                    <p className="text-sm font-medium leading-none">{session.user.name || "User"}</p>
                     <p className="text-xs leading-none text-muted-foreground">
                       {session.user.email}
                     </p>
@@ -54,7 +54,7 @@ export async function Navbar() {
                   <form
                     action={async () => {
                       "use server"
-                      await signOut()
+                      await signOut({ redirectTo: "/" })
                     }}
                   >
                     <button className="w-full text-left">Log out</button>
@@ -63,18 +63,12 @@ export async function Navbar() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <form
-              action={async () => {
-                "use server"
-                await signIn()
-              }}
-            >
+            <Link href="/login">
               <Button variant="default" size="sm">Sign In</Button>
-            </form>
+            </Link>
           )}
         </div>
       </div>
     </nav>
   )
 }
-
