@@ -242,3 +242,61 @@ export async function getUserActivityFeed(userId: string, limit: number = 20) {
   return activity
 }
 
+export async function getFollowingActivityFeed(userId: string, limit: number = 20) {
+  // Get list of user IDs that the current user is following
+  const followingIds = await (prisma as any).follow.findMany({
+    where: {
+      followerId: userId,
+    },
+    select: {
+      followingId: true,
+    },
+  })
+
+  const followingUserIds = followingIds.map((f: any) => f.followingId)
+
+  // If not following anyone, return empty array
+  if (followingUserIds.length === 0) {
+    return []
+  }
+
+  // Get activity from followed users
+  const activity = await prisma.activityPost.findMany({
+    where: {
+      userId: {
+        in: followingUserIds,
+      },
+    },
+    take: limit,
+    include: {
+      user: {
+        select: {
+          id: true,
+          name: true,
+          username: true,
+          image: true,
+        },
+      },
+      anime: {
+        select: {
+          id: true,
+          title: true,
+          coverImage: true,
+        },
+      },
+      manga: {
+        select: {
+          id: true,
+          title: true,
+          coverImage: true,
+        },
+      },
+    },
+    orderBy: {
+      createdAt: 'desc',
+    },
+  })
+
+  return activity
+}
+
