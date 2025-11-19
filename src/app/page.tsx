@@ -7,7 +7,18 @@ import { Badge } from "@/components/ui/badge";
 import { LandingFeatures, LandingCTAs } from "@/components/landing-content";
 import { UserDashboard } from "@/components/user-dashboard";
 import { NewsSection } from "@/components/news-section";
-import { ActivityFeed } from "@/components/activity-feed";
+import { ActivityFeedTabs } from "@/components/activity-feed-tabs";
+import { SuggestedUsers } from "@/components/suggested-users";
+import { getActivityFeed, getFollowingActivityFeed } from "@/actions/activity";
+
+async function ActivityFeedWithData({ userId }: { userId: string }) {
+  const [globalActivities, followingActivities] = await Promise.all([
+    getActivityFeed(30),
+    getFollowingActivityFeed(userId, 30),
+  ])
+
+  return <ActivityFeedTabs globalActivities={globalActivities} followingActivities={followingActivities} />
+}
 
 export default async function Home() {
   const session = await auth();
@@ -116,7 +127,7 @@ export default async function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
             {/* Left Side - Activity Feed */}
             <div>
-              <ActivityFeed />
+              <ActivityFeedWithData userId={userId} />
             </div>
 
             {/* Right Side - Stats/Info/Continue Watching */}
@@ -128,11 +139,14 @@ export default async function Home() {
               {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
                 <section>
                   <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue Watching</h2>
                   </div>
                   <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
                 </section>
               )}
+
+              {/* Suggested Users */}
+              <SuggestedUsers currentUserId={userId} limit={5} />
             </div>
           </div>
         </div>
