@@ -1,10 +1,45 @@
-import { signIn } from "@/auth"
+"use client"
+
+import { signIn } from "next-auth/react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useRouter } from "next/navigation"
 
 export default function LoginPage() {
+  const router = useRouter()
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+  const [loading, setLoading] = useState(false)
+
+  const handleCredentialsSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    setError("")
+
+    try {
+      const result = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      })
+
+      if (result?.error) {
+        setError("Invalid email or password")
+        setLoading(false)
+      } else {
+        router.push("/")
+        router.refresh()
+      }
+    } catch (err) {
+      setError("An error occurred. Please try again.")
+      setLoading(false)
+    }
+  }
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
       <Card className="w-full max-w-md">
@@ -17,8 +52,7 @@ export default function LoginPage() {
         <CardContent className="space-y-4">
           <form
             action={async () => {
-              "use server"
-              await signIn("google", { redirectTo: "/" })
+              await signIn("google", { callbackUrl: "/" })
             }}
           >
             <Button variant="outline" className="w-full" type="submit">
@@ -37,23 +71,39 @@ export default function LoginPage() {
             </div>
           </div>
 
-          <form
-            action={async (formData) => {
-              "use server"
-              await signIn("credentials", formData)
-            }}
-            className="space-y-4"
-          >
+          <form onSubmit={handleCredentialsSubmit} className="space-y-4">
+            {error && (
+              <div className="text-sm text-destructive bg-destructive/10 p-3 rounded-md">
+                {error}
+              </div>
+            )}
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" name="email" type="email" required placeholder="m@example.com" />
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="m@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={loading}
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
-              <Input id="password" name="password" type="password" required />
+              <Input
+                id="password"
+                name="password"
+                type="password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                disabled={loading}
+              />
             </div>
-            <Button className="w-full" type="submit">
-              Sign In
+            <Button className="w-full" type="submit" disabled={loading}>
+              {loading ? "Signing in..." : "Sign In"}
             </Button>
           </form>
         </CardContent>
@@ -61,4 +111,3 @@ export default function LoginPage() {
     </div>
   )
 }
-
