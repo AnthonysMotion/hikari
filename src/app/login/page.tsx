@@ -1,12 +1,11 @@
 "use client"
 
-import { signIn } from "next-auth/react"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { useRouter } from "next/navigation"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -15,24 +14,30 @@ export default function LoginPage() {
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const handleCredentialsSubmit = async (e: React.FormEvent) => {
+  const handleCredentialsSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setLoading(true)
     setError("")
 
     try {
-      const result = await signIn("credentials", {
-        email,
-        password,
-        redirect: false,
+      const response = await fetch("/api/auth/signin/credentials", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          email,
+          password,
+          callbackUrl: "/",
+        }),
       })
 
-      if (result?.error) {
-        setError("Invalid email or password")
-        setLoading(false)
-      } else {
+      if (response.ok) {
         router.push("/")
         router.refresh()
+      } else {
+        setError("Invalid email or password")
+        setLoading(false)
       }
     } catch (err) {
       setError("An error occurred. Please try again.")
@@ -50,11 +55,7 @@ export default function LoginPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-          <form
-            action={async () => {
-              await signIn("google", { callbackUrl: "/" })
-            }}
-          >
+          <form action="/api/auth/signin/google" method="POST">
             <Button variant="outline" className="w-full" type="submit">
               Sign in with Google
             </Button>
