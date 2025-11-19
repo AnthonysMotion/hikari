@@ -11,7 +11,9 @@ import { FavoriteAnimeList } from "@/components/favorite-anime-list"
 import { FavoriteMangaList } from "@/components/favorite-manga-list"
 import { LevelProgress, AchievementsList, BadgesList } from "@/components/gamification"
 import { UserActivityFeed } from "@/components/user-activity-feed"
-import { Edit, Settings, Calendar, Mail } from "lucide-react"
+import { FollowButton } from "@/components/follow-button"
+import { getFollowerCount, getFollowingCount, isFollowing } from "@/actions/follow"
+import { Edit, Settings, Calendar, Mail, Users } from "lucide-react"
 
 function getUserId(session: any): string | null {
   return (session?.user as any)?.id || session?.user?.id || null
@@ -99,6 +101,13 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
 
   const isOwnProfile = currentUserId === user.id
 
+  // Get follower/following counts
+  const [followerCount, followingCount, followingStatus] = await Promise.all([
+    getFollowerCount(user.id),
+    getFollowingCount(user.id),
+    currentUserId ? isFollowing(currentUserId, user.id) : Promise.resolve(false),
+  ])
+
   return (
     <main className="min-h-screen bg-background">
       {/* Banner */}
@@ -152,22 +161,27 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
                 {user.name || user.username || "User"}
               </h1>
-              {isOwnProfile && (
-                <div className="flex gap-2">
-                  <Link href="/profile/edit">
-                    <Button variant="outline" size="sm" className="shrink-0">
-                      <Edit className="w-4 h-4 mr-2" />
-                      Edit Profile
-                    </Button>
-                  </Link>
-                  <Link href="/settings">
-                    <Button variant="outline" size="sm" className="shrink-0">
-                      <Settings className="w-4 h-4 mr-2" />
-                      Settings
-                    </Button>
-                  </Link>
-                </div>
-              )}
+              <div className="flex gap-2">
+                {!isOwnProfile && currentUserId && (
+                  <FollowButton userId={user.id} isFollowing={followingStatus} />
+                )}
+                {isOwnProfile && (
+                  <>
+                    <Link href="/profile/edit">
+                      <Button variant="outline" size="sm" className="shrink-0">
+                        <Edit className="w-4 h-4 mr-2" />
+                        Edit Profile
+                      </Button>
+                    </Link>
+                    <Link href="/settings">
+                      <Button variant="outline" size="sm" className="shrink-0">
+                        <Settings className="w-4 h-4 mr-2" />
+                        Settings
+                      </Button>
+                    </Link>
+                  </>
+                )}
+              </div>
             </div>
             
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -177,6 +191,16 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
                   <span>{user.username}</span>
                 </div>
               )}
+              <div className="flex items-center gap-2">
+                <Users className="w-4 h-4" />
+                <Link href={`/user/${user.id}/followers`} className="hover:text-primary transition-colors">
+                  <span className="font-semibold">{followerCount}</span> <span>followers</span>
+                </Link>
+                <span>•</span>
+                <Link href={`/user/${user.id}/following`} className="hover:text-primary transition-colors">
+                  <span className="font-semibold">{followingCount}</span> <span>following</span>
+                </Link>
+              </div>
               {user.email && (
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
