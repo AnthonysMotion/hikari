@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles } from "lucide-react"
+import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles, ListChecks, BookMarked, Flame, Star, UserCircle } from "lucide-react"
 
 export async function Navbar() {
   const session = await auth()
@@ -28,7 +28,7 @@ export async function Navbar() {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex-1 py-6 flex flex-col gap-2 px-2">
+      <div className="flex-1 py-6 flex flex-col gap-2 px-2 justify-center">
         <Link 
           href="/" 
           className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
@@ -38,22 +38,53 @@ export async function Navbar() {
             Home
           </span>
         </Link>
+        {session?.user && (
+          <>
+            <Link 
+              href="/anime-list" 
+              className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ListChecks className="w-6 h-6 flex-shrink-0" />
+              <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                My Anime List
+              </span>
+            </Link>
+            <Link 
+              href="/manga-list" 
+              className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <BookMarked className="w-6 h-6 flex-shrink-0" />
+              <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                My Manga List
+              </span>
+            </Link>
+            <Link 
+              href={`/user/${(session.user as any)?.id || session.user?.id}`}
+              className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <UserCircle className="w-6 h-6 flex-shrink-0" />
+              <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                Profile
+              </span>
+            </Link>
+          </>
+        )}
         <Link 
           href="/#anime" 
           className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <Tv className="w-6 h-6 flex-shrink-0" />
+          <Flame className="w-6 h-6 flex-shrink-0" />
           <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-            Anime
+            Top Anime
           </span>
         </Link>
         <Link 
           href="/#manga" 
           className="flex items-center h-10 px-2 rounded-md hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <BookOpen className="w-6 h-6 flex-shrink-0" />
+          <Star className="w-6 h-6 flex-shrink-0" />
           <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-            Manga
+            Top Manga
           </span>
         </Link>
       </div>
@@ -80,6 +111,18 @@ export async function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56 ml-2" side="right" align="end" forceMount>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <Link href={`/user/${(session.user as any)?.id || session.user?.id}`} className="w-full flex items-center">
+                  <User className="mr-2 h-4 w-4" />
+                  <span>Profile</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/profile/edit" className="w-full flex items-center">
+                  <span>Edit Profile</span>
+                </Link>
+              </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
                 <form

@@ -9,6 +9,7 @@ function getUserId(session: any): string {
 }
 
 export async function updateProfile(data: {
+  name?: string
   username?: string
   bio?: string
   image?: string

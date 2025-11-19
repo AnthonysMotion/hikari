@@ -8,6 +8,8 @@ import { MangaListStatusSelector } from "@/components/manga-list-status-selector
 import { ChapterCounter } from "@/components/chapter-counter";
 import { ReviewForm } from "@/components/review-form";
 import { ReviewsSection } from "@/components/reviews-section";
+import { FavoriteMangaButton } from "@/components/favorite-manga-button";
+import { isFavoriteManga } from "@/actions/profile";
 
 function parseJSON(str: string | null) {
   if (!str) return null;
@@ -67,6 +69,9 @@ export default async function MangaPage({ params }: { params: Promise<{ id: stri
       })
     : null;
 
+  // Check if manga is favorited
+  const isFavorited = userId ? await isFavoriteManga(mangaId, userId) : false;
+
   const tags = parseJSON(manga.tags) as Array<{ name: string; category?: string; description?: string }> | null;
   const synonyms = parseJSON(manga.synonyms) as string[] | null;
 
@@ -79,7 +84,7 @@ export default async function MangaPage({ params }: { params: Promise<{ id: stri
             src={manga.bannerImage}
             alt={`${manga.title} banner`}
             className="object-cover w-full h-full"
-            style={{ objectPosition: 'center top' }}
+            style={{ objectPosition: 'center center' }}
           />
         </div>
       )}
@@ -128,6 +133,15 @@ export default async function MangaPage({ params }: { params: Promise<{ id: stri
               {/* List Status Selector */}
               {session?.user && (
                 <div className="space-y-3 pt-3 border-t">
+                  {/* Favorite Button */}
+                  <div>
+                    <FavoriteMangaButton
+                      mangaId={mangaId}
+                      isFavorite={isFavorited}
+                      userId={userId || ""}
+                    />
+                  </div>
+
                   <div>
                     <label className="text-sm font-semibold mb-2 block">My List</label>
                     <MangaListStatusSelector

@@ -8,6 +8,8 @@ import { AnimeListStatusSelector } from "@/components/anime-list-status-selector
 import { EpisodeCounter } from "@/components/episode-counter";
 import { ReviewForm } from "@/components/review-form";
 import { ReviewsSection } from "@/components/reviews-section";
+import { FavoriteAnimeButton } from "@/components/favorite-anime-button";
+import { isFavoriteAnime } from "@/actions/profile";
 
 function parseJSON(str: string | null) {
   if (!str) return null;
@@ -67,6 +69,9 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
       })
     : null;
 
+  // Check if anime is favorited
+  const isFavorited = userId ? await isFavoriteAnime(animeId, userId) : false;
+
   const studios = parseJSON(anime.studios) as string[] | null;
   const tags = parseJSON(anime.tags) as Array<{ name: string; category?: string; description?: string }> | null;
   const synonyms = parseJSON(anime.synonyms) as string[] | null;
@@ -80,7 +85,7 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
             src={anime.bannerImage}
             alt={`${anime.title} banner`}
             className="object-cover w-full h-full"
-            style={{ objectPosition: 'center top' }}
+            style={{ objectPosition: 'center center' }}
           />
         </div>
       )}
@@ -129,6 +134,15 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
               {/* List Status Selector */}
               {session?.user && (
                 <div className="space-y-3 pt-3 border-t">
+                  {/* Favorite Button */}
+                  <div>
+                    <FavoriteAnimeButton
+                      animeId={animeId}
+                      isFavorite={isFavorited}
+                      userId={userId || ""}
+                    />
+                  </div>
+
                   <div>
                     <label className="text-sm font-semibold mb-2 block">My List</label>
                     <AnimeListStatusSelector
