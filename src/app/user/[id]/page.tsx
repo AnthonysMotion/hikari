@@ -212,9 +212,9 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {/* Genre Chart */}
           <div className="lg:col-span-2">
-            <Card className="h-full">
+            <Card className="h-full border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle>Top Genres</CardTitle>
+                <CardTitle className="text-xl">Top Genres</CardTitle>
               </CardHeader>
               <CardContent>
                 <GenreChart
@@ -226,27 +226,27 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
           </div>
 
           {/* Quick Stats Card */}
-          <Card>
+          <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle>Quick Stats</CardTitle>
+              <CardTitle className="text-xl">Quick Stats</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Anime Total</span>
-                  <span className="font-semibold">{user.animeList.length}</span>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                  <span className="text-sm font-medium text-muted-foreground">Anime Total</span>
+                  <span className="font-bold text-lg">{user.animeList.length}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Manga Total</span>
-                  <span className="font-semibold">{user.mangaList.length}</span>
+                <div className="flex justify-between items-center p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                  <span className="text-sm font-medium text-muted-foreground">Manga Total</span>
+                  <span className="font-bold text-lg">{user.mangaList.length}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Favorites</span>
-                  <span className="font-semibold">{user.favoriteAnime.length + user.favoriteManga.length}</span>
+                <div className="flex justify-between items-center p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                  <span className="text-sm font-medium text-muted-foreground">Favorites</span>
+                  <span className="font-bold text-lg">{user.favoriteAnime.length + user.favoriteManga.length}</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Reviews</span>
-                  <span className="font-semibold">{user.reviews?.length || 0}</span>
+                <div className="flex justify-between items-center p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                  <span className="text-sm font-medium text-muted-foreground">Reviews</span>
+                  <span className="font-bold text-lg">{user.reviews?.length || 0}</span>
                 </div>
               </div>
             </CardContent>
@@ -255,7 +255,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
 
         {/* Achievements */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Achievements</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Achievements</h2>
           <AchievementsList achievements={user.achievements.map((ua) => ({
             id: ua.id,
             unlockedAt: ua.unlockedAt,
@@ -273,7 +273,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
 
         {/* Badges */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Badges</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Badges</h2>
           <BadgesList badges={user.badges.map((ub) => ({
             id: ub.id,
             earnedAt: ub.earnedAt,
@@ -289,9 +289,9 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
         </div>
 
         {/* Favorites */}
-        <div className="space-y-8">
+        <div className="space-y-12">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Favorite Anime</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Favorite Anime</h2>
             {user.favoriteAnime.length > 0 ? (
               <FavoriteAnimeList favorites={user.favoriteAnime.map(f => f.anime)} />
             ) : (
@@ -305,7 +305,7 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold mb-6">Favorite Manga</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Favorite Manga</h2>
             {user.favoriteManga.length > 0 ? (
               <FavoriteMangaList favorites={user.favoriteManga.map(f => f.manga)} />
             ) : (

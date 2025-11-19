@@ -80,36 +80,37 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
     <main className="min-h-screen bg-background">
       {/* Banner Image - Full Width */}
       {anime.bannerImage && (
-        <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden bg-muted">
+        <div className="relative w-full h-64 md:h-96 lg:h-[32rem] overflow-hidden bg-muted border-b border-border/50">
           <img
             src={anime.bannerImage}
             alt={`${anime.title} banner`}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center center' }}
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid md:grid-cols-[300px_1fr] gap-8">
           {/* Cover Image Sidebar */}
           <div className="space-y-4">
-            <div className="relative aspect-[2/3] w-full rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-[2/3] w-full rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
               {anime.coverImage ? (
                 <img
                   src={anime.coverImage}
                   alt={anime.title}
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
                 />
               ) : (
-                <div className="w-full h-full bg-muted flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex items-center justify-center text-muted-foreground">
                   No Image
                 </div>
               )}
             </div>
 
             {/* Sidebar Info */}
-            <div className="space-y-3 p-4 rounded-lg border bg-card">
+            <div className="space-y-3 p-4 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
               {/* AniList Link */}
               {anime.anilistId && (
                 <div className="text-sm">
@@ -209,29 +210,29 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
             </div>
 
             {/* Stats Section */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-lg border bg-card">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
               {anime.averageScore !== null && (
-                <div>
-                  <div className="text-2xl font-bold">{anime.averageScore}</div>
-                  <div className="text-xs text-muted-foreground">Average Score</div>
+                <div className="text-center p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <div className="text-3xl font-bold text-primary">{anime.averageScore}</div>
+                  <div className="text-xs text-muted-foreground font-medium mt-1">Average Score</div>
                 </div>
               )}
               {anime.popularity !== null && (
-                <div>
-                  <div className="text-2xl font-bold">#{anime.popularity}</div>
-                  <div className="text-xs text-muted-foreground">Popularity</div>
+                <div className="text-center p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <div className="text-3xl font-bold">#{anime.popularity}</div>
+                  <div className="text-xs text-muted-foreground font-medium mt-1">Popularity</div>
                 </div>
               )}
               {anime.episodes !== null && (
-                <div>
-                  <div className="text-2xl font-bold">{anime.episodes}</div>
-                  <div className="text-xs text-muted-foreground">Episodes</div>
+                <div className="text-center p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <div className="text-3xl font-bold">{anime.episodes}</div>
+                  <div className="text-xs text-muted-foreground font-medium mt-1">Episodes</div>
                 </div>
               )}
               {anime.duration !== null && (
-                <div>
-                  <div className="text-2xl font-bold">{anime.duration}</div>
-                  <div className="text-xs text-muted-foreground">Minutes/Ep</div>
+                <div className="text-center p-3 rounded-lg hover:bg-primary/5 transition-colors">
+                  <div className="text-3xl font-bold">{anime.duration}</div>
+                  <div className="text-xs text-muted-foreground font-medium mt-1">Minutes/Ep</div>
                 </div>
               )}
             </div>
@@ -240,18 +241,21 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
             <div className="grid md:grid-cols-2 gap-4">
               {/* Airing Dates */}
               {(anime.startDate || anime.endDate) && (
-                <div className="p-4 rounded-lg border bg-card">
-                  <h3 className="text-sm font-semibold mb-2">Airing Dates</h3>
-                  <div className="text-sm text-muted-foreground space-y-1">
+                <div className="p-4 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
+                  <h3 className="text-sm font-bold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-primary rounded-full" />
+                    Airing Dates
+                  </h3>
+                  <div className="text-sm text-muted-foreground space-y-2">
                     {anime.startDate && (
-                      <div>
-                        <span className="font-medium">Start: </span>
+                      <div className="p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                        <span className="font-semibold text-foreground">Start: </span>
                         {formatDate(anime.startDate)} ({anime.startDate})
                       </div>
                     )}
                     {anime.endDate && (
-                      <div>
-                        <span className="font-medium">End: </span>
+                      <div className="p-2 rounded-lg hover:bg-primary/5 transition-colors">
+                        <span className="font-semibold text-foreground">End: </span>
                         {formatDate(anime.endDate)} ({anime.endDate})
                       </div>
                     )}
@@ -261,11 +265,14 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
 
               {/* Studios */}
               {studios && Array.isArray(studios) && studios.length > 0 && (
-                <div className="p-4 rounded-lg border bg-card">
-                  <h3 className="text-sm font-semibold mb-2">Studios</h3>
+                <div className="p-4 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
+                  <h3 className="text-sm font-bold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-primary rounded-full" />
+                    Studios
+                  </h3>
                   <div className="text-sm text-muted-foreground">
                     {studios.map((studio, idx) => (
-                      <span key={idx}>
+                      <span key={idx} className="p-2 rounded-lg hover:bg-primary/5 transition-colors inline-block mr-1">
                         {studio}
                         {idx < studios.length - 1 && ', '}
                       </span>
@@ -276,17 +283,23 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
 
               {/* Source */}
               {anime.source && (
-                <div className="p-4 rounded-lg border bg-card">
-                  <h3 className="text-sm font-semibold mb-2">Source</h3>
-                  <div className="text-sm text-muted-foreground">{anime.source}</div>
+                <div className="p-4 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
+                  <h3 className="text-sm font-bold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-primary rounded-full" />
+                    Source
+                  </h3>
+                  <div className="text-sm text-muted-foreground p-2 rounded-lg hover:bg-primary/5 transition-colors inline-block">{anime.source}</div>
                 </div>
               )}
 
               {/* Country of Origin */}
               {anime.countryOfOrigin && (
-                <div className="p-4 rounded-lg border bg-card">
-                  <h3 className="text-sm font-semibold mb-2">Country of Origin</h3>
-                  <div className="text-sm text-muted-foreground">{anime.countryOfOrigin}</div>
+                <div className="p-4 rounded-xl border border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
+                  <h3 className="text-sm font-bold mb-3 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-primary rounded-full" />
+                    Country of Origin
+                  </h3>
+                  <div className="text-sm text-muted-foreground p-2 rounded-lg hover:bg-primary/5 transition-colors inline-block">{anime.countryOfOrigin}</div>
                 </div>
               )}
             </div>
@@ -294,10 +307,13 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
             {/* Genres */}
             {anime.genres.length > 0 && (
               <div>
-                <h3 className="text-lg font-semibold mb-3">Genres</h3>
+                <h3 className="text-xl font-bold mb-4 tracking-tight flex items-center gap-2">
+                  <span className="w-1 h-5 bg-primary rounded-full" />
+                  Genres
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {anime.genres.map((genre) => (
-                    <Badge key={genre.id} className="bg-primary/10 text-primary hover:bg-primary/20 text-sm px-3 py-1">
+                    <Badge key={genre.id} className="bg-primary/10 text-primary hover:bg-primary/20 hover:scale-105 text-sm px-4 py-1.5 font-semibold transition-all duration-200 cursor-default">
                       {genre.name}
                     </Badge>
                   ))}
@@ -330,8 +346,11 @@ export default async function AnimePage({ params }: { params: Promise<{ id: stri
             {/* Description */}
             {anime.description && (
               <div>
-                <h2 className="text-2xl font-semibold mb-3">Description</h2>
-                <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
+                <h2 className="text-2xl font-bold mb-4 tracking-tight flex items-center gap-2">
+                  <span className="w-1 h-6 bg-primary rounded-full" />
+                  Description
+                </h2>
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap text-base">
                   {anime.description}
                 </p>
               </div>

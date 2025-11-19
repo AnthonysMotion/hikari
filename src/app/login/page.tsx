@@ -12,22 +12,25 @@ export default async function LoginPage({
   const params = await searchParams
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-background">
-      <Card className="w-full max-w-md">
-        <CardHeader>
-          <CardTitle className="text-2xl text-center">Sign In</CardTitle>
-          <CardDescription className="text-center">
+    <div className="flex items-center justify-center min-h-screen bg-background relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 -z-10" />
+      
+      <Card className="w-full max-w-md border-white/10 dark:border-white/5 shadow-xl backdrop-blur-sm bg-card/50">
+        <CardHeader className="space-y-3 pb-6">
+          <CardTitle className="text-3xl text-center font-bold tracking-tight">Sign In</CardTitle>
+          <CardDescription className="text-center text-base">
             Choose your preferred sign in method
           </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-6">
           <form
             action={async () => {
               "use server"
               await signIn("google", { redirectTo: params.callbackUrl || "/" })
             }}
           >
-            <Button variant="outline" className="w-full" type="submit">
+            <Button variant="outline" className="w-full border-2 hover:bg-primary/10 transition-all duration-200" type="submit">
               Sign in with Google
             </Button>
           </form>
@@ -84,7 +87,7 @@ export default async function LoginPage({
                 required
               />
             </div>
-            <Button className="w-full" type="submit">
+            <Button className="w-full font-semibold shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02]" type="submit">
               Sign In
             </Button>
           </form>

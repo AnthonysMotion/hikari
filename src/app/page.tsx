@@ -104,21 +104,23 @@ export default async function Home() {
 
       {/* Dashboard Content for Logged In Users */}
       {isLoggedIn && (
-        <div className="container mx-auto px-4 md:px-6 py-12 max-w-7xl">
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold mb-2">Welcome Back!</h1>
-            <p className="text-muted-foreground">Here's what's happening with your lists</p>
+        <div className="container mx-auto px-4 md:px-6 py-16 max-w-7xl">
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Welcome Back!</h1>
+            <p className="text-lg text-muted-foreground">Here's what's happening with your lists</p>
           </div>
 
           {/* User Dashboard */}
-          <div className="mb-12">
+          <div className="mb-16">
             <UserDashboard userId={userId} />
           </div>
 
           {/* Watching List */}
           {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-8 tracking-tight">Continue Watching</h2>
+            <section className="mb-16">
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue Watching</h2>
+              </div>
               <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
             </section>
           )}
@@ -126,11 +128,12 @@ export default async function Home() {
       )}
         
       {/* Top Anime Section - Always shown */}
-      <section id="anime" className="w-[80%] mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold tracking-tight">Top Anime</h2>
-          <Link href="/anime" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+      <section id="anime" className="w-[80%] mx-auto px-4 md:px-8 py-12 md:py-16">
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Top Anime</h2>
+          <Link href="/anime" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
             View All
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
@@ -146,32 +149,32 @@ export default async function Home() {
                 'block'
               }`}
             >
-              <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-muted mb-3">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-muted mb-3 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 {anime.coverImage ? (
                   <img
                     src={anime.coverImage}
                     alt={anime.title}
-                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                  <div className="w-full h-full flex items-center justify-center text-muted-foreground bg-gradient-to-br from-muted to-muted/50">
                     No Image
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                   <div className="flex flex-wrap gap-1 mb-2">
                     {anime.genres.slice(0, 2).map(g => (
-                      <span key={g.id} className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded backdrop-blur-sm">
+                      <span key={g.id} className="text-[10px] bg-primary/90 text-primary-foreground px-2 py-1 rounded-md backdrop-blur-sm font-medium">
                         {g.name}
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
-              <h3 className="font-medium leading-tight line-clamp-1 group-hover:text-primary transition-colors">
+              <h3 className="font-semibold leading-tight line-clamp-2 group-hover:text-primary transition-colors mb-1">
                 {anime.title}
               </h3>
-              <p className="text-sm text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground">
                 {anime.seasonYear || 'Unknown Year'} • {anime.format || 'TV'}
               </p>
             </Link>
@@ -180,11 +183,12 @@ export default async function Home() {
       </section>
 
       {/* Top Manga Section - Always shown */}
-      <section id="manga" className="w-[80%] mx-auto px-4 md:px-8 mt-20">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold tracking-tight">Top Manga</h2>
-          <Link href="/manga" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+      <section id="manga" className="w-[80%] mx-auto px-4 md:px-8 mt-20 py-12 md:py-16 border-t border-border/50">
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Top Manga</h2>
+          <Link href="/manga" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
             View All
+            <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-6">
@@ -200,32 +204,32 @@ export default async function Home() {
                 'block'
               }`}
             >
-              <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-muted mb-3">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-xl bg-muted mb-3 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 {manga.coverImage ? (
                   <img
                     src={manga.coverImage}
                     alt={manga.title}
-                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
+                  <div className="w-full h-full flex items-center justify-center text-muted-foreground bg-gradient-to-br from-muted to-muted/50">
                     No Image
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                   <div className="flex flex-wrap gap-1 mb-2">
                     {manga.genres.slice(0, 2).map(g => (
-                      <span key={g.id} className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded backdrop-blur-sm">
+                      <span key={g.id} className="text-[10px] bg-primary/90 text-primary-foreground px-2 py-1 rounded-md backdrop-blur-sm font-medium">
                         {g.name}
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
-              <h3 className="font-medium leading-tight line-clamp-1 group-hover:text-primary transition-colors">
+              <h3 className="font-semibold leading-tight line-clamp-2 group-hover:text-primary transition-colors mb-1">
                 {manga.title}
               </h3>
-              <p className="text-sm text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground">
                 {manga.startDate ? new Date(manga.startDate).getFullYear() : 'Unknown'} • {manga.format || 'Manga'}
               </p>
             </Link>

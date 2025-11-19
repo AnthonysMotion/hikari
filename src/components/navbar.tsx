@@ -32,71 +32,78 @@ export async function Navbar() {
       <div className="flex-1 py-6 flex flex-col gap-2 px-2 justify-center">
         <Link 
           href="/" 
-          className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
         >
-          <Home className="w-6 h-6 flex-shrink-0" />
+          <Home className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
           <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
             Home
           </span>
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
         </Link>
         {session?.user && (
           <>
             <Link 
               href="/anime-list" 
-              className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
             >
-              <ListChecks className="w-6 h-6 flex-shrink-0" />
+              <ListChecks className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
               <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 My Anime List
               </span>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
             </Link>
             <Link 
               href="/manga-list" 
-              className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
             >
-              <BookMarked className="w-6 h-6 flex-shrink-0" />
+              <BookMarked className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
               <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 My Manga List
               </span>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
             </Link>
             <Link 
               href={`/user/${(session.user as any)?.id || session.user?.id}`}
-              className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
             >
-              <UserCircle className="w-6 h-6 flex-shrink-0" />
+              <UserCircle className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
               <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 Profile
               </span>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
             </Link>
           </>
         )}
         <Link 
           href="/#anime" 
-          className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+          className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
         >
-          <Flame className="w-6 h-6 flex-shrink-0" />
+          <Flame className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
           <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
             Top Anime
           </span>
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
         </Link>
             <Link 
               href="/#manga" 
-              className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
             >
-              <Star className="w-6 h-6 flex-shrink-0" />
+              <Star className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
               <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 Top Manga
               </span>
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
             </Link>
             {session?.user && (
               <Link 
                 href="/gamification" 
-                className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
               >
-                <Trophy className="w-6 h-6 flex-shrink-0" />
+                <Trophy className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
                 <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                   Challenges
                 </span>
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
               </Link>
             )}
           </div>
@@ -166,12 +173,13 @@ export async function Navbar() {
         ) : (
           <Link 
             href="/login" 
-            className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+            className="flex items-center h-10 px-2 rounded-lg hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-all duration-200 relative group/nav"
           >
-            <LogIn className="w-6 h-6 flex-shrink-0" />
+            <LogIn className="w-5 h-5 flex-shrink-0 transition-transform group-hover/nav:scale-110" />
             <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               Sign In
             </span>
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full opacity-0 group-hover/nav:opacity-100 transition-opacity" />
           </Link>
         )}
       </div>

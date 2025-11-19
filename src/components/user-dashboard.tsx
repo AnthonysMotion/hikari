@@ -67,84 +67,94 @@ export async function UserDashboard({ userId }: UserDashboardProps) {
     <div className="space-y-8">
       {/* Quick Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="border-white/10 bg-card/50">
-          <CardHeader className="pb-2">
+        <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] group">
+          <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-              <Clock className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Clock className="w-4 h-4 text-primary" />
+              </div>
               In Progress
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{stats.watching + stats.reading}</div>
+            <div className="text-3xl font-bold tracking-tight">{stats.watching + stats.reading}</div>
           </CardContent>
         </Card>
 
-        <Card className="border-white/10 bg-card/50">
-          <CardHeader className="pb-2">
+        <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] group">
+          <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <CheckCircle2 className="w-4 h-4 text-primary" />
+              </div>
               Completed
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{stats.completed}</div>
+            <div className="text-3xl font-bold tracking-tight">{stats.completed}</div>
           </CardContent>
         </Card>
 
-        <Card className="border-white/10 bg-card/50">
-          <CardHeader className="pb-2">
+        <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] group">
+          <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-              <Star className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <Star className="w-4 h-4 text-primary" />
+              </div>
               Favorites
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{favoriteAnime.length + favoriteManga.length}</div>
+            <div className="text-3xl font-bold tracking-tight">{favoriteAnime.length + favoriteManga.length}</div>
           </CardContent>
         </Card>
 
-        <Card className="border-white/10 bg-card/50">
-          <CardHeader className="pb-2">
+        <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] group">
+          <CardHeader className="pb-3">
             <CardTitle className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-              <TrendingUp className="w-4 h-4" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <TrendingUp className="w-4 h-4 text-primary" />
+              </div>
               Reviews
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{stats.reviews}</div>
+            <div className="text-3xl font-bold tracking-tight">{stats.reviews}</div>
           </CardContent>
         </Card>
       </div>
 
       {/* Quick Actions */}
-      <div className="grid md:grid-cols-2 gap-4">
-        <Card className="border-white/10 bg-card/50">
+      <div className="grid md:grid-cols-2 gap-6">
+        <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Tv className="w-5 h-5" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Tv className="w-4 h-4 text-primary" />
+              </div>
               Quick Actions
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             <Link href="/anime-list">
-              <Button variant="ghost" className="w-full justify-start">
-                <ListChecks className="w-4 h-4 mr-2" />
+              <Button variant="ghost" className="w-full justify-start hover:bg-primary/10 group">
+                <ListChecks className="w-4 h-4 mr-2 transition-transform group-hover:translate-x-1" />
                 My Anime List
-                <ArrowRight className="w-4 h-4 ml-auto" />
+                <ArrowRight className="w-4 h-4 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </Button>
             </Link>
             <Link href="/manga-list">
-              <Button variant="ghost" className="w-full justify-start">
-                <BookOpen className="w-4 h-4 mr-2" />
+              <Button variant="ghost" className="w-full justify-start hover:bg-primary/10 group">
+                <BookOpen className="w-4 h-4 mr-2 transition-transform group-hover:translate-x-1" />
                 My Manga List
-                <ArrowRight className="w-4 h-4 ml-auto" />
+                <ArrowRight className="w-4 h-4 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </Button>
             </Link>
             <Link href={`/user/${userId}`}>
-              <Button variant="ghost" className="w-full justify-start">
-                <Star className="w-4 h-4 mr-2" />
+              <Button variant="ghost" className="w-full justify-start hover:bg-primary/10 group">
+                <Star className="w-4 h-4 mr-2 transition-transform group-hover:translate-x-1" />
                 My Profile
-                <ArrowRight className="w-4 h-4 ml-auto" />
+                <ArrowRight className="w-4 h-4 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </Button>
             </Link>
           </CardContent>
@@ -152,7 +162,7 @@ export async function UserDashboard({ userId }: UserDashboardProps) {
 
         {/* Recent Reviews */}
         {reviews.length > 0 && (
-          <Card className="border-white/10 bg-card/50">
+          <Card className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm">
             <CardHeader>
               <CardTitle>Recent Reviews</CardTitle>
             </CardHeader>
@@ -165,25 +175,27 @@ export async function UserDashboard({ userId }: UserDashboardProps) {
                   <Link
                     key={review.id}
                     href={review.anime ? `/anime/${item.id}` : `/manga/${item.id}`}
-                    className="flex items-center gap-3 p-2 rounded-md hover:bg-white/5 transition-colors"
+                    className="flex items-center gap-3 p-3 rounded-lg hover:bg-primary/10 transition-all duration-200 group"
                   >
                     {item.coverImage && (
-                      <img
-                        src={item.coverImage}
-                        alt={item.title}
-                        className="w-12 h-16 object-cover rounded"
-                      />
+                      <div className="relative w-12 h-16 rounded overflow-hidden shadow-md group-hover:shadow-lg transition-shadow">
+                        <img
+                          src={item.coverImage}
+                          alt={item.title}
+                          className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
                     )}
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium truncate">{item.title}</p>
-                      <div className="flex items-center gap-2 mt-1">
+                      <p className="font-semibold truncate group-hover:text-primary transition-colors">{item.title}</p>
+                      <div className="flex items-center gap-1 mt-1.5">
                         {Array.from({ length: 5 }).map((_, i) => (
                           <Star
                             key={i}
-                            className={`w-3 h-3 ${
+                            className={`w-3.5 h-3.5 ${
                               i < review.rating
                                 ? "fill-yellow-400 text-yellow-400"
-                                : "text-muted-foreground"
+                                : "text-muted-foreground/30"
                             }`}
                           />
                         ))}

@@ -13,27 +13,29 @@ export function LevelProgress({ level, xp }: LevelProgressProps) {
   const progress = getXPProgress(xp, level)
 
   return (
-    <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
+    <Card className="border-primary/20 dark:border-primary/10 bg-gradient-to-br from-primary/10 via-primary/5 to-primary/10 backdrop-blur-sm shadow-lg">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Trophy className="w-5 h-5 text-primary" />
+        <CardTitle className="flex items-center gap-3 text-xl">
+          <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center">
+            <Trophy className="w-5 h-5 text-primary" />
+          </div>
           Level {level}
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
-        <div className="space-y-2">
+      <CardContent className="space-y-4">
+        <div className="space-y-3">
           <div className="flex justify-between text-sm">
-            <span className="text-muted-foreground">XP Progress</span>
-            <span className="font-semibold">
+            <span className="text-muted-foreground font-medium">XP Progress</span>
+            <span className="font-bold">
               {progress.current} / {progress.next} XP
             </span>
           </div>
-          <Progress value={progress.percent} className="h-3" />
+          <Progress value={progress.percent} className="h-3 bg-primary/20" />
         </div>
-        <div className="flex items-center gap-4 text-sm">
+        <div className="flex items-center gap-4 text-sm p-3 rounded-lg bg-primary/5">
           <div className="flex items-center gap-2">
             <Zap className="w-4 h-4 text-primary" />
-            <span className="font-semibold">{xp.toLocaleString()}</span>
+            <span className="font-bold text-lg">{xp.toLocaleString()}</span>
             <span className="text-muted-foreground">Total XP</span>
           </div>
         </div>
@@ -85,7 +87,7 @@ export function AchievementsList({ achievements }: AchievementsListProps) {
         return (
           <Card
             key={userAchievement.id}
-            className={`border-2 overflow-hidden transition-all hover:scale-105 ${
+            className={`border-2 overflow-hidden transition-all hover:scale-105 hover:shadow-lg duration-300 ${
               rarityColors[achievement.rarity as keyof typeof rarityColors] || rarityColors.common
             }`}
           >
@@ -159,7 +161,7 @@ export function BadgesList({ badges }: BadgesListProps) {
         return (
           <Card
             key={userBadge.id}
-            className={`border-2 overflow-hidden transition-all hover:scale-110 ${
+            className={`border-2 overflow-hidden transition-all hover:scale-110 hover:shadow-lg duration-300 ${
               rarityColors[badge.rarity as keyof typeof rarityColors] || rarityColors.common
             }`}
           >

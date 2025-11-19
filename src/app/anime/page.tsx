@@ -105,9 +105,9 @@ async function BrowseContent({ searchParams }: { searchParams: SearchParams }) {
             />
           </div>
           <div className="lg:col-span-3">
-            <div className="mb-4">
-              <h2 className="text-2xl font-bold">Anime</h2>
-              <p className="text-muted-foreground text-sm mt-1">
+            <div className="mb-6">
+              <h2 className="text-3xl font-bold tracking-tight mb-2">Anime</h2>
+              <p className="text-muted-foreground text-base">
                 {anime.length} {anime.length === 1 ? "result" : "results"}
               </p>
             </div>
@@ -127,9 +127,9 @@ async function BrowseContent({ searchParams }: { searchParams: SearchParams }) {
             />
           </div>
           <div className="lg:col-span-3">
-            <div className="mb-4">
-              <h2 className="text-2xl font-bold">Manga</h2>
-              <p className="text-muted-foreground text-sm mt-1">
+            <div className="mb-6">
+              <h2 className="text-3xl font-bold tracking-tight mb-2">Manga</h2>
+              <p className="text-muted-foreground text-base">
                 {manga.length} {manga.length === 1 ? "result" : "results"}
               </p>
             </div>
@@ -146,10 +146,10 @@ export default async function AnimePage({ searchParams }: AnimePageProps) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 md:px-6 py-8 max-w-7xl">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Browse</h1>
-          <p className="text-muted-foreground">
+      <div className="container mx-auto px-4 md:px-6 py-12 max-w-7xl">
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">Browse</h1>
+          <p className="text-lg text-muted-foreground">
             Discover and filter through all anime and manga
           </p>
         </div>

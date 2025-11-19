@@ -62,16 +62,16 @@ export function BrowseList({ type, items }: BrowseListProps) {
 
         return (
           <Link href={href} key={item.id} className="group">
-            <Card className="overflow-hidden h-full transition-shadow hover:shadow-lg">
+            <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-xl hover:scale-[1.02] border-white/10 dark:border-white/5">
               <div className="relative aspect-[2/3] overflow-hidden bg-muted">
                 {item.coverImage ? (
                   <img
                     src={item.coverImage}
                     alt={item.title}
-                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground text-sm">
+                  <div className="w-full h-full flex items-center justify-center text-muted-foreground text-sm bg-gradient-to-br from-muted to-muted/50">
                     No Image
                   </div>
                 )}
@@ -79,15 +79,15 @@ export function BrowseList({ type, items }: BrowseListProps) {
                   <div className="absolute top-2 left-2">
                     <Badge
                       variant="secondary"
-                      className="bg-black/70 text-white backdrop-blur-sm"
+                      className="bg-black/80 text-white backdrop-blur-sm font-semibold shadow-lg"
                     >
-                      {item.averageScore}
+                      ⭐ {item.averageScore}
                     </Badge>
                   </div>
                 )}
               </div>
               <CardContent className="p-3">
-                <h3 className="font-medium text-sm line-clamp-2 group-hover:text-primary transition-colors mb-1">
+                <h3 className="font-semibold text-sm line-clamp-2 group-hover:text-primary transition-colors mb-2">
                   {item.title}
                 </h3>
                 <div className="flex flex-wrap gap-1 mb-2">
@@ -95,7 +95,7 @@ export function BrowseList({ type, items }: BrowseListProps) {
                     <Badge
                       key={genre.id}
                       variant="outline"
-                      className="text-[10px] px-1 py-0"
+                      className="text-[10px] px-1.5 py-0.5 border-primary/20 hover:border-primary/40 transition-colors"
                     >
                       {genre.name}
                     </Badge>
