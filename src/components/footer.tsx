@@ -109,6 +109,21 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Developer Credit */}
+        <div className="pt-6 border-t border-white/5 text-center">
+          <p className="text-sm text-muted-foreground">
+            Developed by{" "}
+            <Link
+              href="https://anthonythach.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors font-medium"
+            >
+              Anthony Thach
+            </Link>
+          </p>
+        </div>
       </div>
     </footer>
   )
