@@ -169,11 +169,47 @@ export async function createStatusActivity(
   revalidatePath(`/user/${userId}`)
 }
 
+export async function createFollowActivity(followerId: string, followedUserId: string) {
+  // Check if we already created an activity for this follow recently (within last 5 minutes)
+  const recentActivity = await prisma.activityPost.findFirst({
+    where: {
+      userId: followerId,
+      type: "follow",
+      followedUserId,
+      createdAt: {
+        gte: new Date(Date.now() - 5 * 60 * 1000), // Last 5 minutes
+      },
+    },
+  })
+
+  if (recentActivity) return
+
+  // Create activity for follow action
+  await prisma.activityPost.create({
+    data: {
+      userId: followerId,
+      type: "follow",
+      followedUserId,
+    },
+  })
+
+  revalidatePath(`/user/${followedUserId}`)
+  revalidatePath("/")
+}
+
 export async function getActivityFeed(limit: number = 20) {
   const activity = await prisma.activityPost.findMany({
     take: limit,
     include: {
       user: {
+        select: {
+          id: true,
+          name: true,
+          username: true,
+          image: true,
+        },
+      },
+      followedUser: {
         select: {
           id: true,
           name: true,
@@ -207,11 +243,22 @@ export async function getActivityFeed(limit: number = 20) {
 export async function getUserActivityFeed(userId: string, limit: number = 20) {
   const activity = await prisma.activityPost.findMany({
     where: {
-      userId,
+      OR: [
+        { userId }, // User's own activities
+        { followedUserId: userId }, // Activities where this user was followed
+      ],
     },
     take: limit,
     include: {
       user: {
+        select: {
+          id: true,
+          name: true,
+          username: true,
+          image: true,
+        },
+      },
+      followedUser: {
         select: {
           id: true,
           name: true,
@@ -270,6 +317,14 @@ export async function getFollowingActivityFeed(userId: string, limit: number = 2
     take: limit,
     include: {
       user: {
+        select: {
+          id: true,
+          name: true,
+          username: true,
+          image: true,
+        },
+      },
+      followedUser: {
         select: {
           id: true,
           name: true,

@@ -148,7 +148,7 @@ export default async function Home() {
               {(watchingAnimeData.length > 0 || readingMangaData.length > 0) && (
                 <section>
                   <div className="flex items-center justify-between mb-8">
-                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue Watching</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Continue!</h2>
                   </div>
                   <WatchingList watchingAnime={watchingAnimeData} readingManga={readingMangaData} />
                 </section>

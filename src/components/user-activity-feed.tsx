@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Activity, Tv, BookOpen } from "lucide-react"
+import { Activity, Tv, BookOpen, UserPlus } from "lucide-react"
 import { getUserActivityFeed } from "@/actions/activity"
 import Link from "next/link"
 
@@ -93,6 +93,17 @@ export async function UserActivityFeed({ userId }: UserActivityFeedProps) {
                     )}
                     {activity.type === "completed" && (
                       <span className="text-xs text-muted-foreground">completed</span>
+                    )}
+                    {activity.type === "follow" && activity.followedUser && (
+                      <>
+                        <span className="text-xs text-muted-foreground">followed</span>
+                        <Link 
+                          href={`/user/${activity.followedUser.id}`}
+                          className="text-xs font-medium text-primary hover:underline"
+                        >
+                          {activity.followedUser.name || activity.followedUser.username}
+                        </Link>
+                      </>
                     )}
                   </div>
                   <span className="text-xs text-muted-foreground whitespace-nowrap">

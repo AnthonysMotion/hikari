@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { Activity, MessageSquare, Tv, BookOpen, Send } from "lucide-react"
+import { Activity, MessageSquare, Tv, BookOpen, Send, UserPlus } from "lucide-react"
 import { createActivityPost, getActivityFeed } from "@/actions/activity"
 import { ActivityPostForm } from "@/components/activity-post-form"
 import Link from "next/link"
@@ -100,14 +100,25 @@ export async function ActivityFeed() {
                       {activity.type === "paused" && (
                         <span className="text-xs text-muted-foreground">paused</span>
                       )}
-                      {activity.type === "completed" && (
-                        <span className="text-xs text-muted-foreground">completed</span>
-                      )}
-                    </div>
-                    <span className="text-xs text-muted-foreground whitespace-nowrap">
-                      {formatDate(activity.createdAt)}
-                    </span>
+                    {activity.type === "completed" && (
+                      <span className="text-xs text-muted-foreground">completed</span>
+                    )}
+                    {activity.type === "follow" && activity.followedUser && (
+                      <>
+                        <span className="text-xs text-muted-foreground">followed</span>
+                        <Link 
+                          href={`/user/${activity.followedUser.id}`}
+                          className="text-xs font-medium text-primary hover:underline"
+                        >
+                          {activity.followedUser.name || activity.followedUser.username}
+                        </Link>
+                      </>
+                    )}
                   </div>
+                  <span className="text-xs text-muted-foreground whitespace-nowrap">
+                    {formatDate(activity.createdAt)}
+                  </span>
+                </div>
 
                   {/* Post Content */}
                   {activity.type === "post" && activity.content && (

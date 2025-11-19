@@ -3,7 +3,7 @@
 import { auth } from "@/auth"
 import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
-import { createActivityPost } from "./activity"
+import { createFollowActivity } from "./activity"
 
 function getUserId(session: any): string {
   return (session?.user as any)?.id || session?.user?.id
@@ -43,17 +43,8 @@ export async function followUser(userIdToFollow: string) {
     },
   })
 
-  // Create activity post when someone follows you
-  const followedUser = await prisma.user.findUnique({
-    where: { id: userIdToFollow },
-    select: { name: true, username: true },
-  })
-
-  if (followedUser) {
-    // Note: This creates an activity from the followed user's perspective
-    // showing that they gained a follower. We'll handle this differently
-    // by showing "followed" activities from the follower's perspective in the feed
-  }
+  // Create activity post when someone follows another user
+  await createFollowActivity(currentUserId, userIdToFollow)
 
   revalidatePath(`/user/${userIdToFollow}`)
   revalidatePath(`/user/${currentUserId}`)

@@ -63,6 +63,7 @@ model User {
   challenges    UserChallenge[]
   bingoCards    UserBingoCard[]
   activityPosts ActivityPost[]
+  followedActivities ActivityPost[] @relation("FollowedUserActivities")
   following     Follow[]  @relation("UserFollows")
   followers     Follow[]  @relation("UserFollowers")
   createdAt     DateTime  @default(now())
@@ -357,24 +358,27 @@ model News {
 }
 
 model ActivityPost {
-  id          String   @id @default(cuid())
-  userId      String
-  type        String   // "post", "episode", "chapter"
-  content     String?  // User's text content (for "post" type)
-  animeId     Int?
-  mangaId     Int?
-  episode     Int?     // Episode number (for "episode" type)
-  chapter     Int?     // Chapter number (for "chapter" type)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id            String   @id @default(cuid())
+  userId        String
+  type          String   // "post", "episode", "chapter", "follow"
+  content       String?  // User's text content (for "post" type)
+  animeId       Int?
+  mangaId       Int?
+  episode       Int?     // Episode number (for "episode" type)
+  chapter       Int?     // Chapter number (for "chapter" type)
+  followedUserId String? // User who was followed (for "follow" type)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  anime       Anime?   @relation(fields: [animeId], references: [id], onDelete: Cascade)
-  manga       Manga?   @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  anime         Anime?   @relation(fields: [animeId], references: [id], onDelete: Cascade)
+  manga         Manga?   @relation(fields: [mangaId], references: [id], onDelete: Cascade)
+  followedUser  User?    @relation("FollowedUserActivities", fields: [followedUserId], references: [id], onDelete: Cascade)
 
   @@index([createdAt])
   @@index([userId])
   @@index([type])
+  @@index([followedUserId])
 }
 
 model Follow {
