@@ -3,6 +3,7 @@
 import { auth } from "@/auth"
 import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
+import { checkAndAwardAchievements, addXP } from "@/lib/achievements"
 
 function getUserId(session: any): string {
   return (session?.user as any)?.id || session?.user?.id
@@ -15,6 +16,16 @@ export async function addToAnimeList(animeId: number, status: string) {
   if (!session?.user || !userId) {
     throw new Error("Unauthorized")
   }
+
+  const wasCompleted = await prisma.userAnimeList.findUnique({
+    where: {
+      userId_animeId: {
+        userId: userId,
+        animeId,
+      },
+    },
+    select: { status: true },
+  })
 
   await prisma.userAnimeList.upsert({
     where: {
@@ -35,8 +46,17 @@ export async function addToAnimeList(animeId: number, status: string) {
     },
   })
 
+  // Award XP and check achievements
+  if (status === "COMPLETED" && wasCompleted?.status !== "COMPLETED") {
+    await addXP(userId, 50, "Completed anime")
+    await checkAndAwardAchievements(userId)
+  } else if (status === "COMPLETED") {
+    await checkAndAwardAchievements(userId)
+  }
+
   revalidatePath(`/anime/${animeId}`)
   revalidatePath("/")
+  revalidatePath(`/user/${userId}`)
 }
 
 export async function addToMangaList(mangaId: number, status: string) {
@@ -46,6 +66,16 @@ export async function addToMangaList(mangaId: number, status: string) {
   if (!session?.user || !userId) {
     throw new Error("Unauthorized")
   }
+
+  const wasCompleted = await prisma.userMangaList.findUnique({
+    where: {
+      userId_mangaId: {
+        userId: userId,
+        mangaId,
+      },
+    },
+    select: { status: true },
+  })
 
   await prisma.userMangaList.upsert({
     where: {
@@ -66,8 +96,17 @@ export async function addToMangaList(mangaId: number, status: string) {
     },
   })
 
+  // Award XP and check achievements
+  if (status === "COMPLETED" && wasCompleted?.status !== "COMPLETED") {
+    await addXP(userId, 50, "Completed manga")
+    await checkAndAwardAchievements(userId)
+  } else if (status === "COMPLETED") {
+    await checkAndAwardAchievements(userId)
+  }
+
   revalidatePath(`/manga/${mangaId}`)
   revalidatePath("/")
+  revalidatePath(`/user/${userId}`)
 }
 
 export async function updateAnimeEpisode(animeId: number, episode: number) {
@@ -186,8 +225,31 @@ export async function incrementAnimeEpisode(animeId: number) {
     },
   })
 
+  // Award XP for episode progress
+  await addXP(userId, 5, "Watched episode")
+  
+  // Check if completed (anime already fetched above)
+  if (anime?.episodes && newEpisode >= anime.episodes) {
+    await prisma.userAnimeList.update({
+      where: {
+        userId_animeId: {
+          userId: userId,
+          animeId,
+        },
+      },
+      data: {
+        status: "COMPLETED",
+      },
+    })
+    await addXP(userId, 50, "Completed anime")
+    await checkAndAwardAchievements(userId)
+  } else {
+    await checkAndAwardAchievements(userId)
+  }
+
   revalidatePath(`/anime/${animeId}`)
   revalidatePath("/")
+  revalidatePath(`/user/${userId}`)
 }
 
 export async function incrementMangaChapter(mangaId: number) {
@@ -232,8 +294,31 @@ export async function incrementMangaChapter(mangaId: number) {
     },
   })
 
+  // Award XP for chapter progress
+  await addXP(userId, 3, "Read chapter")
+  
+  // Check if completed (manga already fetched above)
+  if (manga?.chapters && newChapter >= manga.chapters) {
+    await prisma.userMangaList.update({
+      where: {
+        userId_mangaId: {
+          userId: userId,
+          mangaId,
+        },
+      },
+      data: {
+        status: "COMPLETED",
+      },
+    })
+    await addXP(userId, 50, "Completed manga")
+    await checkAndAwardAchievements(userId)
+  } else {
+    await checkAndAwardAchievements(userId)
+  }
+
   revalidatePath(`/manga/${mangaId}`)
   revalidatePath("/")
+  revalidatePath(`/user/${userId}`)
 }
 
 export async function submitReview(
@@ -295,6 +380,8 @@ export async function submitReview(
         },
       })
 
+  const isNewReview = !existingReview
+
   if (existingReview) {
     await prisma.review.update({
       where: { id: existingReview.id },
@@ -315,7 +402,14 @@ export async function submitReview(
     })
   }
 
+  // Award XP for new reviews
+  if (isNewReview) {
+    await addXP(userId, 25, "Wrote review")
+    await checkAndAwardAchievements(userId)
+  }
+
   revalidatePath(animeId ? `/anime/${animeId}` : `/manga/${mangaId}`)
+  revalidatePath(`/user/${userId}`)
 }
 
 export async function removeFromAnimeList(animeId: number) {

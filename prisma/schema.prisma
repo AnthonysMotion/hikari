@@ -315,6 +315,8 @@ model BingoCard {
   createdAt   DateTime @default(now())
   
   users       UserBingoCard[]
+  
+  @@unique([season, year])
 }
 
 model UserBingoCard {

@@ -9,6 +9,7 @@ import { UserStats } from "@/components/user-stats"
 import { GenreChart } from "@/components/genre-chart"
 import { FavoriteAnimeList } from "@/components/favorite-anime-list"
 import { FavoriteMangaList } from "@/components/favorite-manga-list"
+import { LevelProgress, AchievementsList, BadgesList } from "@/components/gamification"
 import { Edit, Settings, Calendar, Mail } from "lucide-react"
 
 function getUserId(session: any): string | null {
@@ -70,6 +71,22 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
         },
         orderBy: {
           createdAt: 'desc',
+        },
+      },
+      achievements: {
+        include: {
+          achievement: true,
+        },
+        orderBy: {
+          unlockedAt: 'desc',
+        },
+      },
+      badges: {
+        include: {
+          badge: true,
+        },
+        orderBy: {
+          earnedAt: 'desc',
         },
       },
     },
@@ -179,6 +196,11 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
           </div>
         </div>
 
+        {/* Level & XP */}
+        <div className="mb-12">
+          <LevelProgress level={user.level} xp={user.xp} />
+        </div>
+
         {/* Statistics */}
         <div className="mb-12">
           <UserStats
@@ -229,6 +251,41 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Achievements */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Achievements</h2>
+          <AchievementsList achievements={user.achievements.map((ua) => ({
+            id: ua.id,
+            unlockedAt: ua.unlockedAt,
+            achievement: {
+              id: ua.achievement.id,
+              name: ua.achievement.name,
+              description: ua.achievement.description,
+              icon: ua.achievement.icon,
+              rarity: ua.achievement.rarity,
+              category: ua.achievement.category,
+              xpReward: ua.achievement.xpReward,
+            },
+          }))} />
+        </div>
+
+        {/* Badges */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Badges</h2>
+          <BadgesList badges={user.badges.map((ub) => ({
+            id: ub.id,
+            earnedAt: ub.earnedAt,
+            badge: {
+              id: ub.badge.id,
+              name: ub.badge.name,
+              description: ub.badge.description,
+              icon: ub.badge.icon,
+              rarity: ub.badge.rarity,
+              category: ub.badge.category,
+            },
+          }))} />
         </div>
 
         {/* Favorites */}

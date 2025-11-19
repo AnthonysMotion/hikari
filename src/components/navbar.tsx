@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles, ListChecks, BookMarked, Flame, Star, UserCircle, Settings } from "lucide-react"
+import { Home, Tv, BookOpen, LogIn, LogOut, User, Sparkles, ListChecks, BookMarked, Flame, Star, UserCircle, Settings, Trophy } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export async function Navbar() {
@@ -79,16 +79,27 @@ export async function Navbar() {
             Top Anime
           </span>
         </Link>
-        <Link 
-          href="/#manga" 
-          className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <Star className="w-6 h-6 flex-shrink-0" />
-          <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-            Top Manga
-          </span>
-        </Link>
-      </div>
+            <Link 
+              href="/#manga" 
+              className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Star className="w-6 h-6 flex-shrink-0" />
+              <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                Top Manga
+              </span>
+            </Link>
+            {session?.user && (
+              <Link 
+                href="/gamification" 
+                className="flex items-center h-10 px-2 rounded-md hover:bg-sidebar-accent dark:hover:bg-white/10 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Trophy className="w-6 h-6 flex-shrink-0" />
+                <span className="ml-4 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                  Challenges
+                </span>
+              </Link>
+            )}
+          </div>
 
       {/* Theme Toggle */}
       <div className="p-2 border-t border-sidebar-border/50 dark:border-white/5">

@@ -3,6 +3,7 @@
 import { auth } from "@/auth"
 import { prisma } from "@/lib/prisma"
 import { revalidatePath } from "next/cache"
+import { checkAndAwardAchievements } from "@/lib/achievements"
 
 function getUserId(session: any): string {
   return (session?.user as any)?.id || session?.user?.id
@@ -70,6 +71,11 @@ export async function toggleFavoriteAnime(animeId: number) {
 
   revalidatePath(`/anime/${animeId}`)
   revalidatePath(`/user/${userId}`)
+  
+  // Check achievements after favoriting
+  if (!existing) {
+    await checkAndAwardAchievements(userId)
+  }
 }
 
 export async function toggleFavoriteManga(mangaId: number) {
@@ -109,6 +115,11 @@ export async function toggleFavoriteManga(mangaId: number) {
 
   revalidatePath(`/manga/${mangaId}`)
   revalidatePath(`/user/${userId}`)
+  
+  // Check achievements after favoriting
+  if (!existing) {
+    await checkAndAwardAchievements(userId)
+  }
 }
 
 export async function isFavoriteAnime(animeId: number, userId: string): Promise<boolean> {
