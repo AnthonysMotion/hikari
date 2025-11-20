@@ -1,7 +1,11 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tv, BookOpen, Star, Users, BarChart3, Heart, ListChecks } from "lucide-react"
+import { FadeIn, StaggerContainer, HoverCard } from "@/components/ui/motion"
+import { motion } from "framer-motion"
 
 export function LandingFeatures() {
   const features = [
@@ -37,32 +41,57 @@ export function LandingFeatures() {
     },
   ]
 
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+  }
+
   return (
     <section className="container mx-auto px-4 md:px-6 py-24 max-w-6xl">
-      <div className="text-center mb-16">
+      <FadeIn className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Everything You Need</h2>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           A complete platform for anime and manga enthusiasts
         </p>
-      </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      </FadeIn>
+      
+      <motion.div 
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+        className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
         {features.map((feature, index) => (
-          <Card 
-            key={index} 
-            className="border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:border-primary/20 group"
-          >
-            <CardHeader className="pb-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <feature.icon className="w-6 h-6 text-primary" />
-              </div>
-              <CardTitle className="text-xl">{feature.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-base leading-relaxed">{feature.description}</CardDescription>
-            </CardContent>
-          </Card>
+          <motion.div key={index} variants={item}>
+            <HoverCard className="h-full">
+              <Card 
+                className="h-full border-white/10 dark:border-white/5 bg-card/50 backdrop-blur-sm hover:bg-card/70 transition-colors duration-300 hover:border-primary/20 group"
+              >
+                <CardHeader className="pb-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                    <feature.icon className="w-6 h-6 text-primary transition-transform duration-300 group-hover:scale-110" />
+                  </div>
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-base leading-relaxed">{feature.description}</CardDescription>
+                </CardContent>
+              </Card>
+            </HoverCard>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   )
 }
@@ -70,7 +99,7 @@ export function LandingFeatures() {
 export function LandingCTAs() {
   return (
     <section className="container mx-auto px-4 md:px-6 py-24 max-w-4xl border-t border-border/50">
-      <div className="text-center space-y-12">
+      <FadeIn direction="up" className="text-center space-y-12">
         <div className="space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Ready to Get Started?</h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -79,18 +108,21 @@ export function LandingCTAs() {
         </div>
         <div className="flex gap-4 justify-center flex-wrap">
           <Link href="/login">
-            <Button size="lg" className="rounded-full px-10 py-6 text-lg font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-              Get Started Free
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button size="lg" className="rounded-full px-10 py-6 text-lg font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300">
+                Get Started Free
+              </Button>
+            </motion.div>
           </Link>
           <Link href="/#anime">
-            <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-lg font-semibold bg-transparent border-2 border-primary/30 hover:border-primary/50 hover:bg-primary/10 backdrop-blur-sm transition-all duration-300 hover:scale-105">
-              Explore Without Account
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-lg font-semibold bg-transparent border-2 border-primary/30 hover:border-primary/50 hover:bg-primary/10 backdrop-blur-sm transition-all duration-300">
+                Explore Without Account
+              </Button>
+            </motion.div>
           </Link>
         </div>
-      </div>
+      </FadeIn>
     </section>
   )
 }
-
