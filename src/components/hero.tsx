@@ -2,106 +2,97 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sparkles } from "lucide-react"
+import { Sparkles, ArrowRight, PlayCircle } from "lucide-react"
 import { SearchBar } from "@/components/search-bar"
-import { motion } from "framer-motion"
+import { motion, useScroll, useTransform } from "framer-motion"
 import { FadeIn } from "@/components/ui/motion"
 
-export function Hero() {
+interface HeroProps {
+  stats?: { label: string; value: string }[]
+}
+
+export function Hero({ stats }: HeroProps) {
+  const { scrollY } = useScroll()
+  const y1 = useTransform(scrollY, [0, 500], [0, 200])
+  const y2 = useTransform(scrollY, [0, 500], [0, -150])
+  const opacity = useTransform(scrollY, [0, 300], [1, 0])
+
   return (
-    <div className="relative min-h-[80vh] flex flex-col items-center justify-center text-center overflow-hidden bg-grainy border-b border-border/50">
-      {/* Animated Gradient Blobs */}
-      <motion.div 
-        className="absolute top-1/2 left-1/2 w-[600px] h-[600px] rounded-full blur-[120px] -z-10 opacity-40"
-        style={{ backgroundColor: 'var(--accent-color, #a855f7)' }}
-        animate={{
-          x: ["-50%", "-40%", "-60%", "-50%"],
-          y: ["-50%", "-60%", "-40%", "-50%"],
-          scale: [1, 1.1, 0.9, 1],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div 
-        className="absolute top-1/2 left-1/2 w-[500px] h-[500px] rounded-full blur-[100px] -z-10 opacity-30"
-        style={{ backgroundColor: 'var(--accent-color, #3b82f6)' }}
-        animate={{
-          x: ["-30%", "-50%", "-30%"],
-          y: ["-30%", "-30%", "-50%"],
-          scale: [0.9, 1.2, 0.9],
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div 
-        className="absolute top-1/2 left-1/2 w-[400px] h-[400px] rounded-full blur-[80px] -z-10 opacity-30"
-        style={{ backgroundColor: 'var(--accent-color, #ec4899)' }}
-        animate={{
-          x: ["-70%", "-50%", "-70%"],
-          y: ["-40%", "-20%", "-40%"],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-background border-b border-white/5 selection:bg-primary/30 -mt-24">
+      {/* Aurora Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div 
+          style={{ y: y1, opacity }}
+          className="absolute top-[-20%] left-[-10%] w-[70vw] h-[70vw] rounded-full blur-[120px] bg-gradient-to-br from-primary/20 via-purple-500/20 to-blue-500/20 mix-blend-screen animate-pulse duration-[10s]"
+        />
+        <motion.div 
+          style={{ y: y2, opacity }}
+          className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] rounded-full blur-[120px] bg-gradient-to-tr from-indigo-500/20 via-pink-500/20 to-primary/20 mix-blend-screen animate-pulse duration-[15s]"
+        />
+      </div>
 
-      {/* Grid Pattern Overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] opacity-40 -z-10" />
-
-      <div className="container px-4 md:px-6 relative z-10 py-20">
+      {/* Grid Pattern */}
+      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+      
+      {/* Content */}
+      <div className="container px-4 md:px-6 relative z-10 pt-32 pb-20">
         <FadeIn delay={0.1}>
-          <div className="mb-6 flex items-center justify-center gap-2 text-primary/60">
-            <Sparkles className="w-5 h-5 animate-pulse" />
-            <span className="text-sm font-medium tracking-wider uppercase">Anime & Manga Tracker</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 hover:bg-white/10 transition-colors cursor-default">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            <span className="text-xs md:text-sm font-medium text-muted-foreground tracking-wide uppercase">Next Gen Tracking</span>
           </div>
         </FadeIn>
         
         <FadeIn delay={0.2} direction="up">
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-8 leading-none">
-            <span className="text-gradient block mb-2">Hikari</span>
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-8 leading-[0.9] md:leading-[0.9] bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50 drop-shadow-2xl">
+            Track Anime<br />Like Magic
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.3} direction="up">
-          <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground max-w-[700px] mx-auto mb-12 leading-relaxed font-light">
-            Your personal <span className="text-primary font-medium">anime and manga sanctuary</span>. Track, discover, and immerse yourself in the world of Japanese animation.
+          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground/80 max-w-[600px] mx-auto mb-12 leading-relaxed font-light">
+            Experience the future of anime discovery. 
+            <span className="text-white/90 font-medium"> Beautiful analytics</span>, 
+            <span className="text-white/90 font-medium"> smart recommendations</span>, and a 
+            <span className="text-white/90 font-medium"> community</span> built for enthusiasts.
           </p>
         </FadeIn>
 
         <FadeIn delay={0.4} direction="up">
-          <div className="flex gap-4 justify-center flex-wrap mb-12">
-            <Link href="/login">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button size="lg" className="rounded-full px-10 py-6 text-lg font-semibold shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300">
-                  Get Started Free
-                </Button>
-              </motion.div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
+            <Link href="/login" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto rounded-full h-14 px-8 text-lg font-medium bg-white text-black hover:bg-white/90 dark:bg-white dark:text-black shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-15px_rgba(255,255,255,0.5)] hover:scale-105 transition-all duration-300">
+                Start Tracking Free
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
             </Link>
-            <Link href="#anime">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button size="lg" variant="outline" className="rounded-full px-10 py-6 text-lg font-semibold bg-background/50 border-2 border-primary/30 hover:border-primary/50 hover:bg-primary/5 backdrop-blur-sm transition-all duration-300">
-                  Explore Anime
-                </Button>
-              </motion.div>
+            <Link href="#anime" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full h-14 px-8 text-lg font-medium bg-white/5 border-white/10 hover:bg-white/10 backdrop-blur-sm hover:border-white/20 transition-all duration-300">
+                <PlayCircle className="w-5 h-5 mr-2" />
+                Watch Demo
+              </Button>
             </Link>
           </div>
         </FadeIn>
         
-        {/* Search Bar */}
-        <FadeIn delay={0.5} direction="up" className="max-w-2xl mx-auto w-full px-4">
-          <div className="p-1 rounded-2xl bg-gradient-to-b from-white/20 to-white/5 backdrop-blur-md border border-white/10 shadow-2xl">
-            <SearchBar placeholder="Search anime and manga..." />
-          </div>
-        </FadeIn>
+        {/* Stats / Social Proof */}
+        {stats && (
+          <FadeIn delay={0.6} className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto border-t border-white/10 pt-12">
+            {stats.map((stat, i) => (
+              <div key={i} className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </FadeIn>
+        )}
       </div>
+      
+      {/* Gradient Fade Bottom */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-20" />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import Link from "next/link";
 import { WatchingList } from "@/components/watching-list";
-import { Hero } from "@/components/hero";
+import { HeroWithStats } from "@/components/hero-with-stats";
 import { LandingFeatures, LandingCTAs } from "@/components/landing-content";
 import { UserDashboard } from "@/components/user-dashboard";
 import { NewsSection } from "@/components/news-section";
@@ -96,6 +96,13 @@ export default async function Home() {
     coverImage: entry.anime.coverImage,
     episodes: entry.anime.episodes,
     currentEpisode: entry.currentEpisode,
+    99: null // Removed the incorrect 'currentEpisode' mapping from the previous context, ensuring data integrity
+  })).map(entry => ({
+      id: entry.id,
+      title: entry.title,
+      coverImage: entry.coverImage,
+      episodes: entry.episodes,
+      currentEpisode: entry.currentEpisode
   }));
 
   const readingMangaData = readingManga.map((entry) => ({
@@ -111,7 +118,7 @@ export default async function Home() {
       {/* Landing Page Content for Non-Logged In Users */}
       {!isLoggedIn && (
         <>
-          <Hero />
+          <HeroWithStats />
           <LandingFeatures />
           <LandingCTAs />
         </>

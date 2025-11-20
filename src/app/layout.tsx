@@ -36,6 +36,7 @@ export default async function RootLayout({
 }>) {
   const session = await auth();
   const userId = (session?.user as any)?.id || session?.user?.id;
+  const isLoggedIn = !!userId;
 
   let accentColor: string | null = null;
   if (userId) {
@@ -49,12 +50,12 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${fragmentMono.variable} font-sans antialiased pl-16 flex flex-col min-h-screen`}
+        className={`${inter.variable} ${fragmentMono.variable} font-sans antialiased flex flex-col min-h-screen`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <AccentColorLoader accentColor={accentColor} />
           <Navbar />
-          <div className="flex-1">
+          <div className="flex-1 pt-24">
             <PageTransition>{children}</PageTransition>
           </div>
           <Footer />
